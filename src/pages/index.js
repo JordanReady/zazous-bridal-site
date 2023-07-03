@@ -1,2 +1,17 @@
 export { default as Home } from "./Home";
 export { default as Contact } from "./Contact";
+export { default as OurStory } from "./OurStory";
+export { default as Vendors } from "./Vendors";
+export { default as Bridal } from "./Bridal";
+export { default as Bridesmaids } from "./Bridesmaids";
+export { default as Prom } from "./Prom";
+export { default as FlowerGirl } from "./FlowerGirl";
+export { default as Accessories } from "./Accessories";
+export { default as SuitsTuxedos } from "./SuitsTuxedos";
+export { default as HowToMeasureYourself } from "./HowToMeasureYourself";
+export { default as ScheduleAppointment } from "./ScheduleAppointment";
+export { default as PlanAppointment } from "./PlanAppointment";
+export { default as PrivateAppointment } from "./PrivateAppointment";
+export { default as RaveReviews } from "./RaveReviews";
+export { default as WriteReview } from "./WriteReview";
+export { default as Events } from "./Events";
