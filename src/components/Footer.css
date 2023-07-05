@@ -1,0 +1,53 @@
+footer {
+  display: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-buttons {
+  margin-bottom: 10px;
+}
+
+.social-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #ccc;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.social-button.facebook:hover {
+  background-color: #0f60b5; /* Darker shade of blue */
+}
+
+.social-button.email:hover {
+  background-color: #00aeff;
+}
+
+.social-button.pinterest:hover {
+  background-color: #b8001d; /* Darker shade of red */
+}
+
+.social-button.instagram:hover {
+  background-color: #dd5068; /* Darker shade of pink/purple */
+}
+
+.social-button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.logo-container {
+  margin-top: 20px;
+}
+
+.logo-container img {
+  max-width: 200px;
+}
