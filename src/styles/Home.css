@@ -1,6 +1,8 @@
 .carousel {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .carousel-inner {
@@ -8,11 +10,142 @@
   max-width: 1200px;
 }
 
+/* Carousel controls */
+
+.carousel-control-prev {
+  justify-content: left;
+  align-items: center;
+}
+
+.carousel-control-prev-icon {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.51);
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.carousel-control-next {
+  justify-content: right;
+  align-items: center;
+}
+
+.carousel-control-next-icon {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.51);
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
 .carousel-image {
   margin: auto;
   object-fit: fill;
 }
 
+/* Item Hover Effects */
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 0.8;
+}
+
+.carousel-item:hover .caption-text {
+  background-color: rgba(0, 0, 0, 0.582);
+  pointer-events: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0.1;
+}
+
+.caption-text {
+  padding: 25px;
+}
+
+/* Thumbnail Images */
+
+.carousel-indicators {
+  bottom: -105px;
+}
+
+.carousel-indicators li {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-indicators li:first-child {
+  width: 100px;
+  height: 75px;
+  background-color: gray;
+}
+.carousel-indicators li:nth-child(2) {
+  width: 100px;
+  height: 75px;
+  background-color: gray;
+}
+.carousel-indicators li:nth-child(3) {
+  width: 100px;
+  height: 75px;
+  background-color: gray;
+}
+.carousel-indicators li:nth-child(4) {
+  width: 100px;
+  height: 75px;
+  background-color: gray;
+}
+.carousel-indicators li:nth-child(5) {
+  width: 100px;
+  height: 75px;
+  background-color: gray;
+}
+.thumbnail-spacer {
+  height: 100px;
+}
+
+/* Hero Text/Button */
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
 .hero-text {
-  font-size: 24px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero-button {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* screen sizes */
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: -75px;
+    margin: 0;
+  }
+  .carousel-indicators li {
+    margin: 0;
+    height: 60px !important;
+  }
 }
