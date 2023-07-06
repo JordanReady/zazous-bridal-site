@@ -138,6 +138,11 @@
   margin-top: 10px;
 }
 
+/* Home Info */
+.home-info {
+  margin-top: 15px;
+}
+
 /* screen sizes */
 @media (max-width: 767px) {
   .carousel-indicators {

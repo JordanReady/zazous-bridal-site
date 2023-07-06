@@ -6,6 +6,8 @@ import Img2 from "../assets/property-pic-2.jpg";
 import Img3 from "../assets/property-pic-3.jpg";
 import Img4 from "../assets/property-pic-4.jpg";
 import Img5 from "../assets/property-pic-5.jpg";
+import WeddingWire1 from "../assets/wedding-wire-1.jpg";
+import WeddingWire2 from "../assets/wedding-wire-2.jpg";
 
 import "../styles/Home.css";
 
@@ -138,6 +140,68 @@ const Home = () => {
         <button className="hero-button btn btn-dark" onClick={handleClick}>
           Schedule Appointment
         </button>
+      </section>
+      <section className="home-info">
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <div class="text-center">
+              <h4>Store Hours</h4>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Monday</th>
+                    <td>10AM - 6PM</td>
+                  </tr>
+                  <tr>
+                    <th>Tuesday</th>
+                    <td>CLOSED</td>
+                  </tr>
+                  <tr>
+                    <th>Wednesday</th>
+                    <td>10AM - 6PM</td>
+                  </tr>
+                  <tr>
+                    <th>Thursday</th>
+                    <td>10AM - 6PM</td>
+                  </tr>
+                  <tr>
+                    <th>Friday</th>
+                    <td>10AM - 6PM</td>
+                  </tr>
+                  <tr>
+                    <th>Saturday</th>
+                    <td>10AM - 5PM</td>
+                  </tr>
+                  <tr>
+                    <th>Sunday</th>
+                    <td>10AM - 5PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="col-md-4 mt-4 d-flex justify-content-center align-items-center">
+            <div className="row">
+              <div className="col">
+                {/* Image 1 */}
+                <img src={WeddingWire1} alt="Image 1" className="img-fluid" />
+              </div>
+              <div className="col">
+                {/* Image 2 */}
+                <img src={WeddingWire2} alt="Image 2" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mt-4 d-flex justify-content-center align-items-center">
+            <div className="text-center">
+              <h3>Zazou's Bridal Boutique & Tuxedos</h3>
+              <p>955 Washington Street - Suite 104</p>
+              <p>Dubuque, IA 52001</p>
+              <p>563-213-2049</p>
+              <p>info@zazousbridalandtuxedos.com</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
