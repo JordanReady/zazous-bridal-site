@@ -12,7 +12,9 @@ const CustomNavbar = () => {
       <Navbar.Brand as={Link} to="/">
         Zazou's Bridal <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
+        Menu
+      </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
         <Nav className="ml-auto">
           <Nav.Link as={Link} to="/">

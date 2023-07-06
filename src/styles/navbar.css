@@ -30,6 +30,12 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .navbar-expand-xl {
+    justify-content: space-around !important;
+  }
+}
+
 @media (max-width: 767px) {
   .navbar-brand {
     display: flex;
@@ -40,7 +46,7 @@
     margin: 0;
   }
   .navbar-expand-xl {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
@@ -49,6 +55,9 @@
   }
   .dropdown-item {
     text-align: center;
+  }
+  .toggle-menu {
+    width: 100%;
   }
 }
 

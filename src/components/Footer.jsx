@@ -14,16 +14,28 @@ const Footer = () => {
   return (
     <footer>
       <div className="social-buttons">
-        <a href="#" className="social-button facebook">
+        <a
+          href="https://www.facebook.com/zazousbridalboutique/"
+          target="_blank"
+          className="social-button facebook"
+        >
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a href="#" className="social-button email">
+        <a href="/contact" className="social-button email">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="#" className="social-button pinterest">
+        <a
+          href="https://www.pinterest.com/ZazousBridal/"
+          target="_blank"
+          className="social-button pinterest"
+        >
           <FontAwesomeIcon icon={faPinterest} />
         </a>
-        <a href="#" className="social-button instagram">
+        <a
+          href="https://www.instagram.com/zazousbridalboutique/"
+          target="_blank"
+          className="social-button instagram"
+        >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>

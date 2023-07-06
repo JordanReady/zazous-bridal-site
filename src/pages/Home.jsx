@@ -32,7 +32,7 @@ const Home = () => {
         <div className="carousel-inner">
           <div className="carousel-item active ratio-4x3">
             <img
-              src={Img1}
+              src={Img3}
               className="d-block w-100 carousel-image"
               alt="Slide 1"
             />
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
           <div className="carousel-item ratio-4x3">
             <img
-              src={Img4}
+              src={Img2}
               className="d-block w-100 carousel-image"
               alt="Slide 4"
             />
