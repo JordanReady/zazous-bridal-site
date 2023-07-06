@@ -8,7 +8,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import ChamberLogo from "../assets/chamber-logo.png";
 
-import "./Footer.css";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (

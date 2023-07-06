@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 
-import { Navbar, Footer } from "./components";
+import { CustomNavbar, Footer } from "./components";
 
 import {
   Home,
@@ -27,7 +27,7 @@ import {
 const App = () => (
   <Router>
     <div className="App">
-      <Navbar />
+      <CustomNavbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/our-story" exact element={<OurStory />} />

@@ -1,0 +1,18 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  max-height: 750px;
+  max-width: 1200px;
+}
+
+.carousel-image {
+  margin: auto;
+  object-fit: fill;
+}
+
+.hero-text {
+  font-size: 24px;
+}

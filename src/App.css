@@ -1,5 +1,5 @@
 /* index.css or App.css */
-@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 html {
   box-sizing: border-box;
@@ -42,5 +42,4 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
