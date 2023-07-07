@@ -26,7 +26,6 @@
 
 .navbar-brand {
   font-size: 35px;
-  font-style: italic;
   color: var(--primary-color);
   text-shadow: var(--text-shadow);
 }
@@ -38,6 +37,7 @@
 .navbar-nav {
   display: flex;
   justify-content: flex-end;
+  font-family: var(--secondary-font);
 }
 
 .navbar-collapse {

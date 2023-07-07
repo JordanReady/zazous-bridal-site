@@ -1,5 +1,5 @@
 :root {
-  font-family: Vollkorn, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Cabin", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,9 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  /* Fonts */
+  --primary-font: "Playfair Display", serif !important;
+  --secondary-font: "Cabin", sans-serif !important;
+
   /* Colors */
-  --secondary-color: #000000;
   --primary-color: #f7bd8b;
+  --secondary-color: #000000;
   --border-color: #d39660;
 
   /* Utilities */
@@ -26,6 +30,7 @@
   --text-shadow-light: -1px -1px 1px rgba(0, 0, 0, 0.1),
     1px -1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
 }
 
 body {

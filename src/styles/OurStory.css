@@ -1,0 +1,13 @@
+.main-img {
+  width: 725px;
+  border-radius: var(--border-radius);
+}
+
+.small-img {
+  border-radius: var(--border-radius);
+}
+
+.story-text {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+}
