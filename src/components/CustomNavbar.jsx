@@ -8,15 +8,15 @@ import "../styles/navbar.css";
 
 const CustomNavbar = () => {
   return (
-    <Navbar expand="xl" variant="light">
-      <Navbar.Brand as={Link} to="/">
+    <Navbar expand="xl" variant="light" className="mt-4">
+      <Navbar.Brand as={Link} to="/" className="navbar-brand">
         Zazou's Bridal <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
         Menu
       </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
-        <Nav className="ml-auto">
+        <Nav className="ml-auto nav-links">
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>

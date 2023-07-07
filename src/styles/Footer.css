@@ -18,9 +18,10 @@ footer {
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: #ccc;
+  background-color: var(--primary-color);
   color: #fff;
   transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .social-button.facebook:hover {

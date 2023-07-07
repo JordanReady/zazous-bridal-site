@@ -4,8 +4,21 @@
   min-width: 95vw;
 }
 
+.nav-link,
+.dropdown-item {
+  color: var(--primary-color);
+}
+
+.nav-link.active,
+.dropdown-item.active,
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--secondary-color);
+}
+
 .navbar-brand {
   font-size: 35px;
+  font-style: italic;
 }
 
 .navbar-nav {
@@ -21,6 +34,11 @@
 
 .dropdown-menu {
   animation: fadeIn 0.5s;
+}
+
+.toggle-menu {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* screen sizes */
@@ -44,11 +62,13 @@
     text-align: center;
     font-size: clamp(1.8rem, 5vw, 2rem);
     margin: 0;
+    margin-top: 5px;
   }
   .navbar-expand-xl {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin-top: 0 !important;
   }
   .nav-link {
     text-align: center;

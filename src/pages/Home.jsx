@@ -143,9 +143,9 @@ const Home = () => {
       </section>
       <section className="home-info">
         <div class="row">
-          <div class="col-md-4 mt-4">
+          <div class="col-md-4 info-box mt-4">
             <div class="text-center">
-              <h4>Store Hours</h4>
+              <h3 className="title-text pt-2">Store Hours</h3>
               <table class="table table-bordered">
                 <tbody>
                   <tr>
@@ -180,7 +180,7 @@ const Home = () => {
               </table>
             </div>
           </div>
-          <div className="col-md-4 mt-4 d-flex justify-content-center align-items-center">
+          <div className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center">
             <div className="row">
               <div className="col">
                 {/* Image 1 */}
@@ -192,13 +192,15 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mt-4 d-flex justify-content-center align-items-center">
+          <div className="col-md-4 info-box mt-4 mb-4 d-flex justify-content-center align-items-center">
             <div className="text-center">
-              <h3>Zazou's Bridal Boutique & Tuxedos</h3>
-              <p>955 Washington Street - Suite 104</p>
-              <p>Dubuque, IA 52001</p>
-              <p>563-213-2049</p>
-              <p>info@zazousbridalandtuxedos.com</p>
+              <h3 className="mb-4 title-text info-title">
+                Zazou's Bridal Boutique & Tuxedos
+              </h3>
+              <p className="mb-4 info">955 Washington Street - Suite 104</p>
+              <p className="mb-4 info">Dubuque, IA 52001</p>
+              <p className="mb-4 info">563-213-2049</p>
+              <p className="mb-4 info">info@zazousbridalandtuxedos.com</p>
             </div>
           </div>
         </div>
