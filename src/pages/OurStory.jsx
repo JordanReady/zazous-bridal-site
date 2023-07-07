@@ -4,6 +4,8 @@ import Img2 from "../assets/property-pic-2.jpg";
 import Img3 from "../assets/property-pic-3.jpg";
 import Img4 from "../assets/property-pic-4.jpg";
 import Img5 from "../assets/property-pic-5.jpg";
+
+import { ScheduleAppointmentBtn } from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../styles/OurStory.css";
@@ -34,7 +36,7 @@ const OurStory = () => {
             bride & groom dresses, tuxedos, prom dresses, jewelry, hair pieces,
             veils, and so much more!
           </p>
-          <button className="btn btn-primary">Button</button>
+          <ScheduleAppointmentBtn />
         </div>
       </div>
 

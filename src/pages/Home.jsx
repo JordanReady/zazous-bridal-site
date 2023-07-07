@@ -9,6 +9,8 @@ import Img5 from "../assets/property-pic-5.jpg";
 import WeddingWire1 from "../assets/wedding-wire-1.jpg";
 import WeddingWire2 from "../assets/wedding-wire-2.jpg";
 
+import { ScheduleAppointmentBtn } from "../components";
+
 import "../styles/Home.css";
 
 const Home = () => {
@@ -17,11 +19,6 @@ const Home = () => {
     const carouselElement = document.querySelector(".carousel");
     new Carousel(carouselElement);
   }, []);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.location.href = "/schedule-appointment";
-  };
 
   return (
     <div className="container">
@@ -137,9 +134,7 @@ const Home = () => {
           in the Dubuque Millwork District is the perfect environment to help
           any bride say, "I found the gown at Zazou's!”
         </h2>
-        <button className="hero-button btn" onClick={handleClick}>
-          Schedule Appointment
-        </button>
+        <ScheduleAppointmentBtn />
       </section>
       <section className="home-info mt-4">
         <div class="row">

@@ -139,27 +139,6 @@
   font-family: var(--secondary-font);
 }
 
-.hero-button {
-  font-family: var(--secondary-font);
-  padding: 15px;
-  margin-top: 10px;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: white;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  transition: all ease-in-out 0.3s;
-  text-shadow: var(--text-shadow-light);
-}
-
-.hero-button:hover {
-  color: white;
-  background-color: #f3b580;
-  border-color: rgba(0, 0, 0, 0.541);
-  transform: translateY(-3px);
-  text-shadow: var(--text-shadow);
-}
-
 /* Home Info */
 .home-info {
   margin-top: 15px;
