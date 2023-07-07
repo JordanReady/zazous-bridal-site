@@ -88,7 +88,6 @@
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .carousel-indicators li:first-child {
@@ -142,15 +141,21 @@
 .hero-button {
   padding: 15px;
   margin-top: 10px;
+  font-weight: bold;
   background-color: var(--primary-color);
-  color: black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all ease-in-out 0.3s;
+  text-shadow: var(--text-shadow-light);
 }
 
 .hero-button:hover {
-  color: black;
-  opacity: 0.8;
-  background-color: var(--primary-color);
+  color: white;
+  background-color: #f3b580;
+  border-color: rgba(0, 0, 0, 0.541);
+  transform: translateY(-3px);
+  text-shadow: var(--text-shadow);
 }
 
 /* Home Info */
@@ -159,13 +164,15 @@
 }
 
 .info-box {
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
+  height: 335px;
 }
 
 .title-text {
   color: var(--primary-color);
+  text-shadow: var(--text-shadow);
 }
 
 .info {

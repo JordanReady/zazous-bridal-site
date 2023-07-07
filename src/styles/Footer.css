@@ -6,6 +6,10 @@ footer {
   text-align: center;
 }
 
+.back-to-top-btn {
+  display: none;
+}
+
 .social-buttons {
   margin-bottom: 10px;
 }
@@ -20,8 +24,14 @@ footer {
   margin-right: 10px;
   background-color: var(--primary-color);
   color: #fff;
-  transition: background-color 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.3s;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 .social-button.facebook:hover {
@@ -51,4 +61,20 @@ footer {
 
 .logo-container img {
   max-width: 200px;
+}
+
+/* screen size */
+
+@media (max-width: 767px) {
+  .back-to-top-btn {
+    display: inline;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    color: white;
+    transition: all ease-in-out 0.3s;
+  }
+  .back-to-top-btn:hover {
+    transform: translateY(-3px);
+  }
 }

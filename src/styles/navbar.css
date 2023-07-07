@@ -12,13 +12,27 @@
 .nav-link.active,
 .dropdown-item.active,
 .nav-link:hover,
+.dropdown-item {
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-link.active,
+.dropdown-item.active,
+.nav-link:hover,
 .dropdown-item:hover {
   color: var(--secondary-color);
+  background-color: white;
 }
 
 .navbar-brand {
   font-size: 35px;
   font-style: italic;
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color);
 }
 
 .navbar-nav {
@@ -34,11 +48,16 @@
 
 .dropdown-menu {
   animation: fadeIn 0.5s;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
 }
 
 .toggle-menu {
   background-color: var(--primary-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
+  color: white;
+  border: 1px solid var(--border-color);
+  text-shadow: var(--text-shadow-light);
 }
 
 /* screen sizes */

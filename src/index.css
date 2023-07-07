@@ -13,8 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --secondary-color: #eac13a;
+  /* Colors */
+  --secondary-color: #000000;
   --primary-color: #f7bd8b;
+  --border-color: #d39660;
+
+  /* Utilities */
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3),
+    1px -1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.3),
+    1px 1px 1px rgba(0, 0, 0, 0.3);
+  --text-shadow-light: -1px -1px 1px rgba(0, 0, 0, 0.1),
+    1px -1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 body {

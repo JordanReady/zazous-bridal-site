@@ -137,11 +137,11 @@ const Home = () => {
           in the Dubuque Millwork District is the perfect environment to help
           any bride say, "I found the gown at Zazou's!”
         </h2>
-        <button className="hero-button btn btn-dark" onClick={handleClick}>
+        <button className="hero-button btn" onClick={handleClick}>
           Schedule Appointment
         </button>
       </section>
-      <section className="home-info">
+      <section className="home-info mt-4">
         <div class="row">
           <div class="col-md-4 info-box mt-4">
             <div class="text-center">

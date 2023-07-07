@@ -8,7 +8,7 @@ import "../styles/navbar.css";
 
 const CustomNavbar = () => {
   return (
-    <Navbar expand="xl" variant="light" className="mt-4">
+    <Navbar expand="xl" variant="light" className="mt-3 mb-3">
       <Navbar.Brand as={Link} to="/" className="navbar-brand">
         Zazou's Bridal <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
@@ -20,7 +20,7 @@ const CustomNavbar = () => {
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
-          <NavDropdown title="About Us" id="aboutDropdown">
+          <NavDropdown title="About Us" className="dropdown" id="aboutDropdown">
             <NavDropdown.Item as={Link} to="/our-story">
               Our Story
             </NavDropdown.Item>
@@ -28,7 +28,11 @@ const CustomNavbar = () => {
               Vendors
             </NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Dresses" id="dressesDropdown">
+          <NavDropdown
+            title="Dresses"
+            className="dropdown"
+            id="dressesDropdown"
+          >
             <NavDropdown.Item as={Link} to="/bridal">
               Bridal
             </NavDropdown.Item>
@@ -51,7 +55,11 @@ const CustomNavbar = () => {
               How to Measure Yourself
             </NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Appointments" id="appointmentsDropdown">
+          <NavDropdown
+            title="Appointments"
+            className="dropdown"
+            id="appointmentsDropdown"
+          >
             <NavDropdown.Item as={Link} to="/schedule-appointment">
               Schedule Appointment
             </NavDropdown.Item>
@@ -62,7 +70,11 @@ const CustomNavbar = () => {
               Private Appointment
             </NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Reviews" id="reviewsDropdown">
+          <NavDropdown
+            title="Reviews"
+            className="dropdown"
+            id="reviewsDropdown"
+          >
             <NavDropdown.Item as={Link} to="/rave-reviews">
               Rave Reviews
             </NavDropdown.Item>

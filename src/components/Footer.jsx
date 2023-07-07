@@ -11,8 +11,18 @@ import ChamberLogo from "../assets/chamber-logo.png";
 import "../styles/Footer.css";
 
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer>
+      <button
+        className="back-to-top-btn btn mt-0 mb-3"
+        onClick={handleScrollToTop}
+      >
+        Back to Top
+      </button>
       <div className="social-buttons">
         <a
           href="https://www.facebook.com/zazousbridalboutique/"
