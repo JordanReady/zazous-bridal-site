@@ -10,4 +10,52 @@
 .story-text {
   font-family: var(--secondary-font);
   font-size: 18px;
+  text-align: justify;
+}
+
+/* screen sizes */
+@media (max-width: 767px) {
+  .story-text {
+    text-align: justify;
+  }
+}
+
+/* animations */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.schedule-appointment-btn-container {
+  opacity: 0;
+}
+
+.our-story-title,
+.main-img,
+.story-text p,
+.schedule-appointment-btn-container,
+.hero-button,
+.small-img {
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.our-story-title {
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.main-img,
+.story-text p,
+.hero-button,
+.small-img {
+  animation-delay: calc(0.1s * var(--i) + 0.1s);
 }

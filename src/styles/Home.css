@@ -90,6 +90,13 @@
   border-radius: 12px;
 }
 
+li .active {
+  display: none !important;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: blur();
+}
+
 .carousel-indicators li:first-child {
   width: 100px;
   height: 75px;
@@ -207,5 +214,34 @@ table tr {
   }
   .info {
     font-size: 18px !important;
+  }
+}
+
+/* animations */
+.carousel-indicators li,
+.hero-button,
+.hero-text,
+.info-box,
+.wedding-wire-container {
+  opacity: 0;
+  transform: translateX(-50%);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.carousel-image {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }

@@ -28,32 +28,32 @@ const Home = () => {
             data-bs-target=".carousel"
             data-bs-slide-to="0"
             className="active"
-            style={{ backgroundImage: `url(${Img1})` }}
+            style={{ backgroundImage: `url(${Img1})`, "--i": 2 }}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="1"
-            style={{ backgroundImage: `url(${Img2})` }}
+            style={{ backgroundImage: `url(${Img2})`, "--i": 3 }}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="2"
-            style={{ backgroundImage: `url(${Img3})` }}
+            style={{ backgroundImage: `url(${Img3})`, "--i": 4 }}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="3"
-            style={{ backgroundImage: `url(${Img4})` }}
+            style={{ backgroundImage: `url(${Img4})`, "--i": 5 }}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="4"
-            style={{ backgroundImage: `url(${Img5})` }}
+            style={{ backgroundImage: `url(${Img5})`, "--i": 6 }}
           />
         </ol>
 
         <div className="carousel-inner">
-          <div className="carousel-item active ratio-4x3">
+          <div className="carousel-item active ratio-4x3" style={{ "--i": 1 }}>
             <img
               src={Img1}
               className="d-block w-100 carousel-image"
@@ -126,7 +126,7 @@ const Home = () => {
       </div>
       <div className="thumbnail-spacer"></div>
       <section className="hero-text-container">
-        <h2 className="hero-text">
+        <h2 className="hero-text" style={{ "--i": 7 }}>
           Zazou’s Bridal Boutique & Tuxedos prides ourselves on being innovative
           and unique when it comes to providing the ultimate bridal experience!
           We carry wedding gowns, tuxedos, bridesmaids, mothers, flower girls,
@@ -134,11 +134,11 @@ const Home = () => {
           in the Dubuque Millwork District is the perfect environment to help
           any bride say, "I found the gown at Zazou's!”
         </h2>
-        <ScheduleAppointmentBtn />
+        <ScheduleAppointmentBtn style={8} />
       </section>
       <section className="home-info mt-4">
         <div class="row">
-          <div class="col-md-4 info-box mt-4">
+          <div class="col-md-4 info-box mt-4" style={{ "--i": 9 }}>
             <div class="text-center">
               <h3 className="title-text pt-2">Store Hours</h3>
               <table class="table table-bordered">
@@ -175,19 +175,23 @@ const Home = () => {
               </table>
             </div>
           </div>
-          <div className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center">
+          <div
+            className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container"
+            style={{ "--i": 10 }}
+          >
             <div className="row">
               <div className="col">
-                {/* Image 1 */}
                 <img src={WeddingWire1} alt="Image 1" className="img-fluid" />
               </div>
               <div className="col">
-                {/* Image 2 */}
                 <img src={WeddingWire2} alt="Image 2" className="img-fluid" />
               </div>
             </div>
           </div>
-          <div className="col-md-4 info-box mt-4 mb-4 d-flex justify-content-center align-items-center">
+          <div
+            className="col-md-4 info-box mt-4 mb-4 d-flex justify-content-center align-items-center"
+            style={{ "--i": 11 }}
+          >
             <div className="text-center">
               <h3 className="mb-4 title-text info-title">
                 Zazou's Bridal Boutique & Tuxedos
