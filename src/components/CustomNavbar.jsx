@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Logo from "../assets/Logo-1-outline1.png";
 
 import "../styles/navbar.css";
 
@@ -10,7 +11,9 @@ const CustomNavbar = () => {
   return (
     <Navbar expand="xl" variant="light" className="mt-3 mb-3">
       <Navbar.Brand as={Link} to="/" className="navbar-brand">
-        Zazou's Bridal <span className="brand-break">Boutique & Tuxedos</span>
+        <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
+        <span className="zazous-bridal">azou's Bridal</span>
+        <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
         Menu
