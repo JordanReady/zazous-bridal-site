@@ -1,0 +1,28 @@
+.event-card {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.card-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column;
+}
+
+.event-card-title {
+  font-family: var(--primary-font);
+  font-size: 32px;
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+}
+
+.event-card-subtitle {
+  color: var(--primary-color) !important;
+}
+
+.event-card-text {
+  font-family: var(--secondary-font) !important;
+  font-size: 18px;
+  text-align: justify;
+}

@@ -13,7 +13,12 @@ const VendorCard = ({ title, items, cardIndex }) => {
           {title}
         </h2>
         {items.map((item, index) => (
-          <a href={item.link} className="list-item mb-2" key={index}>
+          <a
+            href={item.link}
+            className="list-item mb-2"
+            key={index}
+            target="_blank"
+          >
             {item.name}
           </a>
         ))}

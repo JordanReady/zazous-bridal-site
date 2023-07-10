@@ -1,0 +1,15 @@
+.past-event-card {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  height: calc(100% - 76px);
+}
+
+.list-group-item {
+  margin-top: 1rem;
+}
+
+.past-event-item-title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: normal;
+}

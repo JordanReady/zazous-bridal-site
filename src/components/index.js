@@ -5,3 +5,5 @@ export { default as VendorCard } from "./VendorCard";
 export { default as StoreHours } from "./StoreHours";
 export { default as StoreInfo } from "./StoreInfo";
 export { default as StoreAwards } from "./StoreAwards";
+export { default as EventCard } from "./EventCard";
+export { default as PastEventsCard } from "./PastEventsCard";
