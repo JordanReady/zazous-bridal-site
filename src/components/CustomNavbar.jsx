@@ -11,9 +11,11 @@ const CustomNavbar = () => {
   return (
     <Navbar expand="xl" variant="light" className="mt-3 mb-3">
       <Navbar.Brand as={Link} to="/" className="navbar-brand">
-        <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
-        <span className="zazous-bridal">azou's Bridal</span>
-        <span className="brand-break">Boutique & Tuxedos</span>
+        <div className="logo-container">
+          <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
+          <span className="zazous-bridal">azou's Bridal </span>
+        </div>
+        <span className="brand-break">&nbsp;Boutique & Tuxedos</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
         Menu

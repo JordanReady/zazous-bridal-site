@@ -11,6 +11,10 @@
   margin-right: -1px;
 }
 
+.logo-container {
+  margin-top: 0px !important;
+}
+
 .nav-link,
 .dropdown-item {
   color: var(--primary-color);
@@ -35,6 +39,10 @@
   font-size: 35px;
   color: var(--primary-color);
   text-shadow: var(--text-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-style: italic; */
 }
 
 .navbar-brand:hover {
@@ -81,16 +89,13 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 0px !important;
+  }
   .zazous-nav-logo {
     width: 40px;
     height: 40px;
-    margin-top: -55px;
-    margin-left: 21px;
-    position: fixed;
-  }
-
-  .zazous-bridal {
-    margin-left: 30px;
+    margin-top: -19px;
   }
 
   .navbar-brand {
@@ -100,7 +105,7 @@
     text-align: center;
     font-size: clamp(1.8rem, 5vw, 2rem);
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .navbar-expand-xl {
     flex-direction: column-reverse;

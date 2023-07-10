@@ -9,7 +9,12 @@ import Img5 from "../assets/property-pic-5.jpg";
 import WeddingWire1 from "../assets/wedding-wire-1.jpg";
 import WeddingWire2 from "../assets/wedding-wire-2.jpg";
 
-import { ScheduleAppointmentBtn } from "../components";
+import {
+  ScheduleAppointmentBtn,
+  StoreHours,
+  StoreInfo,
+  StoreAwards,
+} from "../components";
 
 import "../styles/Home.css";
 
@@ -138,43 +143,11 @@ const Home = () => {
       </section>
       <section className="home-info mt-4">
         <div class="row">
-          <div class="col-md-4 info-box mt-4" style={{ "--i": 9 }}>
-            <div class="text-center">
-              <h3 className="title-text pt-2">Store Hours</h3>
-              <table class="table table-bordered">
-                <tbody>
-                  <tr>
-                    <th>Monday</th>
-                    <td>10AM - 6PM</td>
-                  </tr>
-                  <tr>
-                    <th>Tuesday</th>
-                    <td>CLOSED</td>
-                  </tr>
-                  <tr>
-                    <th>Wednesday</th>
-                    <td>10AM - 6PM</td>
-                  </tr>
-                  <tr>
-                    <th>Thursday</th>
-                    <td>10AM - 6PM</td>
-                  </tr>
-                  <tr>
-                    <th>Friday</th>
-                    <td>10AM - 6PM</td>
-                  </tr>
-                  <tr>
-                    <th>Saturday</th>
-                    <td>10AM - 5PM</td>
-                  </tr>
-                  <tr>
-                    <th>Sunday</th>
-                    <td>10AM - 5PM</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <StoreHours
+            style={9}
+            col={"col-md-4"}
+            customClass={"mt-4 home-store-hours"}
+          />
           <div
             className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container"
             style={{ "--i": 10 }}
@@ -188,20 +161,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div
-            className="col-md-4 info-box mt-4 mb-4 d-flex justify-content-center align-items-center"
-            style={{ "--i": 11 }}
-          >
-            <div className="text-center">
-              <h3 className="mb-4 title-text info-title">
-                Zazou's Bridal Boutique & Tuxedos
-              </h3>
-              <p className="mb-4 info">955 Washington Street - Suite 104</p>
-              <p className="mb-4 info">Dubuque, IA 52001</p>
-              <p className="mb-4 info">563-213-2049</p>
-              <p className="mb-4 info">info@zazousbridalandtuxedos.com</p>
-            </div>
-          </div>
+          <StoreInfo style={11} col={"col-md-4"} customClass={"mt-4 mb-4"} />
         </div>
       </section>
     </div>

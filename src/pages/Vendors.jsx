@@ -252,7 +252,7 @@ const Vendors = () => {
   return (
     <div className="container">
       <h2 className="recomendation-title d-flex justify-content-center">
-        Reconmandations
+        Recommendations
       </h2>
       <p className="recomendation-text d-flex justify-content-center">
         Need help finding a vendor? Here's our recommendations!

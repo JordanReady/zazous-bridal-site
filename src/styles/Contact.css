@@ -1,0 +1,80 @@
+.logo-image {
+  border: 5px dashed var(--primary-color);
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+}
+
+.contact-btn {
+  font-family: var(--secondary-font);
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all ease-in-out 0.3s;
+  text-shadow: var(--text-shadow-light);
+}
+
+.contact-btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  border-color: rgba(0, 0, 0, 0.541);
+  transform: translateY(-2px) !important;
+  text-shadow: var(--text-shadow);
+}
+
+.last-name-col {
+  margin-left: 2.5%;
+}
+
+.name-field {
+  width: 95%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid var(--primary-color) !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--border-color);
+}
+
+/* screen sizes */
+@media (max-width: 768px) {
+  .contact-logo-container {
+    margin-top: 1rem;
+  }
+  .last-name-col {
+    margin-right: -2.5% !important;
+  }
+  .contact-store-hours {
+    margin-top: 0 !important;
+  }
+}
+
+/* animations */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-form {
+  opacity: 0;
+  animation-name: slideInRight;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}

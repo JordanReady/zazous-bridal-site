@@ -1,0 +1,29 @@
+.info-box {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: 335px;
+}
+
+.title-text {
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+}
+
+.info {
+  font-size: 20px !important;
+  font-family: var(--secondary-font);
+}
+
+@media (max-width: 767px) {
+  .info-box {
+    width: 90vw;
+    margin: auto;
+  }
+  .info-title {
+    padding-top: 8px;
+  }
+  .info {
+    font-size: 18px !important;
+  }
+}

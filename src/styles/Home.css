@@ -151,23 +151,6 @@ li .active {
   margin-top: 15px;
 }
 
-.info-box {
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  height: 335px;
-}
-
-.title-text {
-  color: var(--primary-color);
-  text-shadow: var(--text-shadow);
-}
-
-.info {
-  font-size: 20px !important;
-  font-family: var(--secondary-font);
-}
-
 /* Table */
 
 table {
@@ -211,9 +194,13 @@ table tr {
   .info-box {
     width: 90vw;
     margin: auto;
+    margin-bottom: 1.5rem;
   }
-  .info {
-    font-size: 18px !important;
+  .thumbnail-spacer {
+    height: 70px;
+  }
+  .home-store-hours {
+    margin-top: 10px !important;
   }
 }
 
@@ -222,6 +209,7 @@ table tr {
 .hero-button,
 .hero-text,
 .info-box,
+.logo-image,
 .wedding-wire-container {
   opacity: 0;
   transform: translateX(-50%);
