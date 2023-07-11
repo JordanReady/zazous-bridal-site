@@ -251,7 +251,10 @@ const Vendors = () => {
 
   return (
     <div className="container">
-      <h2 className="recomendation-title d-flex justify-content-center">
+      <h2
+        className="recomendation-title d-flex justify-content-center"
+        style={{ fontStyle: "italic", "--i": 1 }}
+      >
         Recommendations
       </h2>
       <p className="recomendation-text d-flex justify-content-center">

@@ -16,8 +16,9 @@ const PastEventsCard = () => {
     <div className="card past-event-card">
       <ul className="d-flex flex-column justify-content-center">
         {pastEvents.map((event) => (
-          <li key={event.id} className="list-group-item">
-            <h5 className="past-event-item-title">{event}</h5>
+          <li key={event.id} className="list-group-item ">
+            <span className="bullet-point">&#8226;</span>
+            {event}
           </li>
         ))}
       </ul>

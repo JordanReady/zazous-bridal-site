@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="container">
       <h2
         className="our-story-title d-flex justify-content-center"
-        style={{ "--i": 1 }}
+        style={{ fontStyle: "italic", "--i": 1 }}
       >
         Contact Us
       </h2>

@@ -6,10 +6,14 @@
 
 .list-group-item {
   margin-top: 1rem;
-}
-
-.past-event-item-title {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: normal;
+  list-style: circle !important;
+}
+
+.bullet-point {
+  margin-right: 5px;
+  color: var(--primary-color);
+  font-size: 1.2em;
 }

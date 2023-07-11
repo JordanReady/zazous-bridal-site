@@ -9,7 +9,7 @@ const Events = () => {
     <div className="container">
       <h2
         className="our-story-title d-flex justify-content-center"
-        style={{ "--i": 1 }}
+        style={{ fontStyle: "italic", "--i": 1 }}
       >
         Events
       </h2>
@@ -25,7 +25,7 @@ const Events = () => {
             at $500 and under. We offer sizes ranging from 2 to 32, ensuring the perfect fit for every
             body shape. Don't miss out on finding your dream dress — schedule your appointment now!`}
             scheduleButton={true}
-            customClass={"event-card"}
+            customClass={"event-card event-card-fill"}
           />
         </div>
         <div className="col-lg-6 event-page-card">

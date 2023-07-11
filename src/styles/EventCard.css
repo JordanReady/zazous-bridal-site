@@ -3,6 +3,10 @@
   box-shadow: var(--shadow);
 }
 
+.event-card-fill {
+  height: calc(100% - 76px);
+}
+
 .card-body {
   display: flex !important;
   align-items: center !important;
