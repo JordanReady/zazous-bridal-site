@@ -8,7 +8,7 @@
 
 .quick-tips-title {
   color: var(--primary-color);
-  text-shadow: var(--text-shadow);
+  /* text-shadow: var(--text-shadow-light); */
   font-size: 32px;
 }
 
@@ -35,7 +35,7 @@
 
 .where-to-measure-list li span {
   color: var(--primary-color);
-  /* text-shadow: var(--text-shadow); */
+  /* text-shadow: var(--text-shadow-light); */
   font-size: 24px;
 }
 
@@ -45,6 +45,12 @@
   }
   .quick-tips-inner-row {
     flex-direction: column-reverse;
+  }
+  .quick-tips-bullet-points {
+    padding: 10px;
+  }
+  .where-to-measure-list {
+    padding: 10px;
   }
 }
 

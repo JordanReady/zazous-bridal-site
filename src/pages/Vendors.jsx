@@ -257,10 +257,11 @@ const Vendors = () => {
       >
         Recommendations
       </h2>
+
+      <hr style={{ color: "#d39660" }} />
       <p className="recomendation-text d-flex justify-content-center">
         Need help finding a vendor? Here's our recommendations!
       </p>
-      <hr style={{ color: "#d39660" }} />
       <div className="row justify-content-center">
         {vendors.map((vendor, index) => (
           <VendorCard key={index} {...vendor} cardIndex={index} />

@@ -19,13 +19,16 @@
 }
 
 .vendor-card-title {
-  color: white;
+  /* color: white;
   background-color: var(--primary-color);
   width: 80%;
   text-shadow: var(--text-shadow);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
+  */
+  color: var(--primary-color);
   padding: 10px;
+  font-size: 32px;
 }
 
 .list-item {
