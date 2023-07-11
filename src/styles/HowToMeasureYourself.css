@@ -1,0 +1,113 @@
+.quick-tips-row {
+  max-width: 1200px;
+  margin: auto !important;
+}
+.quick-tips-inner-row {
+  display: flex;
+}
+
+.quick-tips-title {
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+  font-size: 32px;
+}
+
+.quick-tips-email-title {
+  font-size: 22px;
+}
+
+.quick-tips-bullet-points {
+  margin-top: 1rem;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.where-to-measure-list {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+}
+
+.where-to-measure-list li {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.where-to-measure-list li span {
+  color: var(--primary-color);
+  /* text-shadow: var(--text-shadow); */
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .quick-tips-title {
+    font-size: 28px;
+  }
+  .quick-tips-inner-row {
+    flex-direction: column-reverse;
+  }
+}
+
+/* animations */
+
+.measure-page {
+  opacity: 0;
+}
+
+.measure-page-animation-2 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+}
+.measure-page-animation-3 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.4s;
+}
+.measure-page-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.6s;
+}
+.measure-page-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.8s;
+}
+.measure-page-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
+}
+.measure-page-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.measure-page-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.measure-page-animation-9 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.6s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
