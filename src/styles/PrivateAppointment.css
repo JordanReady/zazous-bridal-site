@@ -1,0 +1,118 @@
+.private-appointment-larger-img {
+  width: 575px;
+  height: 715px;
+  object-fit: cover;
+}
+
+.private-appointment-larger-img-row {
+  align-self: flex-end !important;
+}
+
+.private-appointment-smaller-img {
+  max-height: 315px;
+  width: 315px;
+  object-fit: cover;
+}
+
+.private-appointment-text {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* screen size */
+@media (max-width: 768px) {
+  .private-appointment-larger-img {
+    height: 415px;
+    margin-bottom: 1rem;
+  }
+  .private-appointment-btn {
+    margin-bottom: 2rem;
+    margin-top: 0 !important;
+  }
+  .private-appointment-smaller-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .private-appointment-smaller-img {
+    margin-bottom: 1.75rem;
+  }
+
+  .private-appointment-text {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+/* animations */
+
+.private-appointment-animation {
+  opacity: 0;
+}
+.private-appointment-animation-1 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+}
+.private-appointment-animation-2 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.4s;
+}
+.private-appointment-animation-3 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.6s;
+}
+.private-appointment-animation-4 {
+  animation: slideInRightSlow 0.6s ease-in-out forwards 0.8s;
+}
+.private-appointment-animation-5 {
+  animation: slideInUpSlow 0.6s ease-in-out forwards 1s;
+}
+.private-appointment-animation-6 {
+  animation: slideInRightSlow 0.6s ease-in-out forwards 1.2s;
+}
+.private-appointment-animation-7 {
+  animation: slideInRightSlow 0.6s ease-in-out forwards 1.4s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

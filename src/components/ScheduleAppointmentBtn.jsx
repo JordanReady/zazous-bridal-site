@@ -2,10 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/ScheduleAppointmentBtn.css";
 
-const ScheduleAppointmentBtn = ({ style, customClass }) => {
+const ScheduleAppointmentBtn = ({ style, customClass, text, link }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    window.location.href = "/schedule-appointment";
+    window.location.href = link || "/schedule-appointment";
   };
 
   return (
@@ -14,7 +14,7 @@ const ScheduleAppointmentBtn = ({ style, customClass }) => {
       onClick={handleClick}
       style={{ "--i": style }}
     >
-      Schedule Appointment
+      {text || "Schedule Appointment"}
     </button>
   );
 };
