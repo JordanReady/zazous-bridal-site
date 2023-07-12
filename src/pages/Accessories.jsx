@@ -1,11 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Img1 from "../assets/property-pic-1.jpg";
-import Img2 from "../assets/property-pic-2.jpg";
-import Img3 from "../assets/property-pic-3.jpg";
-import Img4 from "../assets/property-pic-4.jpg";
-import Img5 from "../assets/property-pic-5.jpg";
+import Img1 from "../assets/accessories/accessories-img-1.jpg";
+import Img2 from "../assets/accessories/accessories-img-2.jpg";
+import Img3 from "../assets/accessories/accessories-img-3.jpg";
+import Img4 from "../assets/accessories/accessories-img-4.jpg";
+import Img5 from "../assets/accessories/accessories-img-5.jpg";
+import Img6 from "../assets/accessories/accessories-img-6.jpg";
+import Img7 from "../assets/accessories/accessories-img-7.jpg";
 
 import "../styles/Accessories.css";
 
@@ -18,7 +20,7 @@ const Accessories = () => {
       >
         Accessories
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="accessories-text text-center">
         {/* Paragraph */}
         <p className="accessories-animation accessories-animation-1">
@@ -33,22 +35,22 @@ const Accessories = () => {
       </div>
 
       {/* First row of three images */}
-      <div className="row">
-        <div className="col-md-4">
+      <div className="row mt-4">
+        <div className="col-md-4 mb-4 d-flex justify-content-center">
           <img
             src={Img1}
             alt="Image 1"
             className="img-fluid accessories-img-large accessories-animation accessories-animation-2"
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 mb-4 d-flex justify-content-center">
           <img
             src={Img2}
             alt="Image 2"
             className="img-fluid accessories-img-large accessories-animation accessories-animation-3"
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 mb-4 d-flex justify-content-center">
           <img
             src={Img3}
             alt="Image 3"
@@ -59,30 +61,30 @@ const Accessories = () => {
 
       {/* Second row of four images */}
       <div className="row">
-        <div className="col-md-6 col-lg-3 mt-3">
+        <div className="col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
           <img
             src={Img4}
             alt="Image 4"
             className="img-fluid accessories-img-small accessories-animation accessories-animation-5"
           />
         </div>
-        <div className="col-md-6 col-lg-3 mt-3">
+        <div className="col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
           <img
             src={Img5}
             alt="Image 5"
             className="img-fluid accessories-img-small accessories-animation accessories-animation-6"
           />
         </div>
-        <div className="col-md-6 col-lg-3 mt-3">
+        <div className="col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
           <img
-            src={Img2}
+            src={Img6}
             alt="Image 6"
             className="img-fluid accessories-img-small accessories-animation accessories-animation-7"
           />
         </div>
-        <div className="col-md-6 col-lg-3 mt-3">
+        <div className="col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
           <img
-            src={Img3}
+            src={Img7}
             alt="Image 7"
             className="img-fluid accessories-img-small accessories-animation accessories-animation-8"
           />

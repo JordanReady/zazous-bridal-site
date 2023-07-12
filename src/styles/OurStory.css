@@ -1,10 +1,15 @@
 .main-img {
-  width: 725px;
+  height: 555px;
+  width: 6600px;
   border-radius: var(--border-radius);
+  object-fit: cover;
 }
 
 .small-img {
   border-radius: var(--border-radius);
+  width: 330px;
+  height: 205px;
+  object-fit: cover;
 }
 
 .story-text {
@@ -17,6 +22,9 @@
 @media (max-width: 767px) {
   .story-text {
     text-align: justify;
+  }
+  .main-img {
+    height: 400px;
   }
 }
 

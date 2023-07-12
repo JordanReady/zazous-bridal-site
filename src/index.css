@@ -17,12 +17,21 @@
   --primary-font: "Playfair Display", serif !important;
   --secondary-font: "Cabin", sans-serif !important;
 
-  /* Colors */
+  /* ----------Colors---------- */
+
+  /* -----Scheme 1----- */
   --primary-color: #e9b1a6;
-  --secondary-color: #000000;
+  --secondary-color: black;
   --border-color: #e9b1a6;
 
-  /* Utilities */
+  /* -----Scheme 2----- */
+  /* --primary-color: rgb(33, 78, 33);
+  --secondary-color: gold;
+  --border-color: rgb(30, 65, 30); */
+
+  /* ----------Utilities---------- */
+
+  /* -----Scheme 1----- */
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   --text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3),
     1px -1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.3),
@@ -33,14 +42,27 @@
   --text-shadow-white: -1px -1px 1px rgba(255, 255, 255, 0.3),
     1px -1px 1px rgba(255, 255, 255, 0.3), -1px 1px 1px rgba(255, 255, 255, 0.3),
     1px 1px 1px rgba(255, 255, 255, 0.3);
-  --border-radius: 10px;
+  --border-radius: 0px;
+
+  /* -----Scheme 2----- */
+  /* --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.3),
+    1px -1px 1px rgba(255, 255, 255, 0.3), -1px 1px 1px rgba(255, 255, 255, 0.3),
+    1px 1px 1px rgba(255, 255, 255, 0.3);
+  --text-shadow-light: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px -1px 1px rgba(255, 255, 255, 0.1), -1px 1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(255, 255, 255, 0.1);
+  --text-shadow-white: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    1px -1px 1px rgba(255, 255, 255, 0.2), -1px 1px 1px rgba(255, 255, 255, 0.2),
+    1px 1px 1px rgba(255, 255, 255, 0.2);
+  --border-radius: 8px; */
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
   min-height: 100vh;
-  font-family: "Vollkorn";
+  font-family: "Playfair Display", serif;
 }
 
 @media (prefers-color-scheme: light) {

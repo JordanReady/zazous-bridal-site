@@ -1,9 +1,9 @@
 import React from "react";
-import Img1 from "../assets/property-pic-1.jpg";
-import Img2 from "../assets/property-pic-2.jpg";
-import Img3 from "../assets/property-pic-3.jpg";
-import Img4 from "../assets/property-pic-4.jpg";
-import Img5 from "../assets/property-pic-5.jpg";
+import Img1 from "../assets/ourStory/store-img-1.jpeg";
+import Img2 from "../assets/ourStory/store-img-2.jpeg";
+import Img3 from "../assets/ourStory/store-img-3.jpeg";
+import Img4 from "../assets/ourStory/store-img-4.jpeg";
+import Img5 from "../assets/ourStory/store-img-5.jpeg";
 
 import { ScheduleAppointmentBtn } from "../components";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +19,7 @@ const OurStory = () => {
       >
         Our Story
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="row mt-4">
         <div
           className="col-lg-6 d-flex flex-column align-items-center"
@@ -50,17 +50,29 @@ const OurStory = () => {
         </div>
       </div>
 
-      <div className="row mt-4">
-        <div className="col-lg-3 col-md-6 col-sm-6 mb-3" style={{ "--i": 6 }}>
+      <div className="row mt-4 small-img-row">
+        <div
+          className="col-lg-3 col-md-6 col-sm-6 mb-3 d-flex justify-content-center"
+          style={{ "--i": 6 }}
+        >
           <img className="small-img" src={Img2} alt="Image" />
         </div>
-        <div className="col-lg-3 col-md-6 col-sm-6 mb-3" style={{ "--i": 7 }}>
+        <div
+          className="col-lg-3 col-md-6 col-sm-6 mb-3 d-flex justify-content-center"
+          style={{ "--i": 7 }}
+        >
           <img className="small-img" src={Img3} alt="Image" />
         </div>
-        <div className="col-lg-3 col-md-6 col-sm-6 mb-3" style={{ "--i": 8 }}>
+        <div
+          className="col-lg-3 col-md-6 col-sm-6 mb-3 d-flex justify-content-center"
+          style={{ "--i": 8 }}
+        >
           <img className="small-img" src={Img4} alt="Image" />
         </div>
-        <div className="col-lg-3 col-md-6 col-sm-6" style={{ "--i": 9 }}>
+        <div
+          className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center"
+          style={{ "--i": 9 }}
+        >
           <img className="small-img" src={Img5} alt="Image" />{" "}
         </div>
       </div>

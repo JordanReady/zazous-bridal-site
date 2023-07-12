@@ -65,6 +65,7 @@
   animation: fadeIn 0.5s;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 .toggle-menu {

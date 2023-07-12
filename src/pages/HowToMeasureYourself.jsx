@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MeasurementPic from "../assets/Measurement.png";
+import MeasurementPic from "../assets/logos/Measurement.png";
 
 import "../styles/HowToMeasureYourself.css";
 
@@ -13,7 +13,7 @@ const HowToMeasureYourself = () => {
       >
         Measurements
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="row quick-tips-row">
         <h2 className="d-flex justify-content-center quick-tips-title text-center  measure-page-animation-2 measure-page">
           Tips to Measure Yourself for a Bridesmaid Dress at Home

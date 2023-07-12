@@ -22,14 +22,14 @@
   border-radius: var(--border-radius);
   bottom: -50px;
   right: -35px;
-  border: 1px solid black;
+  border: 1px solid var(--secondary-color);
   box-shadow: var(--shadow);
 }
 
 .dress-card-designer {
   opacity: 1 !important;
   font-family: var(--primary-font);
-  color: black;
+  color: var(--secondary-color);
   text-shadow: var(--text-shadow-white);
   font-size: 28px;
   font-weight: bold;
@@ -37,7 +37,7 @@
 
 .dress-card-collection {
   opacity: 1 !important;
-  color: black;
+  color: var(--secondary-color);
   font-family: var(--secondary-font);
   font-weight: 18px;
 }
@@ -68,7 +68,7 @@
   .dress-card-designer {
     opacity: 1 !important;
     font-family: var(--primary-font);
-    color: black;
+    color: var(--secondary-color);
     text-shadow: var(--text-shadow-white);
     font-size: 28px;
     font-weight: bold;
@@ -76,7 +76,7 @@
 
   .dress-card-collection {
     opacity: 1 !important;
-    color: black;
+    color: var(--secondary-color);
     font-family: var(--secondary-font);
     font-weight: 18px;
   }

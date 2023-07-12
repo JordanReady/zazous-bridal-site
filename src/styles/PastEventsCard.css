@@ -2,6 +2,7 @@
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
   height: calc(100% - 76px);
+  border-radius: var(--border-radius);
 }
 
 .list-group-item {

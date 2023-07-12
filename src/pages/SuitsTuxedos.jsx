@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Img1 from "../assets/property-pic-1.jpg";
-import Img2 from "../assets/property-pic-2.jpg";
-import Img3 from "../assets/property-pic-3.jpg";
-import Img4 from "../assets/property-pic-4.jpg";
+import Img1 from "../assets/suitsTuxedos/suits-tux-img-1.jpg";
+import Img2 from "../assets/suitsTuxedos/suits-tux-img-2.jpg";
+import Img3 from "../assets/suitsTuxedos/suits-tux-img-3.jpg";
+import Img4 from "../assets/suitsTuxedos/suits-tux-img-4.jpg";
 
 import "../styles/SuitsTuxedos.css";
 
@@ -19,7 +19,7 @@ const SuitsTuxedos = () => {
       >
         Suits & Tuxedos
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="suits-tuxedos-text text-center">
         {/* Paragraphs */}
         <p className="suits-tuxedos-animation suits-tuxedos-animation-1 ">
@@ -43,41 +43,40 @@ const SuitsTuxedos = () => {
           dads, littles, etc) in tuxedos, the grooms rental fee is waived!
         </p>
       </div>
-
-      <div className="row mt-4">
-        <div className="col-md-4 d-flex align-items-start">
+      <div className="row mt-4 ">
+        <div className="col-md-4 d-flex align-items-start justify-content-center">
           {/* First image */}
           <img
             src={Img1}
             alt="Image 1"
-            className="img-fluid larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-4"
+            className="img-fluid suits-larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-4"
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
           {/* Stacked images */}
-          <div className="row">
-            <div className="col-md-12 mb-3">
+          <div className="row align-itmes-center">
+            <div className="col-md-12 d-flex justify-content-center">
               <img
                 src={Img2}
                 alt="Image 2-1"
-                className="img-fluid suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-6"
+                className="img-fluid mb-0 mb-sm-3 suits-tuxedos-img suits-smaller-img suits-tuxedos-animation suits-tuxedos-animation-6"
               />
             </div>
-            <div className="col-md-12">
+            <div className="col-md-12 d-flex justify-content-center">
               <img
                 src={Img3}
                 alt="Image 2-2"
-                className="img-fluid suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-7"
+                className="img-fluid suits-tuxedos-img suits-smaller-img suits-tuxedos-animation suits-tuxedos-animation-7"
               />
             </div>
           </div>
         </div>
-        <div className="col-md-4 d-flex align-items-start">
+        <div className="col-md-4 d-flex align-items-start justify-content-center">
           {/* Third image */}
           <img
             src={Img4}
             alt="Image 3"
-            className="img-fluid larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-5"
+            className="img-fluid suits-larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-5"
           />
         </div>
       </div>

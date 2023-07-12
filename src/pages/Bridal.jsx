@@ -27,7 +27,7 @@ const Bridal = () => {
       >
         Bridal Collection
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
 
       <div className="bridal-text text-center">
         <p className="bridal-animation bridal-animation-2">

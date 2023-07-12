@@ -13,7 +13,7 @@ const Events = () => {
       >
         Events
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="row">
         <div className="col-lg-6 event-page-card">
           <h2 className="event-title text-center mb-3"> Upcoming Events</h2>

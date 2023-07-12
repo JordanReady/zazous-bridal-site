@@ -258,7 +258,7 @@ const Vendors = () => {
         Recommendations
       </h2>
 
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <p className="recomendation-text d-flex justify-content-center">
         Need help finding a vendor? Here's our recommendations!
       </p>

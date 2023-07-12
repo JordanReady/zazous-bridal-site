@@ -1,6 +1,11 @@
-.larger-img {
+.suits-larger-img {
   height: 450px;
+  width: 350px;
   object-fit: cover;
+}
+
+.suits-smaller-img {
+  width: 350px;
 }
 
 .suits-tuxedos-img {

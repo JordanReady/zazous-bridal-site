@@ -6,12 +6,14 @@
 
 .accessories-img-large {
   height: 440px;
+  width: 365px;
   object-fit: cover;
   border-radius: var(--border-radius);
 }
 
 .accessories-img-small {
   height: 340px;
+  width: 255px;
   object-fit: cover;
   border-radius: var(--border-radius);
 }
@@ -19,6 +21,13 @@
 .suits-tuxedos-btn {
   display: flex;
   margin: auto;
+}
+
+/* screen sizes */
+@media (max-width: 768px) {
+  .accessories-img-small {
+    width: 365px;
+  }
 }
 
 /* animations */

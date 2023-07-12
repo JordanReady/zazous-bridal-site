@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../assets/Logo-1-outline1.png";
+import Logo from "../assets/Logos/Zazous-logo-outline-1.png";
 
 import "../styles/navbar.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { StoreHours, StoreInfo, StoreAwards } from "../components";
-import Logo from "../assets/Zazous-logo-1.jpg";
+import Logo from "../assets/Logos/Zazous-logo-1.jpg";
 
 import "../styles/Contact.css";
 
@@ -13,7 +13,7 @@ const Contact = () => {
       >
         Contact Us
       </h2>
-      <hr style={{ color: "#d39660" }} />
+      <hr style={{ color: "var(--primary-color)" }} />
       <div className="row">
         <div className="col-lg-6">
           <div>

@@ -1,6 +1,7 @@
 .event-card {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
 }
 
 .event-card-fill {

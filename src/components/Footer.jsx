@@ -6,7 +6,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import ChamberLogo from "../assets/chamber-logo.png";
+import ChamberLogo from "../assets/logos/chamber-logo.png";
 
 import "../styles/Footer.css";
 

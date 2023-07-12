@@ -1,7 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WeddingWire1 from "../assets/wedding-wire-1.jpg";
-import WeddingWire2 from "../assets/wedding-wire-2.jpg";
 
 import {
   ScheduleAppointmentBtn,
@@ -41,14 +39,7 @@ const Home = () => {
             className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container"
             style={{ "--i": 10 }}
           >
-            <div className="row">
-              <div className="col">
-                <img src={WeddingWire1} alt="Image 1" className="img-fluid" />
-              </div>
-              <div className="col">
-                <img src={WeddingWire2} alt="Image 2" className="img-fluid" />
-              </div>
-            </div>
+            <StoreAwards />
           </div>
           <StoreInfo style={11} col={"col-md-4"} customClass={"mt-4 mb-4"} />
         </div>

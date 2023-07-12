@@ -15,6 +15,7 @@
   border: 1px solid var(--border-color);
   transition: all ease-in-out 0.3s;
   text-shadow: var(--text-shadow-light);
+  border-radius: var(--border-radius);
 }
 
 .contact-btn:hover {
@@ -38,6 +39,7 @@ input[type="text"],
 input[type="email"],
 textarea {
   border: 1px solid var(--primary-color) !important;
+  border-radius: var(--border-radius) !important;
 }
 
 input[type="text"]:focus,

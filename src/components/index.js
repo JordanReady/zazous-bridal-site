@@ -9,3 +9,4 @@ export { default as EventCard } from "./EventCard";
 export { default as PastEventsCard } from "./PastEventsCard";
 export { default as HeroCarousel } from "./HeroCarousel";
 export { default as DressCard } from "./DressCard";
+export { default as HeroCarouselItem } from "./HeroCarouselItem";

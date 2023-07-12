@@ -1,12 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Img1 from "../assets/property-pic-1.jpg";
-import Img2 from "../assets/property-pic-2.jpg";
-import Img3 from "../assets/property-pic-3.jpg";
-import Img4 from "../assets/property-pic-4.jpg";
-import Img5 from "../assets/property-pic-5.jpg";
+import Img1 from "../assets/carousel/carousel-img-1.jpg";
+import Img2 from "../assets/carousel/carousel-img-2.jpg";
+import Img3 from "../assets/carousel/carousel-img-3.jpg";
+import Img4 from "../assets/carousel/carousel-img-4.jpg";
+import Img5 from "../assets/carousel/carousel-img-5.jpg";
 
 import "../styles/HeroCarousel.css";
+
+import { HeroCarouselItem } from "../components";
 
 const HeroCarousel = () => {
   return (
@@ -14,58 +16,29 @@ const HeroCarousel = () => {
       <div
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        data-bs-pause={true}
+        data-bs-pause="false"
       >
         <div className="carousel-inner">
-          <div className="carousel-item active ratio-4x3" style={{ "--i": 1 }}>
-            <img
-              src={Img1}
-              className="d-block w-100 carousel-image"
-              alt="Slide 1"
+          <div className="carousel-item active ratio-4x3">
+            <HeroCarouselItem
+              img={Img1}
+              caption={"Brittney Hoffman Artistry"}
             />
-            <div className="carousel-caption">
-              <h3 className="caption-text">Slide 1 Title</h3>
-            </div>
           </div>
           <div className="carousel-item ratio-4x3">
-            <img
-              src={Img2}
-              className="d-block w-100 carousel-image"
-              alt="Slide 2"
+            <HeroCarouselItem
+              img={Img2}
+              caption={"Ashlee Paige Spencer Photography"}
             />
-            <div className="carousel-caption">
-              <h3 className="caption-text">Slide 2 Title</h3>
-            </div>
           </div>
           <div className="carousel-item ratio-4x3">
-            <img
-              src={Img3}
-              className="d-block w-100 carousel-image"
-              alt="Slide 3"
-            />
-            <div className="carousel-caption">
-              <h3 className="caption-text">Slide 3 Title</h3>
-            </div>
+            <HeroCarouselItem img={Img3} caption={"Tamara Hanson Photo"} />
           </div>
           <div className="carousel-item ratio-4x3">
-            <img
-              src={Img4}
-              className="d-block w-100 carousel-image"
-              alt="Slide 4"
-            />
-            <div className="carousel-caption">
-              <h3 className="caption-text">Slide 4 Title</h3>
-            </div>
+            <HeroCarouselItem img={Img4} caption={false} />
           </div>
           <div className="carousel-item ratio-4x3">
-            <img
-              src={Img5}
-              className="d-block w-100 carousel-image"
-              alt="Slide 5"
-            />
-            <div className="carousel-caption">
-              <h3 className="caption-text">Slide 5 Title</h3>
-            </div>
+            <HeroCarouselItem img={Img5} caption={"Elle May Photography"} />
           </div>
         </div>
 
