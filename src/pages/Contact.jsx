@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="form-row name-row d-flex">
               <div className="col-md-6">
                 <label htmlFor="firstName ">
-                  First Name <span className="required-label ">(required)</span>
+                  First Name <span className="required-label ">*</span>
                 </label>
                 <input
                   type="text"
@@ -43,7 +43,7 @@ const Contact = () => {
               </div>
               <div className="col-md-6 last-name-col">
                 <label htmlFor="lastName">
-                  Last Name <span className="required-label ">(required)</span>
+                  Last Name <span className="required-label ">*</span>
                 </label>
                 <input
                   type="text"
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <label htmlFor="email">
-                Email Address <span className="required-label">(required)</span>
+                Email Address <span className="required-label">*</span>
               </label>
               <input
                 type="email"
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <label htmlFor="subject">
-                Subject <span className="required-label">(required)</span>
+                Subject <span className="required-label">*</span>
               </label>
               <input
                 type="text"
@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <label htmlFor="message">
-                Message <span className="required-label">(required)</span>
+                Message <span className="required-label">*</span>
               </label>
               <textarea
                 className="form-control"

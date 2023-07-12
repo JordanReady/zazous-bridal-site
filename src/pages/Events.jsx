@@ -44,7 +44,7 @@ const Events = () => {
           <div className="form-row name-row d-flex">
             <div className="col-md-6">
               <label htmlFor="firstName">
-                First Name <span className="required-label">(required)</span>
+                First Name <span className="required-label">*</span>
               </label>
               <input
                 type="text"
@@ -55,7 +55,7 @@ const Events = () => {
             </div>
             <div className="col-md-6 last-name-col">
               <label htmlFor="lastName">
-                Last Name <span className="required-label">(required)</span>
+                Last Name <span className="required-label">*</span>
               </label>
               <input
                 type="text"
@@ -71,19 +71,19 @@ const Events = () => {
           </div>
           <div className="form-group">
             <label htmlFor="email">
-              Email Address <span className="required-label">(required)</span>
+              Email Address <span className="required-label">*</span>
             </label>
             <input type="email" className="form-control" id="email" required />
           </div>
           <div className="form-group">
             <label htmlFor="subject">
-              Subject <span className="required-label">(required)</span>
+              Subject <span className="required-label">*</span>
             </label>
             <input type="text" className="form-control" id="subject" required />
           </div>
           <div className="form-group">
             <label htmlFor="message">
-              Message <span className="required-label">(required)</span>
+              Message <span className="required-label">*</span>
             </label>
             <textarea className="form-control" id="message" rows="5" required />
           </div>

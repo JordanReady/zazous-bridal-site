@@ -1,0 +1,83 @@
+.dress-card {
+  position: relative;
+  max-width: 315px !important;
+  cursor: pointer;
+}
+
+.dress-card-image {
+  width: 315px;
+  height: 475px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  /* border: 1px solid var(--primary-color); */
+  box-shadow: var(--shadow);
+}
+
+.dress-card-details {
+  position: absolute;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  width: 315px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  bottom: -50px;
+  right: -35px;
+  border: 1px solid black;
+  box-shadow: var(--shadow);
+}
+
+.dress-card-designer {
+  opacity: 1 !important;
+  font-family: var(--primary-font);
+  color: black;
+  text-shadow: var(--text-shadow-white);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dress-card-collection {
+  opacity: 1 !important;
+  color: black;
+  font-family: var(--secondary-font);
+  font-weight: 18px;
+}
+
+/* screen size */
+/* screen size */
+
+@media (max-width: 992px) {
+  .dress-card {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .dress-card {
+    margin: auto;
+  }
+  .dress-card-image {
+    width: auto;
+  }
+  .dress-card-details {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .dress-card-designer {
+    opacity: 1 !important;
+    font-family: var(--primary-font);
+    color: black;
+    text-shadow: var(--text-shadow-white);
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .dress-card-collection {
+    opacity: 1 !important;
+    color: black;
+    font-family: var(--secondary-font);
+    font-weight: 18px;
+  }
+}

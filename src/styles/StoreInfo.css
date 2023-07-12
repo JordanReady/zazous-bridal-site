@@ -7,7 +7,7 @@
 
 .title-text {
   color: var(--primary-color);
-  text-shadow: var(--text-shadow);
+  /* text-shadow: var(--text-shadow); */
 }
 
 .info {

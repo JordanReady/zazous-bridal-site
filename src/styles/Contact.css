@@ -77,4 +77,13 @@ textarea:focus {
   animation-duration: 0.75s;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
+  font-family: var(--secondary-font);
+}
+
+.contact-form label span {
+  color: var(--primary-color);
+}
+
+.contact-form label {
+  color: black;
 }

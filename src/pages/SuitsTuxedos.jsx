@@ -8,6 +8,8 @@ import Img4 from "../assets/property-pic-4.jpg";
 
 import "../styles/SuitsTuxedos.css";
 
+import { ScheduleAppointmentBtn } from "../components";
+
 const SuitsTuxedos = () => {
   return (
     <div className="container">
@@ -79,6 +81,7 @@ const SuitsTuxedos = () => {
           />
         </div>
       </div>
+      <ScheduleAppointmentBtn style={9} customClass="suits-tuxedos-btn mt-3" />
     </div>
   );
 };
