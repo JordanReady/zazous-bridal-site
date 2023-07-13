@@ -1,0 +1,146 @@
+.thank-you-message {
+  width: 200%;
+  margin-top: 5px;
+  padding: 20px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  font-family: var(--secondary-font);
+  text-align: center;
+  z-index: 999;
+  font-size: 18px;
+}
+
+.thank-you-message-heading {
+  color: var(--primary-color);
+}
+.thank-you-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--border-color);
+}
+
+.thank-you-btn {
+  width: 140px;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you-alert-message {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* screen size */
+@media (max-width: 768px) {
+  .thank-you-message {
+    width: 100%;
+  }
+}
+
+/* animations */
+
+.thank-you-animation {
+  opacity: 0;
+}
+.thank-you-animation-start {
+  animation: slideInUpSlow 0.75s ease-in-out forwards;
+}
+.thank-you-animation-1 {
+  animation: slideUpPopAnimation 0.75s ease-in-out forwards 0.8s;
+}
+.thank-you-animation-2 {
+  animation: slideInUpSlow 0.5s ease-in-out forwards 1s;
+}
+.thank-you-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.thank-you-animation-4 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 1.4s;
+}
+.thank-you-animation-5 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 1.5s;
+}
+.thank-you-animation-6 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 1.6s;
+}
+.thank-you-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.8s;
+}
+.thank-you-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2s;
+}
+.thank-you-animation-9 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2.2s;
+}
+.thank-you-animation-10 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 2.4s;
+}
+.thank-you-animation-11 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 2.6s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

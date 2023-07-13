@@ -4,6 +4,8 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import "../styles/ScheduleAppointment.css";
 
+import { ThankYouMessage } from "../components";
+
 const CustomDateInput = forwardRef(({ value, onClick }, ref) => (
   <button className="custom-date-input" onClick={onClick} ref={ref}>
     {value}
@@ -16,11 +18,11 @@ const ScheduleAppointment = () => {
   const [appointmentTime, setAppointmentTime] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(undefined);
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [budgetType, setBudgetType] = useState("");
   const [referalType, setReferalType] = useState("");
-  const [numberPeople, setNumberPeople] = useState(0);
+  const [numberPeople, setNumberPeople] = useState("");
   const [contactType, setContactType] = useState("");
   const [address, setAddress] = useState("");
   const [addressTwo, setAddressTwo] = useState("");
@@ -30,6 +32,7 @@ const ScheduleAppointment = () => {
   const [comments, setComments] = useState("");
   const [mailingList, setMailingList] = useState(false);
   const [textAlerts, setTextAlerts] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
 
   const appointmentTypeOptions = [
     { value: "", name: "Select Appointment Type" },
@@ -205,25 +208,32 @@ const ScheduleAppointment = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Appointment Type:", appointmentType);
-    console.log("Start Date:", startDate);
-    console.log("Appointment Time:", appointmentTime);
-    console.log("First Name:", firstName);
-    console.log("Last Name:", lastName);
-    console.log("Phone Number:", phoneNumber);
-    console.log("Email:", email);
-    console.log("Budget Type:", budgetType);
-    console.log("Referral Type:", referalType);
-    console.log("Number of People:", numberPeople);
-    console.log("Contact Type:", contactType);
-    console.log("Address:", address);
-    console.log("Address Two:", addressTwo);
-    console.log("City:", city);
-    console.log("State Type:", stateType);
-    console.log("Zip Code:", zipCode);
-    console.log("Comments:", comments);
-    console.log("Mailing List:", mailingList);
-    console.log("Text Alerts:", textAlerts);
+    if (!showThankYou) {
+      console.log("Appointment Type:", appointmentType);
+      console.log("Start Date:", startDate);
+      console.log("Appointment Time:", appointmentTime);
+      console.log("First Name:", firstName);
+      console.log("Last Name:", lastName);
+      console.log("Phone Number:", phoneNumber);
+      console.log("Email:", email);
+      console.log("Budget Type:", budgetType);
+      console.log("Referral Type:", referalType);
+      console.log("Number of People:", numberPeople);
+      console.log("Contact Type:", contactType);
+      console.log("Address:", address);
+      console.log("Address Two:", addressTwo);
+      console.log("City:", city);
+      console.log("State Type:", stateType);
+      console.log("Zip Code:", zipCode);
+      console.log("Comments:", comments);
+      console.log("Mailing List:", mailingList);
+      console.log("Text Alerts:", textAlerts);
+      setShowThankYou(true);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -237,41 +247,60 @@ const ScheduleAppointment = () => {
       <hr style={{ color: "var(--primary-color)" }} />
       <div className="row">
         <div className="col-md-6">
-          <div className="schedule-your-appointment-text">
-            <p className="schedule-your-appointment-animation schedule-your-appointment-animation-1">
-              Scheduling an appointment is the best way to make sure you get the
-              complete and undivided attention you deserve from your consultant.
-              We will take walk-ins if availability allows. Bridal appointments
-              are scheduled for 1 ½-2 hours.
-            </p>
-            <p className="schedule-your-appointment-animation schedule-your-appointment-animation-2">
-              We ask that you limit your guests to 4 (not including yourself).
-              Please reach out if you’d like to bring a larger group and we’d be
-              happy to try accommodating by spreading out our appointments if
-              possible.
-            </p>
-            <p className="schedule-your-appointment-animation schedule-your-appointment-animation-3">
-              If you We recommend scheduling your bridal appointment 9-12+
-              months prior to your wedding date to ensure you're able to get the
-              dress of your dreams! There are instances such as a designer being
-              ahead of schedule or buying a dress "off the rack" that would
-              result in you receiving your gown sooner. any questions, please
-              contact us At
-            </p>
-            <div className="disclaimer schedule-your-appointment-animation schedule-your-appointment-animation-6">
-              <h2 className="schedule-your-appointment-header ">
-                Please Note:
-              </h2>
-              <p className="bold-text">
-                This form does not guarantee your time slot. You will receive an
-                email/text confirmation once we approve your appointment
-                date/time. Our form below does not recognize our current
-                bookings, so we will contact you ASAP if we need to reschedule
-                due to overbooking. Thank you for your understanding! Please
-                call us with any questions.
-              </p>
+          {showThankYou ? (
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col">
+                  <ThankYouMessage
+                    appointmentType={appointmentType}
+                    startDate={startDate}
+                    appointmentTime={appointmentTime}
+                    email={email}
+                    phoneNumber={phoneNumber}
+                    contactType={contactType}
+                    mailingList={mailingList}
+                    textAlerts={textAlerts}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="schedule-your-appointment-text">
+              <p className="schedule-your-appointment-animation schedule-your-appointment-animation-1">
+                Scheduling an appointment is the best way to make sure you get
+                the complete and undivided attention you deserve from your
+                consultant. We will take walk-ins if availability allows. Bridal
+                appointments are scheduled for 1 ½-2 hours.
+              </p>
+              <p className="schedule-your-appointment-animation schedule-your-appointment-animation-2">
+                We ask that you limit your guests to 4 (not including yourself).
+                Please reach out if you’d like to bring a larger group and we’d
+                be happy to try accommodating by spreading out our appointments
+                if possible.
+              </p>
+              <p className="schedule-your-appointment-animation schedule-your-appointment-animation-3">
+                If you We recommend scheduling your bridal appointment 9-12+
+                months prior to your wedding date to ensure you're able to get
+                the dress of your dreams! There are instances such as a designer
+                being ahead of schedule or buying a dress "off the rack" that
+                would result in you receiving your gown sooner. any questions,
+                please contact us At
+              </p>
+              <div className="disclaimer schedule-your-appointment-animation schedule-your-appointment-animation-6">
+                <h2 className="schedule-your-appointment-header ">
+                  Please Note:
+                </h2>
+                <p className="bold-text">
+                  This form does not guarantee your time slot. You will receive
+                  an email/text confirmation once we approve your appointment
+                  date/time. Our form below does not recognize our current
+                  bookings, so we will contact you ASAP if we need to reschedule
+                  due to overbooking. Thank you for your understanding! Please
+                  call us with any questions.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
         <div className="col-md-6">
           <h2 className="schedule-your-appointment-header schedule-your-appointment-animation schedule-your-appointment-animation-4">
@@ -386,6 +415,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="Jane"
                   id="firstName"
                   value={firstName}
                   onChange={handleFirstNameChange}
@@ -399,6 +429,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="Doe"
                   id="lastName"
                   value={lastName}
                   onChange={handleLastNameChange}
@@ -413,6 +444,7 @@ const ScheduleAppointment = () => {
               <input
                 type="tel"
                 className="form-control"
+                placeholder="(555) 555-5555"
                 id="phoneNumber"
                 value={phoneNumber}
                 onChange={handlePhoneChange}
@@ -426,6 +458,7 @@ const ScheduleAppointment = () => {
               <input
                 type="email"
                 className="form-control"
+                placeholder="example@email.com"
                 id="email"
                 value={email}
                 onChange={handleEmailChange}
@@ -474,6 +507,7 @@ const ScheduleAppointment = () => {
               <input
                 type="number"
                 className="form-control"
+                placeholder="Got friends?"
                 id="numPeopleJoining"
                 value={numberPeople}
                 onChange={handleNumberPeopleChange}
@@ -504,6 +538,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="Your Address"
                   id="address1"
                   value={address}
                   onChange={handleAddressChange}
@@ -516,6 +551,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="Your Alternate Address"
                   id="address2"
                   value={addressTwo}
                   onChange={handleAddressTwoChange}
@@ -530,6 +566,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="Your City"
                   id="city"
                   value={city}
                   onChange={handleCityChange}
@@ -559,6 +596,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
+                  placeholder="99999"
                   id="zipCode"
                   value={zipCode}
                   onChange={handleZipCodeChange}
@@ -571,6 +609,7 @@ const ScheduleAppointment = () => {
               </label>
               <textarea
                 className="form-control"
+                placeholder="Please share any questions, comments, or concerns you may have"
                 id="questionsComments"
                 rows="3"
                 value={comments}
