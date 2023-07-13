@@ -17,6 +17,7 @@ const HeroCarousel = () => {
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
         data-bs-pause="false"
+        data-bs-interval="4000"
       >
         <div className="carousel-inner">
           <div className="carousel-item active ratio-4x3">

@@ -1,0 +1,185 @@
+.schedule-your-appointment-text {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+}
+
+.schedule-your-appointment-header {
+  color: var(--primary-color);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* date picker */
+.date-picker-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-date-input {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  cursor: pointer;
+  padding: 6px;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  background-color: var(--primary-color);
+}
+
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::after {
+  display: none;
+}
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before {
+  display: none;
+}
+
+.react-datepicker__month-container {
+  float: unset;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 0.3rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* form styles */
+form {
+  font-family: var(--secondary-font);
+}
+
+input,
+select {
+  border: 1px solid var(--primary-color) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+input[type="checkbox"].form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.notification-preferences-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.required-label {
+  color: var(--primary-color);
+}
+
+.schedule-your-appointment-btn {
+  font-family: var(--secondary-font);
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all ease-in-out 0.3s;
+  text-shadow: var(--text-shadow-light);
+  border-radius: var(--border-radius);
+}
+
+.schedule-your-appointment-btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  border-color: rgba(0, 0, 0, 0.541);
+  transform: translateY(-2px) !important;
+  text-shadow: var(--text-shadow);
+}
+
+/* screen sizes */
+@media (max-width: 768px) {
+  /* stuff */
+}
+
+/* animations */
+
+.schedule-your-appointment-animation {
+  opacity: 0;
+}
+.schedule-your-appointment-animation-1 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+}
+.schedule-your-appointment-animation-2 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.3s;
+}
+.schedule-your-appointment-animation-3 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.4s;
+}
+.schedule-your-appointment-animation-4 {
+  animation: slideInRightSlow 0.6s ease-in-out forwards 0.5s;
+}
+.schedule-your-appointment-animation-5 {
+  animation: slideInRightSlow 0.6s ease-in-out forwards 0.6s;
+}
+.schedule-your-appointment-animation-6 {
+  animation: slideInLeftSlow 0.6s ease-in-out forwards 0.7s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
