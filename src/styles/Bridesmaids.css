@@ -1,0 +1,102 @@
+.bridesmaids-text {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  text-align: justify;
+}
+
+.bridesmaids-promotion {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: -1.5rem;
+}
+
+/* animations */
+
+.bridesmaids-animation {
+  opacity: 0;
+}
+.bridesmaids-animation-1 {
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
+}
+.bridesmaids-animation-2 {
+  animation: slideUpPopAnimation 0.75s ease-in-out forwards 0.6s;
+}
+.bridesmaids-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.8s;
+}
+.bridesmaids-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
+}
+.bridesmaids-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.bridesmaids-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.bridesmaids-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.6s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
