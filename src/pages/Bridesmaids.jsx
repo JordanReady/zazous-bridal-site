@@ -40,49 +40,49 @@ const Bridesmaids = () => {
       </div>
 
       <div className="row mb-4">
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-3">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-3 d-flex justify-content-center">
           <DressCard
             image={Img1}
             designer={"Allure"}
-            collection={"Romance"}
-            link={"https://allurebridesmaidss.com/collections/allure-romance/"}
+            collection={"Bridesmaids"}
+            link={"http://www.allurebridals.com/category/bridesmaids"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-4">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-4 d-flex justify-content-center">
           <DressCard
             image={Img2}
-            designer={"Allure"}
-            collection={"Madison James"}
-            link={
-              "http://www.allurebridesmaidss.com/category/madisonjamesbridesmaids"
-            }
+            designer={"Christina Wu"}
+            collection={"Bridesmaids"}
+            link={"https://houseofwu.com/collection/christina-wu-celebration/"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-5">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-5 d-flex justify-content-center">
           <DressCard
             image={Img3}
-            designer={"Allure"}
-            collection={"Couture"}
-            link={"http://www.allurebridesmaidss.com/category/couture"}
+            designer={"Bill Levkoff"}
+            collection={"Bridesmaids"}
+            link={"https://www.billlevkoff.com/bridesmaid-dresses/"}
           />
         </div>
       </div>
       <div className="row mb-4">
         <div className="col-lg-2"></div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-6">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-6 d-flex justify-content-center">
           <DressCard
             image={Img4}
-            designer={"Casablanca"}
-            collection={"bridesmaids"}
-            link={"https://www.casablancabridesmaids.com/collections/gowns/"}
+            designer={"Adrianna Papell Platinum"}
+            collection={"Great for Mothers"}
+            link={
+              "https://houseofwu.com/collection/adrianna-papell-platinum-bridesmaids/"
+            }
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-7">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-7 d-flex justify-content-center">
           <DressCard
             image={Img5}
-            designer={"Casablanca"}
-            collection={"Beloved"}
-            link={"https://www.belovedbycasablancabridesmaids.com/"}
+            designer={"Christina Wu Elegance"}
+            collection={"Great for Mothers"}
+            link={"https://houseofwu.com/collection/christina-wu-elegance/"}
           />
         </div>
         <div className="col-lg-2"></div>

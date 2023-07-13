@@ -39,7 +39,7 @@ const Bridal = () => {
       </div>
 
       <div className="row mb-4">
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-3">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-3 d-flex justify-content-center">
           <DressCard
             image={Img1}
             designer={"Allure"}
@@ -47,7 +47,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/collections/allure-romance/"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-4">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-4 d-flex justify-content-center">
           <DressCard
             image={Img2}
             designer={"Allure"}
@@ -55,7 +55,7 @@ const Bridal = () => {
             link={"http://www.allurebridals.com/category/madisonjamesbridal"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-5">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-5 d-flex justify-content-center">
           <DressCard
             image={Img3}
             designer={"Allure"}
@@ -65,7 +65,7 @@ const Bridal = () => {
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-6">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-6 d-flex justify-content-center">
           <DressCard
             image={Img4}
             designer={"Allure"}
@@ -73,7 +73,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/wilderly-bride"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-7">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-7 d-flex justify-content-center">
           <DressCard
             image={Img5}
             designer={"Allure"}
@@ -81,7 +81,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/abella"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-8">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-8 d-flex justify-content-center">
           <DressCard
             image={Img6}
             designer={"Allure"}
@@ -91,7 +91,7 @@ const Bridal = () => {
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-9">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-9 d-flex justify-content-center">
           <DressCard
             image={Img7}
             designer={"Justin Alexander"}
@@ -99,7 +99,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/wilderly-bride"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-10">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-10 d-flex justify-content-center">
           <DressCard
             image={Img8}
             designer={"Justin Alexander"}
@@ -107,7 +107,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/abella"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-11">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-11 d-flex justify-content-center">
           <DressCard
             image={Img9}
             designer={"Justin Alexander"}
@@ -117,7 +117,7 @@ const Bridal = () => {
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-12">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-12 d-flex justify-content-center">
           <DressCard
             image={Img10}
             designer={"Maggie Sottero"}
@@ -125,7 +125,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/wilderly-bride"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-13">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-13 d-flex justify-content-center">
           <DressCard
             image={Img11}
             designer={"Maggie Sottero"}
@@ -133,7 +133,7 @@ const Bridal = () => {
             link={"https://allurebridals.com/abella"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-14">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-14 d-flex justify-content-center">
           <DressCard
             image={Img12}
             designer={"Justin Alexander"}
@@ -144,7 +144,7 @@ const Bridal = () => {
       </div>
       <div className="row mb-4">
         <div className="col-lg-2"></div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-15">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-15 d-flex justify-content-center">
           <DressCard
             image={Img13}
             designer={"Casablanca"}
@@ -152,7 +152,7 @@ const Bridal = () => {
             link={"https://www.casablancabridal.com/collections/gowns/"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-16">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-16 d-flex justify-content-center">
           <DressCard
             image={Img14}
             designer={"Casablanca"}
