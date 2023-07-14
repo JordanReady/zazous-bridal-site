@@ -6,20 +6,14 @@ import Img4 from "../assets/prom/prom-image-4.jpg";
 import Img5 from "../assets/prom/prom-image-5.jpg";
 import Img6 from "../assets/prom/prom-image-6.jpg";
 
-import { DressCard } from "../components";
+import { DressCard, PageHeading } from "../components";
 
 import "../styles/Prom.css";
 
 const Prom = () => {
   return (
-    <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center text-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Prom Collection
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+    <div className="container prom-container">
+      <PageHeading name={"Prom Collection"} animationDirection={""} />
 
       <div className="prom-text text-center">
         <p className="prom-animation prom-animation-1">
@@ -29,7 +23,7 @@ const Prom = () => {
         </p>
       </div>
 
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 prom-animation prom-animation-2 d-flex justify-content-center">
           <DressCard
             image={Img1}
@@ -55,7 +49,7 @@ const Prom = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 prom-animation prom-animation-5 d-flex justify-content-center">
           <DressCard
             image={Img4}

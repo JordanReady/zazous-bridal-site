@@ -14,20 +14,14 @@ import Img12 from "../assets/bridal/bridal-image-12.png";
 import Img13 from "../assets/bridal/bridal-image-13.png";
 import Img14 from "../assets/bridal/bridal-image-14.png";
 
-import { DressCard } from "../components";
+import { DressCard, PageHeading } from "../components";
 
 import "../styles/Bridal.css";
 
 const Bridal = () => {
   return (
-    <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Bridal Collection
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+    <div className="container bridal-container">
+      <PageHeading name={"Bridal Collection"} animationDirection={""} />
 
       <div className="bridal-text text-center">
         <p className="bridal-animation bridal-animation-2">
@@ -38,7 +32,7 @@ const Bridal = () => {
         </p>
       </div>
 
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-3 d-flex justify-content-center">
           <DressCard
             image={Img1}
@@ -64,7 +58,7 @@ const Bridal = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-6 d-flex justify-content-center">
           <DressCard
             image={Img4}
@@ -90,7 +84,7 @@ const Bridal = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-9 d-flex justify-content-center">
           <DressCard
             image={Img7}
@@ -116,7 +110,7 @@ const Bridal = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-12 d-flex justify-content-center">
           <DressCard
             image={Img10}
@@ -142,8 +136,8 @@ const Bridal = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
-        <div className="col-lg-2"></div>
+      <div className="row mb-4 two-card-row">
+        <div className="col-lg-2 dress-card-spacer"></div>
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-15 d-flex justify-content-center">
           <DressCard
             image={Img13}
@@ -160,7 +154,7 @@ const Bridal = () => {
             link={"https://www.belovedbycasablancabridal.com/"}
           />
         </div>
-        <div className="col-lg-2"></div>
+        <div className="col-lg-2 dress-card-spacer"></div>
       </div>
     </div>
   );

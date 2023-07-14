@@ -4,33 +4,35 @@ import Logo from "../assets/Logos/Zazous-logo-1.jpg";
 
 import "../styles/Contact.css";
 
+import { PageHeading } from "../components";
+
 const Contact = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Contact Us
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Contact Us"} animationDirection={""} />
       <div className="row">
         <div className="col-lg-6">
           <div>
             <div className="row d-flex justify-content-center align-items-center">
-              <StoreInfo col={"col-8"} style={3} customClass={"mt-2 mb-4"} />
+              <StoreInfo
+                col={"col-8"}
+                style={3}
+                customClass={"mt-2 mb-4 contact-animation contact-animation-1"}
+              />
               <StoreHours
                 col={"col-8"}
-                customClass={"mb-4 mt-4 contact-store-hours"}
+                customClass={
+                  "mb-4 mt-4 contact-store-hours contact-animation contact-animation-2"
+                }
                 style={5}
               />
             </div>
           </div>
         </div>
         <div className="col-lg-6">
-          <form className="contact-form">
+          <form className="contact-form contact-animation contact-animation-3">
             <div className="form-row name-row d-flex">
-              <div className="col-md-6">
+              <div className="col-md-6 contact-animation contact-animation-4">
                 <label htmlFor="firstName ">
                   First Name <span className="required-label ">*</span>
                 </label>
@@ -41,7 +43,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="col-md-6 last-name-col">
+              <div className="col-md-6 last-name-col contact-animation contact-animation-5">
                 <label htmlFor="lastName">
                   Last Name <span className="required-label ">*</span>
                 </label>
@@ -53,11 +55,11 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group contact-animation contact-animation-6">
               <label htmlFor="phone">Phone</label>
               <input type="text" className="form-control" id="phone" />
             </div>
-            <div className="form-group">
+            <div className="form-group contact-animation contact-animation-7">
               <label htmlFor="email">
                 Email Address <span className="required-label">*</span>
               </label>
@@ -68,7 +70,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-group contact-animation contact-animation-8">
               <label htmlFor="subject">
                 Subject <span className="required-label">*</span>
               </label>
@@ -79,7 +81,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-group contact-animation contact-animation-9">
               <label htmlFor="message">
                 Message <span className="required-label">*</span>
               </label>
@@ -93,7 +95,7 @@ const Contact = () => {
             <div className="form-btn-container d-flex justify-content-center">
               <button
                 type="submit"
-                className="contact-btn btn btn-primary mt-2"
+                className="contact-btn btn btn-primary mt-2 contact-animation contact-animation-10"
               >
                 Submit
               </button>
@@ -106,14 +108,14 @@ const Contact = () => {
                 <img
                   src={Logo}
                   alt="Logo"
-                  className="logo-image"
+                  className="logo-image contact-animation contact-animation-11"
                   style={{ "--i": 7 }}
                 />
               </div>
             </div>
             <div className="col-md-6">
-              <div className="row d-flex justify-content-center align-items-center">
-                <StoreAwards style={9} />
+              <div className="row d-flex justify-content-center align-items-center contact-animation contact-animation-12">
+                <StoreAwards />
               </div>
             </div>
           </div>

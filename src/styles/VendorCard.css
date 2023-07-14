@@ -39,6 +39,14 @@
   text-align: center;
 }
 
+/* screen size */
+@media (max-width: 768px) {
+  .recomendation-text {
+    margin-bottom: -1rem;
+    margin-top: 1rem !important;
+  }
+}
+
 /* animations */
 @keyframes slideUp {
   0% {

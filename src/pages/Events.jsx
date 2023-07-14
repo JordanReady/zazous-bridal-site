@@ -1,46 +1,48 @@
 import React from "react";
 
-import { EventCard, PastEventsCard } from "../components";
+import { EventCard, PastEventsCard, PageHeading } from "../components";
 
 import "../styles/Events.css";
 
 const Events = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Events
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Events"} animationDirection={""} />
       <div className="row">
         <div className="col-lg-6 event-page-card">
-          <h2 className="event-title text-center mb-3"> Upcoming Events</h2>
-          <EventCard
-            title={"Bridal Bash Sale"}
-            date={"OCTOBER 10-23"}
-            time={"All Day!"}
-            info={`Explore our exquisite collection of 100+ stunning dresses, all priced
+          <h2 className="event-title text-center mb-3 event-animation event-animation-1">
+            Upcoming Events
+          </h2>
+          <div className="event-card-container event-animation event-animation-3">
+            <EventCard
+              title={"Bridal Bash Sale"}
+              date={"OCTOBER 10-23"}
+              time={"All Day!"}
+              info={`Explore our exquisite collection of 100+ stunning dresses, all priced
             at $500 and under. We offer sizes ranging from 2 to 32, ensuring the perfect fit for every
             body shape. Don't miss out on finding your dream dress — schedule your appointment now!`}
-            scheduleButton={true}
-            customClass={"event-card event-card-fill"}
-          />
+              scheduleButton={true}
+              customClass={"event-card event-card-fill"}
+            />
+          </div>
         </div>
         <div className="col-lg-6 event-page-card">
-          <h2 className="event-title text-center mb-3">Past Events</h2>
-          <PastEventsCard />
+          <h2 className="event-title text-center mb-3 event-animation event-animation-2">
+            Past Events
+          </h2>
+          <div className="past-event-card-container event-animation event-animation-4">
+            <PastEventsCard />
+          </div>
         </div>
       </div>
       <div className="signup-section mt-3 mb-3">
-        <h2 className="event-title text-center event-page-email-title">
+        <h2 className="event-title text-center event-page-email-title event-animation event-animation-5">
           Sign up for our email list!
         </h2>
-        <p className="sign-up-subtext text-center mb-4 event-page-email-subtitle">
+        <p className="sign-up-subtext text-center mb-4 event-page-email-subtitle event-page-email-title event-animation event-animation-6">
           Receive emails for our sales, promotions, and events!
         </p>
-        <form className="contact-form email-form event-page-email-form">
+        <form className="contact-form email-form event-page-email-form event-animation event-animation-7">
           <div className="form-row name-row d-flex">
             <div className="col-md-6">
               <label htmlFor="firstName">

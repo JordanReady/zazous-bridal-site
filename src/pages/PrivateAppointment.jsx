@@ -5,18 +5,15 @@ import Img3 from "../assets/privateAppointment/private-appointment-img-3.jpg";
 
 import "../styles/PrivateAppointment.css";
 
-import { ScheduleAppointmentBtn } from "../components";
+import { ScheduleAppointmentBtn, PageHeading } from "../components";
 
 const PrivateAppointment = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Private Appointments
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading
+        name={"Schedule Your Private Appointment"}
+        animationDirection={""}
+      />
 
       <div className="row">
         <div className="col-md-6 private-appointment-animation private-appointment-animation-1">

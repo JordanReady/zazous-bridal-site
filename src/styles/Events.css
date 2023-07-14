@@ -35,41 +35,47 @@
   }
 }
 
+/* screen size */
+@media (max-width: 768px) {
+  .event-page-card {
+    margin-top: -0.75rem !important;
+  }
+  .contact-btn {
+    margin-top: 1.75rem !important;
+    margin-bottom: -0.5rem;
+  }
+}
+
 /* animations */
 
-.event-page-card,
-.event-page-email-title,
-.event-page-email-subtitle,
-.event-page-email-form {
+.event-animation {
   opacity: 0;
 }
-
-.event-page-card:nth-child(1) {
-  animation: slideInLeft 0.5s ease-in-out forwards;
+.event-animation-1 {
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
+}
+.event-animation-2 {
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.4s;
+}
+.event-animation-3 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.6s;
+}
+.event-animation-4 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.8s;
+}
+.event-animation-5 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 1s;
+}
+.event-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.event-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
 }
 
-.event-page-card:nth-child(2) {
-  animation: slideInRight 0.5s ease-in-out forwards;
-  animation-delay: 0.2s;
-}
-
-.event-page-email-title {
-  animation: slideInUp 0.5s ease-in-out forwards;
-  animation-delay: 0.4s;
-}
-
-.event-page-email-subtitle {
-  animation: slideInUp 0.5s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-.event-page-email-form {
-  animation: slideInUp 0.5s ease-in-out forwards;
-  animation-delay: 0.7s;
-}
-
-@keyframes slideInLeft {
+@keyframes slideInLeftSlow {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     opacity: 0;
   }
   to {
@@ -78,9 +84,9 @@
   }
 }
 
-@keyframes slideInRight {
+@keyframes slideInRightSlow {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
     opacity: 0;
   }
   to {
@@ -89,13 +95,44 @@
   }
 }
 
-@keyframes slideInUp {
+@keyframes slideInUpSlow {
   from {
-    transform: translateY(100%);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
     opacity: 1;
   }
 }

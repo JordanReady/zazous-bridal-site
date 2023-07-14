@@ -48,6 +48,18 @@ textarea:focus {
   border-color: var(--border-color);
 }
 
+.contact-form {
+  font-family: var(--secondary-font);
+}
+
+.contact-form label span {
+  color: var(--primary-color);
+}
+
+.contact-form label {
+  color: black;
+}
+
 /* screen sizes */
 @media (max-width: 768px) {
   .contact-logo-container {
@@ -59,33 +71,117 @@ textarea:focus {
   .contact-store-hours {
     margin-top: 0 !important;
   }
+  .contact-btn {
+    margin-top: -1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .logo-image {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* animations */
-@keyframes slideInRight {
-  0% {
+
+.contact-animation {
+  opacity: 0;
+}
+.contact-animation-1 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+}
+.contact-animation-2 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.4s;
+}
+.contact-animation-3 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.5s;
+}
+.contact-animation-4 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.6s;
+}
+.contact-animation-5 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.7s;
+}
+.contact-animation-6 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.8s;
+}
+.contact-animation-7 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.9s;
+}
+.contact-animation-8 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1s;
+}
+.contact-animation-9 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.1s;
+}
+.contact-animation-10 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.2s;
+}
+.contact-animation-11 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.4s;
+}
+.contact-animation-12 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.5s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
     opacity: 0;
-    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
   }
   100% {
+    transform: scale(1);
     opacity: 1;
-    transform: translateX(0);
   }
-}
-
-.contact-form {
-  opacity: 0;
-  animation-name: slideInRight;
-  animation-duration: 0.75s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-  font-family: var(--secondary-font);
-}
-
-.contact-form label span {
-  color: var(--primary-color);
-}
-
-.contact-form label {
-  color: black;
 }

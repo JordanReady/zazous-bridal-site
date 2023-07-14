@@ -60,36 +60,109 @@ table tr {
   .home-store-hours {
     margin-top: 10px !important;
   }
+  .hero-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-btn {
+    margin-bottom: 0.75rem;
+  }
+  .home-store-awards {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .home-store-info {
+    margin-top: 0 !important;
+  }
 }
 
 /* animations */
-.hero-button,
-.hero-text,
-.info-box,
-.logo-image,
-.wedding-wire-container {
+
+.home-animation {
   opacity: 0;
-  transform: translateX(-50%);
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: calc(0.1s * var(--i));
+}
+.home-animation-1 {
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
+}
+.home-animation-2 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.4s;
+}
+.home-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.6s;
+}
+.home-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.8s;
+}
+.home-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
+}
+.home-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.home-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
 }
 
-@keyframes slideInRight {
+@keyframes slideInLeftSlow {
   from {
+    transform: translateX(-50%);
     opacity: 0;
-    transform: translateX(-100%);
   }
   to {
-    opacity: 1;
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
-@keyframes fadeIn {
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
   to {
+    transform: translateX(0);
     opacity: 1;
-    transform: translate(0);
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

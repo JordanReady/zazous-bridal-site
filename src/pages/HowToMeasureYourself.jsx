@@ -4,16 +4,12 @@ import MeasurementPic from "../assets/logos/Measurement.png";
 
 import "../styles/HowToMeasureYourself.css";
 
+import { PageHeading } from "../components";
+
 const HowToMeasureYourself = () => {
   return (
     <div className="container how-to-measure-container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Measurements
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Measurements"} animationDirection={""} />
       <div className="row quick-tips-row">
         <h2 className="d-flex justify-content-center quick-tips-title text-center  measure-page-animation-2 measure-page">
           Tips to Measure Yourself for a Bridesmaid Dress at Home
@@ -21,11 +17,9 @@ const HowToMeasureYourself = () => {
         <div className="quick-tips-inner-row  measure-page-animation-3 measure-page">
           <div className="col-md-1 quick-tips-spacer"></div>
           <div className="col-md-4 d-flex justify-content-center">
-            {/* Left column with the image */}
             <img src={MeasurementPic} alt="Measurement" />
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
-            {/* Right column with bullet points */}
             <ul className="quick-tips-bullet-points">
               <li>
                 <span className="bullet-point">&#8226;</span>Use soft and
@@ -49,10 +43,8 @@ const HowToMeasureYourself = () => {
         </div>
         <div className="col-md-1 quick-tips-spacer"></div>
       </div>
-
-      {/* List of measurements */}
       <div className="measurements">
-        <h2 className="quick-tips-title text-center mt-4  measure-page-animation-4 measure-page">
+        <h2 className="quick-tips-title measure-title text-center mt-4  measure-page-animation-4 measure-page">
           Where to Measure Yourself
         </h2>
         <ol className="where-to-measure-list">

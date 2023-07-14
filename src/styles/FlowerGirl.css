@@ -1,59 +1,85 @@
-.prom-text {
+.flowergirl-text {
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: justify;
 }
 
-.prom-promotion {
+.flowergirl-promotion {
   color: var(--primary-color);
   font-size: 24px;
   margin-bottom: -1.5rem;
 }
 
+.flowergirl-card {
+  height: 350px;
+  width: 250px;
+}
+
+.flowergirl-card img {
+  height: 350px;
+  width: 250px;
+}
+
+.flowergirl-card div {
+  width: 250px;
+  bottom: -40px;
+  right: -20px;
+}
+
+.flowergirl-card h4 {
+  font-size: 20px;
+}
+
+.flowergirl-card p {
+  display: none;
+}
+
 /* screen size */
 @media (max-width: 768px) {
-  .prom-text {
+  .flowergirl-text {
     margin-bottom: 2rem !important;
   }
-  .prom-container {
+  .flowergirl-container {
     margin-bottom: -2rem;
   }
   .dress-card-spacer {
     display: none;
   }
-  .three-card-row {
+  .four-card-row {
     margin-top: -2rem !important;
-  }
-  .two-card-row {
-    margin-top: -2rem !important;
-    margin-bottom: -0.5rem !important;
   }
 }
 
 /* animations */
 
-.prom-animation {
+.flowergirl-animation {
   opacity: 0;
 }
-.prom-animation-1 {
+.flowergirl-animation-1 {
   animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
-.prom-animation-2 {
+.flowergirl-animation-2 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 0.4s;
 }
-.prom-animation-3 {
+.flowergirl-animation-3 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 0.6s;
 }
-.prom-animation-4 {
+.flowergirl-animation-4 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 0.8s;
 }
-.prom-animation-5 {
+.flowergirl-animation-5 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
 }
-.prom-animation-6 {
+.flowergirl-animation-6 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
 }
-.prom-animation-7 {
+.flowergirl-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.flowergirl-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.flowergirl-animation-9 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
 }
 
@@ -118,5 +144,21 @@
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* screen sizes */
+@media (max-width: 1199px) {
+  .flowergirl-card div {
+    width: 220px;
+    bottom: -40px;
+    right: -20px;
+  }
+}
+@media (max-width: 768px) {
+  .flowergirl-card div {
+    width: 250px;
+    bottom: -40px;
+    right: -20px;
   }
 }

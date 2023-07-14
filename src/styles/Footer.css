@@ -70,9 +70,13 @@ footer {
     display: inline;
     background-color: var(--primary-color);
     border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-shadow: var(--text-shadow-light);
+    font-family: var(--secondary-font) !important;
     box-shadow: var(--shadow);
     color: white;
     transition: all ease-in-out 0.3s;
+    margin-bottom: 1.75rem !important;
   }
   .back-to-top-btn:hover {
     transform: translateY(-3px);

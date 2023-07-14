@@ -14,11 +14,11 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div className="container">
-      <div className="carousel-container" style={{ "--i": 1 }}>
+      <div className="carousel-container home-animation home-animation-1">
         <HeroCarousel />
       </div>
       <section className="hero-text-container">
-        <h2 className="hero-text" style={{ "--i": 7 }}>
+        <h2 className="hero-text home-animation home-animation-2">
           Zazou’s Bridal Boutique & Tuxedos prides ourselves on being innovative
           and unique when it comes to providing the ultimate bridal experience!
           We carry wedding gowns, tuxedos, bridesmaids, mothers, flower girls,
@@ -26,22 +26,29 @@ const Home = () => {
           in the Dubuque Millwork District is the perfect environment to help
           any bride say, "I found the gown at Zazou's!”
         </h2>
-        <ScheduleAppointmentBtn style={8} />
+        <div className="home-btn-container home-animation home-animation-3">
+          <ScheduleAppointmentBtn customClass={"hero-btn"} />
+        </div>
       </section>
       <section className="home-info mt-4">
         <div class="row">
           <StoreHours
-            style={9}
             col={"col-md-4"}
-            customClass={"mt-4 home-store-hours"}
+            customClass={
+              "mt-4 home-store-hours home-animation home-animation-4"
+            }
           />
-          <div
-            className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container"
-            style={{ "--i": 10 }}
-          >
-            <StoreAwards />
+          <div className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container home-animation home-animation-5">
+            <div className="home-store-awards-container home-animation home-animation-6">
+              <StoreAwards customClass={"home-store-awards"} />
+            </div>
           </div>
-          <StoreInfo style={11} col={"col-md-4"} customClass={"mt-4 mb-4"} />
+          <StoreInfo
+            col={"col-md-4"}
+            customClass={
+              "mt-4 mb-4 home-store-info home-animation home-animation-7"
+            }
+          />
         </div>
       </section>
     </div>

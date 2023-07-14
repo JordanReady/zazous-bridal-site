@@ -1,7 +1,6 @@
 .past-event-card {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
-  height: calc(100% - 76px);
   border-radius: var(--border-radius);
 }
 
@@ -16,5 +15,5 @@
 .bullet-point {
   margin-right: 5px;
   color: var(--primary-color);
-  font-size: 1.2em;
+  font-size: 1.25rem;
 }

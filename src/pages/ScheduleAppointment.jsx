@@ -1,10 +1,10 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useState, useRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import "../styles/ScheduleAppointment.css";
 
-import { ThankYouMessage } from "../components";
+import { ThankYouMessage, PageHeading } from "../components";
 
 const CustomDateInput = forwardRef(({ value, onClick }, ref) => (
   <button className="custom-date-input" onClick={onClick} ref={ref}>
@@ -33,6 +33,21 @@ const ScheduleAppointment = () => {
   const [mailingList, setMailingList] = useState(false);
   const [textAlerts, setTextAlerts] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
+
+  const appointmentRowRef = useRef(null);
+
+  const handleScrollTopOfForm = () => {
+    if (window.innerWidth <= 768) {
+      const appointmentRowPosition =
+        appointmentRowRef.current.getBoundingClientRect().top +
+        window.pageYOffset;
+      const scrollOffset = 5; // Adjust this value if needed
+      window.scrollTo({
+        top: appointmentRowPosition - scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const appointmentTypeOptions = [
     { value: "", name: "Select Appointment Type" },
@@ -238,13 +253,7 @@ const ScheduleAppointment = () => {
 
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center text-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Schedule Your Appointment
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Schedule Your Appointment"} animationDirection={""} />
       <div className="row">
         <div className="col-md-6">
           {showThankYou ? (
@@ -310,7 +319,7 @@ const ScheduleAppointment = () => {
             onSubmit={handleSubmit}
             className="schedule-your-appointment-animation schedule-your-appointment-animation-5"
           >
-            <div className="row">
+            <div className="row" ref={appointmentRowRef}>
               <div className="col-6 col-md-8">
                 <div className="mb-3">
                   <label htmlFor="appointmentType" className="form-label">
@@ -321,6 +330,7 @@ const ScheduleAppointment = () => {
                     id="appointmentType"
                     value={appointmentType}
                     onChange={handleAppointmentTypeChange}
+                    onClick={handleScrollTopOfForm}
                     required
                   >
                     {appointmentTypeOptions.map((option) => (
@@ -332,7 +342,10 @@ const ScheduleAppointment = () => {
                 </div>
               </div>
               <div className="col-6 col-md-4">
-                <div className="mb-3 date-picker-row">
+                <div
+                  className="mb-3 date-picker-row"
+                  onClick={handleScrollTopOfForm}
+                >
                   <label htmlFor="appointmentDate" className="form-label">
                     Appointment Date <span className="required-label ">*</span>
                   </label>
@@ -551,7 +564,7 @@ const ScheduleAppointment = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Alternate Address"
+                  placeholder="Your 2nd Address"
                   id="address2"
                   value={addressTwo}
                   onChange={handleAddressTwoChange}

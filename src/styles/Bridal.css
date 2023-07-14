@@ -4,6 +4,26 @@
   text-align: justify;
 }
 
+/* screen size */
+@media (max-width: 768px) {
+  .bridal-text {
+    margin-bottom: 2rem !important;
+    margin-top: 1rem !important;
+  }
+  .bridal-container {
+    margin-bottom: -2rem !important;
+  }
+  .dress-card-spacer {
+    display: none;
+  }
+  .three-card-row {
+    margin-top: -2rem !important;
+  }
+  .two-card-row {
+    margin-top: -2rem !important;
+  }
+}
+
 /* animations */
 
 .bridal-animation {

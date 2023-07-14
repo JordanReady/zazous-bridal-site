@@ -2,16 +2,15 @@ import React from "react";
 
 import "../styles/PlanAppointment.css";
 
+import { PageHeading } from "../components";
+
 const PlanAppointment = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title plan-appointment-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Plan For Your Bridal Appointment
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading
+        name={"Plan For Your Bridal Appointment"}
+        animationDirection={""}
+      />
 
       <div className="plan-appointment-text">
         <p className=" plan-appointment-header plan-appointment-animation plan-appointment-animation-1">

@@ -8,18 +8,12 @@ import Img4 from "../assets/suitsTuxedos/suits-tux-img-4.jpg";
 
 import "../styles/SuitsTuxedos.css";
 
-import { ScheduleAppointmentBtn } from "../components";
+import { ScheduleAppointmentBtn, PageHeading } from "../components";
 
 const SuitsTuxedos = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Suits & Tuxedos
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Suits & Tuxedos"} animationDirection={""} />
       <div className="suits-tuxedos-text text-center">
         {/* Paragraphs */}
         <p className="suits-tuxedos-animation suits-tuxedos-animation-1 ">
@@ -36,7 +30,7 @@ const SuitsTuxedos = () => {
           guys out of town? No problem! We will work with you on getting
           accurate measurements.
         </p>
-        <p className="suits-tuxedos-promotion-text suits-tuxedos-animation suits-tuxedos-animation-8 ">
+        <p className="suits-tuxedos-promotion-text suits-tuxedos-animation suits-tuxedos-animation-7 ">
           <span className="suits-tuxedos-promotion">Special Promotion!</span>
           <br />
           If you find your gown at Zazou’s and get 5+ guys (groomsmen, ushers,
@@ -49,7 +43,7 @@ const SuitsTuxedos = () => {
           <img
             src={Img1}
             alt="Image 1"
-            className="img-fluid suits-larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-4"
+            className="img-fluid suits-larger-img suits-tuxedos-img suits-tuxedos-animation suits-tuxedos-animation-3"
           />
         </div>
         <div className="col-md-4 d-flex align-items-center justify-content-center">
@@ -66,7 +60,7 @@ const SuitsTuxedos = () => {
               <img
                 src={Img3}
                 alt="Image 2-2"
-                className="img-fluid suits-tuxedos-img suits-smaller-img suits-tuxedos-animation suits-tuxedos-animation-7"
+                className="img-fluid suits-tuxedos-img suits-smaller-img suits-tuxedos-animation suits-tuxedos-animation-4"
               />
             </div>
           </div>
@@ -80,7 +74,7 @@ const SuitsTuxedos = () => {
           />
         </div>
       </div>
-      <ScheduleAppointmentBtn style={9} customClass="suits-tuxedos-btn mt-3" />
+      <ScheduleAppointmentBtn customClass="suits-tuxedos-btn mt-3 suits-tuxedos-animation suits-tuxedos-animation-8" />
     </div>
   );
 };

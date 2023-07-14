@@ -5,20 +5,17 @@ import Img3 from "../assets/bridesmaids/bridesmaids-image-2.jpg";
 import Img4 from "../assets/bridesmaids/bridesmaids-image-4.jpg";
 import Img5 from "../assets/bridesmaids/bridesmaids-image-5.jpg";
 
-import { DressCard } from "../components";
+import { DressCard, PageHeading } from "../components";
 
 import "../styles/Bridesmaids.css";
 
 const Bridesmaids = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center text-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Bridesmaids & Mothers Collection
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading
+        name={"Bridesmaids & Mothers Collection"}
+        animationDirection={""}
+      />
 
       <div className="bridesmaids-text text-center">
         <p className="bridesmaids-animation bridesmaids-animation-1">
@@ -65,7 +62,7 @@ const Bridesmaids = () => {
           />
         </div>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-4 two-card-row">
         <div className="col-lg-2"></div>
         <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-6 d-flex justify-content-center">
           <DressCard

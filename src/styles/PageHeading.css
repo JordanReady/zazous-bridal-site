@@ -1,0 +1,86 @@
+.page-heading {
+  font-style: italic;
+  animation: slidInUpSlow 0.5s ease-in;
+}
+
+/* animations */
+
+.page-heading-animation {
+  opacity: 0;
+}
+.page-heading-animation-1 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.2s;
+}
+.left {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s !important;
+}
+.right {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.2s !important;
+}
+.down {
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s !important;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

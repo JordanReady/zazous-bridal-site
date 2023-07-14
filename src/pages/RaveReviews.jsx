@@ -1,15 +1,12 @@
 import React from "react";
 
+import { PageHeading } from "../components";
+
+import "../styles/RaveReviews.css";
 const RaveReviews = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Rave Reviews
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Rave Reviews"} animationDirection={""} />
     </div>
   );
 };

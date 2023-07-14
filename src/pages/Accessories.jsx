@@ -11,16 +11,12 @@ import Img7 from "../assets/accessories/accessories-img-7.jpg";
 
 import "../styles/Accessories.css";
 
+import { PageHeading } from "../components";
+
 const Accessories = () => {
   return (
     <div className="container">
-      <h2
-        className="our-story-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Accessories
-      </h2>
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Accessories"} animationDirection={""} />
       <div className="accessories-text text-center">
         {/* Paragraph */}
         <p className="accessories-animation accessories-animation-1">

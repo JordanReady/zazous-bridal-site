@@ -26,44 +26,102 @@
   .main-img {
     height: 400px;
   }
+  .our-story-btn {
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+  }
 }
 
 /* animations */
-@keyframes slide-up {
+
+.our-story-animation {
+  opacity: 0;
+}
+.our-story-animation-1 {
+  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+}
+.our-story-animation-2 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.4s;
+}
+.our-story-animation-3 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 0.5s;
+}
+.our-story-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.7s;
+}
+.our-story-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.9s;
+}
+.our-story-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
+}
+.our-story-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.1s;
+}
+.our-story-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+
+@keyframes slideInLeftSlow {
   from {
+    transform: translateX(-50%);
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
+    transform: translateX(0);
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-.schedule-appointment-btn-container {
-  opacity: 0;
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.our-story-title,
-.main-img,
-.story-text p,
-.schedule-appointment-btn-container,
-.hero-button,
-.small-img {
-  animation-name: slide-up;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  transform: translateY(20px);
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.our-story-title {
-  animation-delay: calc(0.1s * var(--i));
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.main-img,
-.story-text p,
-.hero-button,
-.small-img {
-  animation-delay: calc(0.1s * var(--i) + 0.1s);
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

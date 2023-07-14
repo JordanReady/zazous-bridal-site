@@ -1,6 +1,6 @@
 import React from "react";
 
-import { VendorCard } from "../components";
+import { VendorCard, PageHeading } from "../components";
 
 import "../styles/VendorCard.css";
 
@@ -251,18 +251,11 @@ const Vendors = () => {
 
   return (
     <div className="container">
-      <h2
-        className="recomendation-title d-flex justify-content-center"
-        style={{ fontStyle: "italic", "--i": 1 }}
-      >
-        Recommendations
-      </h2>
-
-      <hr style={{ color: "var(--primary-color)" }} />
+      <PageHeading name={"Recommendations"} animationDirection={""} />
       <p className="recomendation-text d-flex justify-content-center">
         Need help finding a vendor? Here's our recommendations!
       </p>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center text-center">
         {vendors.map((vendor, index) => (
           <VendorCard key={index} {...vendor} cardIndex={index} />
         ))}
