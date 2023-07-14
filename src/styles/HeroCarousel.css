@@ -164,8 +164,23 @@ li .active {
 }
 
 .carousel-image {
-  opacity: 0.5;
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
+  opacity: 0.2;
+  animation-name: fadeInThenFadeOut;
+  animation-duration: 4.4s;
   animation-fill-mode: forwards;
+}
+
+@keyframes fadeInThenFadeOut {
+  0% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }

@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/solid.css";
+import "@fortawesome/fontawesome-free/css/brands.css";
 
 import { CustomNavbar, Footer } from "./components";
 
