@@ -42,11 +42,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   /* font-style: italic; */
 }
 
 .navbar-brand:hover {
   color: var(--primary-color);
+  pointer-events: none;
 }
 
 .navbar-nav {
@@ -74,6 +76,12 @@
   color: white;
   border: 1px solid var(--border-color);
   text-shadow: var(--text-shadow-light);
+}
+
+.dropdwon-menu-slide {
+  transition: max-height 1s ease;
+  overflow: hidden;
+  max-height: 0;
 }
 
 /* screen sizes */

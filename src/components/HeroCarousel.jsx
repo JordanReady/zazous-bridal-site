@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Img1 from "../assets/carousel/carousel-img-1.jpg";
 import Img2 from "../assets/carousel/carousel-img-2.jpg";
 import Img3 from "../assets/carousel/carousel-img-3.jpg";

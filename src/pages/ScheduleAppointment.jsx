@@ -352,6 +352,7 @@ const ScheduleAppointment = () => {
                   <DatePicker
                     className="custom-date-input"
                     required
+                    inputMode="none"
                     renderCustomHeader={({
                       monthDate,
                       customHeaderCount,

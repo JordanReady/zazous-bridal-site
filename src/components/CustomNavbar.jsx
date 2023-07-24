@@ -5,7 +5,7 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/Logos/Zazous-logo-outline-1.png";
 
-import "../styles/navbar.css";
+import "../styles/CustomNavbar.css";
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -40,22 +40,22 @@ const CustomNavbar = () => {
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
     >
-      <Navbar.Brand
-        as={Link}
-        to="/"
-        className="navbar-brand"
-        onClick={handleNavItemClick}
-      >
+      <Navbar.Brand className="navbar-brand">
         <div className="logo-container">
           <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
-          <span className="zazous-bridal">azou's Bridal </span>
+          <span className="zazous-bridal">Zazou's Bridal </span>
         </div>
         <span className="brand-break">&nbsp;Boutique & Tuxedos</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
         Menu
       </Navbar.Toggle>
-      <Navbar.Collapse id="navbarNav">
+      <Navbar.Collapse
+        id="navbarNav"
+        className={`custom-navbar-collapse ${
+          expanded ? "navbar-slide-down" : ""
+        }`}
+      >
         <Nav className="ml-auto nav-links">
           <Nav.Link as={Link} to="/" onClick={handleNavItemClick}>
             Home
