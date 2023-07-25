@@ -7,7 +7,7 @@ const ScheduleAppointmentBtn = ({ style, customClass, text, link }) => {
   const history = createBrowserHistory();
 
   const handleButtonClick = () => {
-    const targetURL = link || "/zazous-bridal-site/schedule-appointment";
+    const targetURL = link || "#/schedule-appointment";
     history.push(targetURL);
     window.scrollTo(0, 0);
     window.location.reload();
