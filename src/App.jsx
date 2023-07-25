@@ -28,7 +28,7 @@ import {
 } from "./pages";
 
 const App = () => (
-  <Router>
+  <Router basename="/zazous-bridal-site">
     <div className="App">
       <CustomNavbar />
       <Routes>
