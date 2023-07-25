@@ -43,7 +43,7 @@ const CustomNavbar = () => {
       <Navbar.Brand className="navbar-brand">
         <div className="logo-container">
           <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
-          <span className="zazous-bridal">Zazou's Bridal </span>
+          <span className="zazous-bridal">azou's Bridal </span>
         </div>
         <span className="brand-break">&nbsp;Boutique & Tuxedos</span>
       </Navbar.Brand>
