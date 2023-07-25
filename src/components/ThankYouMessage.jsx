@@ -52,7 +52,7 @@ const ThankYouMessage = ({
       <div className="thank-you-btn-container thank-you-animation thank-you-animation-9">
         <ScheduleAppointmentBtn
           text={"Contact Us"}
-          link={"/contact"}
+          link={"#/contact"}
           customClass={"thank-you-btn"}
         />
       </div>

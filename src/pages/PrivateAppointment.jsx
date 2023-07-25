@@ -43,7 +43,7 @@ const PrivateAppointment = () => {
               </p>
               <div className="mt-4 d-flex justify-content-center align-items-center private-appointment-btn private-appointment-animation private-appointment-animation-5">
                 <ScheduleAppointmentBtn
-                  link={"/zazous-bridal-site/contact"}
+                  link={"#/contact"}
                   text={"Contact Us"}
                   customClass={"private-appointment-btn"}
                 />
