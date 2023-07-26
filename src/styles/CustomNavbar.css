@@ -92,8 +92,39 @@
 }
 
 @media (max-width: 1199px) {
+  .navbar {
+    margin-bottom: 0px !important;
+  }
+  .zazous-nav-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: -19px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    margin: 0;
+    margin-top: 10px;
+  }
   .navbar-expand-xl {
-    justify-content: space-around !important;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0 !important;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .dropdown-item {
+    text-align: center;
+    position: sticky;
+  }
+  .toggle-menu {
+    width: 100%;
   }
 }
 

@@ -177,10 +177,10 @@ const WriteReview = () => {
                   </label>
                 </div>
               </div>
-              <div className="form-btn-container d-flex justify-content-center">
+              <div className="form-btn-container d-flex justify-content-center write-review-animation write-review-animation-8">
                 <button
                   type="submit"
-                  className="contact-btn btn btn-primary mt-2 write-review-animation write-review-animation-8"
+                  className="contact-btn btn btn-primary mt-2 "
                 >
                   Send your Feedback
                 </button>

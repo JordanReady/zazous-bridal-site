@@ -92,10 +92,10 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="form-btn-container d-flex justify-content-center">
+            <div className="form-btn-container d-flex justify-content-center contact-animation contact-animation-10">
               <button
                 type="submit"
-                className="contact-btn btn btn-primary mt-2 contact-animation contact-animation-10"
+                className="contact-btn btn btn-primary mt-2 "
               >
                 Submit
               </button>

@@ -74,7 +74,9 @@ const SuitsTuxedos = () => {
           />
         </div>
       </div>
-      <ScheduleAppointmentBtn customClass="suits-tuxedos-btn mt-3 suits-tuxedos-animation suits-tuxedos-animation-8" />
+      <div className="suits-tuxedos-animation suits-tuxedos-animation-8">
+        <ScheduleAppointmentBtn customClass="suits-tuxedos-btn mt-3 " />
+      </div>
     </div>
   );
 };

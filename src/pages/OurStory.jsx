@@ -40,12 +40,9 @@ const OurStory = () => {
             bride & groom dresses, tuxedos, prom dresses, jewelry, hair pieces,
             veils, and so much more!
           </p>
-
-          <ScheduleAppointmentBtn
-            customClass={
-              " our-story-btn our-story-animation our-story-animation-4"
-            }
-          />
+          <div className="our-story-animation our-story-animation-4">
+            <ScheduleAppointmentBtn customClass={" our-story-btn"} />
+          </div>
         </div>
       </div>
 
