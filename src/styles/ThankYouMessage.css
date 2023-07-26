@@ -10,6 +10,7 @@
   text-align: center;
   z-index: 999;
   font-size: 18px;
+  box-shadow: var(--shadow);
 }
 
 .thank-you-message-heading {

@@ -99,7 +99,8 @@ const ScheduleAppointment = () => {
   };
 
   const handlePhoneChange = (e) => {
-    setPhoneNumber(e.target.value);
+    const sanitizedValue = e.target.value.replace(/[^0-9]/g, "");
+    setPhoneNumber(sanitizedValue);
   };
 
   const handleEmailChange = (e) => {
@@ -269,6 +270,7 @@ const ScheduleAppointment = () => {
                     contactType={contactType}
                     mailingList={mailingList}
                     textAlerts={textAlerts}
+                    firstName={firstName}
                   />
                 </div>
               </div>
@@ -460,6 +462,8 @@ const ScheduleAppointment = () => {
                 className="form-control"
                 placeholder="(555) 555-5555"
                 id="phoneNumber"
+                pattern="[0-9]*"
+                inputMode="numeric"
                 value={phoneNumber}
                 onChange={handlePhoneChange}
                 required

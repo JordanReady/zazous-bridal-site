@@ -5,6 +5,10 @@
   width: 260px;
 }
 
+.contact-store-info-row {
+  display: flex;
+}
+
 .contact-btn {
   font-family: var(--secondary-font);
   margin-top: 10px;
@@ -62,6 +66,9 @@ textarea:focus {
 
 /* screen sizes */
 @media (max-width: 768px) {
+  .contact-row {
+    flex-direction: column-reverse;
+  }
   .contact-logo-container {
     margin-top: 1rem;
   }
@@ -116,10 +123,13 @@ textarea:focus {
   animation: slideInRightSlow 0.75s ease-in-out forwards 1.2s;
 }
 .contact-animation-11 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1.4s;
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.3s;
 }
 .contact-animation-12 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1.5s;
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.6s;
+}
+.contact-animation-13 {
+  animation: slideInRightSlow 0.75s ease-in-out forwards 1.7s;
 }
 
 @keyframes slideInLeftSlow {

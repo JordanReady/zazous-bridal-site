@@ -11,4 +11,6 @@ export { default as HeroCarousel } from "./HeroCarousel";
 export { default as DressCard } from "./DressCard";
 export { default as HeroCarouselItem } from "./HeroCarouselItem";
 export { default as ThankYouMessage } from "./ThankYouMessage";
+export { default as ThankYouContactMessage } from "./ThankYouContactMessage";
+export { default as ThankYouReviewMessage } from "./ThankYouReviewMessage";
 export { default as PageHeading } from "./PageHeading";

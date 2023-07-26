@@ -1,0 +1,11 @@
+.thank-you-review-message {
+  width: 60%;
+  box-shadow: var(--shadow);
+}
+
+/* screen size */
+@media (max-width: 768px) {
+  .thank-you-review-message {
+    width: 90%;
+  }
+}

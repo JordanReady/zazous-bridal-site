@@ -1,0 +1,11 @@
+.thank-you-contact-message {
+  width: 100%;
+  box-shadow: var(--shadow);
+  margin-bottom: 18rem;
+}
+
+@media (max-width: 991px) {
+  .thank-you-contact-message {
+    margin-bottom: 1rem;
+  }
+}

@@ -13,11 +13,22 @@ const ThankYouMessage = ({
   contactType,
   mailingList,
   textAlerts,
+  firstName,
 }) => {
+  firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+  if (phoneNumber.length === 10) {
+    phoneNumber = phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
+  } else if (phoneNumber.charAt(0) === "1" && phoneNumber.length === 11) {
+    phoneNumber = phoneNumber.replace(
+      /(\d{1})(\d{3})(\d{3})(\d{4})/,
+      "+$1-$2-$3-$4"
+    );
+  }
+
   return (
     <div className="thank-you-message thank-you-animation thank-you-animation-start">
       <h2 className="thank-you-message-heading thank-you-animation thank-you-animation-1">
-        Thank You!
+        Thank You {firstName}!
       </h2>
       <p className="thank-you-animation thank-you-animation-2">
         Your appointment request has been submitted successfully.
