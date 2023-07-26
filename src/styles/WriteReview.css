@@ -42,25 +42,25 @@
   animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
 .write-review-animation-2 {
-  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.4s;
+  animation: slideInLeftSlow 1.2s ease-in-out forwards 0.2s;
 }
 .write-review-animation-3 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 0.6s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 0.6s;
 }
 .write-review-animation-4 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 0.8s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 0.8s;
 }
 .write-review-animation-5 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 1s;
 }
 .write-review-animation-6 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1.2s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 1.2s;
 }
 .write-review-animation-7 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1.4s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 1.4s;
 }
 .write-review-animation-8 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 1.6s;
+  animation: slideInRightSlow 0.8s ease-in-out forwards 1.6s;
 }
 
 @keyframes slideInLeftSlow {

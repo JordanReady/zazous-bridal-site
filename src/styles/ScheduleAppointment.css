@@ -67,6 +67,10 @@
 form {
   font-family: var(--secondary-font);
 }
+.form-label {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
 
 input,
 select {

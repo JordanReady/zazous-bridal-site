@@ -62,6 +62,8 @@ textarea:focus {
 
 .contact-form label {
   color: black;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
 }
 
 /* screen sizes */

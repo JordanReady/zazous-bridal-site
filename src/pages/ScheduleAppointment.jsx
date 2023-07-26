@@ -323,7 +323,7 @@ const ScheduleAppointment = () => {
           >
             <div className="row" ref={appointmentRowRef}>
               <div className="col-6 col-md-8">
-                <div className="mb-3">
+                <div className="">
                   <label htmlFor="appointmentType" className="form-label">
                     Appointment Type <span className="required-label ">*</span>
                   </label>
@@ -345,7 +345,7 @@ const ScheduleAppointment = () => {
               </div>
               <div className="col-6 col-md-4">
                 <div
-                  className="mb-3 date-picker-row"
+                  className=" date-picker-row"
                   onClick={handleScrollTopOfForm}
                 >
                   <label htmlFor="appointmentDate" className="form-label">
@@ -405,7 +405,7 @@ const ScheduleAppointment = () => {
                 </div>
               </div>
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="appointmentTime" className="form-label">
                 Appointment Time <span className="required-label ">*</span>
               </label>
@@ -453,7 +453,7 @@ const ScheduleAppointment = () => {
                 />
               </div>
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="phoneNumber" className="form-label">
                 Phone Number <span className="required-label ">*</span>
               </label>
@@ -469,7 +469,7 @@ const ScheduleAppointment = () => {
                 required
               />
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="email" className="form-label">
                 Email <span className="required-label ">*</span>
               </label>
@@ -483,7 +483,7 @@ const ScheduleAppointment = () => {
                 required
               />
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="budget" className="form-label">
                 Budget <span className="required-label ">*</span>
               </label>
@@ -501,7 +501,7 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="hearAboutUs" className="form-label">
                 How did you hear about us?
               </label>
@@ -518,7 +518,7 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="numPeopleJoining" className="form-label">
                 Number of People Joining You
               </label>
@@ -531,7 +531,7 @@ const ScheduleAppointment = () => {
                 onChange={handleNumberPeopleChange}
               />
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="bestContactMethod" className="form-label">
                 Best Contact Method
               </label>
@@ -621,7 +621,7 @@ const ScheduleAppointment = () => {
                 />
               </div>
             </div>
-            <div className="mb-3">
+            <div className="">
               <label htmlFor="questionsComments" className="form-label">
                 Questions and Comments
               </label>
@@ -634,7 +634,7 @@ const ScheduleAppointment = () => {
                 onChange={(e) => setComments(e.target.value)}
               />
             </div>
-            <div className="mb-3 notification-preferences-container d-flex flex-wrap justify-content-center">
+            <div className=" notification-preferences-container d-flex flex-wrap justify-content-center">
               <label className="form-label">Notification Preferences</label>
               <div className="form-check">
                 <input

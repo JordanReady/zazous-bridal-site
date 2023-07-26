@@ -107,7 +107,7 @@ const Contact = () => {
             <form className="contact-form contact-animation contact-animation-3">
               <div className="form-row name-row d-flex">
                 <div className="col-md-6 contact-animation contact-animation-4">
-                  <label htmlFor="firstName ">
+                  <label htmlFor="firstName">
                     First Name <span className="required-label ">*</span>
                   </label>
                   <input
