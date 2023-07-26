@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../assets/Logos/Logo-outline-thicc.png";
+import Logo from "../assets/Logos/Logo-Nav.png";
 
 import "../styles/CustomNavbar.css";
 
