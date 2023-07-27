@@ -105,6 +105,86 @@ const reviews = [
     publish: true,
     datePublished: "March 2023",
   },
+  {
+    firstName: "Mollie ",
+    lastName: "Hammer ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "Maddie was amazing! She asked important questions regarding the vibe and feel of my wedding and gave sincere and kind advice. I felt so beautiful throughout the appointment. I would 100% recommend Zazou's for any brides looking for their perfect dress!",
+    publish: true,
+    datePublished: "March 2023",
+  },
+  {
+    firstName: "Laura",
+    lastName: "Behnke",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "Maddie was very helpful. Although I already have a dress that will work better than the discounted dresses tried on, Maddie also presented options of accessories that could make what I have be my special dress. She was friendly and made me feel welcome and that she valued my time. I’d recommend her.",
+    publish: true,
+    datePublished: "February 2023",
+  },
+  {
+    firstName: "Sadie ",
+    lastName: "Holmes ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "Truly couldn’t have asked for a better experience! Maddy was amazing and made me feel so special and beautiful!! Highly recommend finding your dream dress at Zazou’s.",
+    publish: true,
+    datePublished: "February 2023",
+  },
+  {
+    firstName: "Sadie ",
+    lastName: "Holmes ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "Super kind, and we’re really helpful. So many pretty dresses. 100% recommend.",
+    publish: false,
+    datePublished: "February 2023",
+  },
+  {
+    firstName: "Dawn ",
+    lastName: "Galle ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "I had an amazing experience. Being a plus size bride to be I was worried that nothing would fit me. I was pleasantly surprised at the large selection of plus size wedding dresses. They have a stage with mirrors all around so I could see the dress from every angle. We loved Ali, she was so helpful and really listened to what I wanted in a dress. I walked out with my dream dress!! I would definitely recommend Zazous, especially if you are looking for larger sizes. You don't have to settle if you are plus sized. This is the place to find your dress!!",
+    publish: true,
+    datePublished: "February 2023",
+  },
+  {
+    firstName: "Melissa ",
+    lastName: "Gehl ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "Great selection in prom dresses. So many colors to chose from. Awesome help from the workers and helped me chose the perfect dress.",
+    publish: true,
+    datePublished: "February 2023",
+  },
+  {
+    firstName: "Clarissa ",
+    lastName: "Smith ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "I loved my experience at Zazous!! I didn't feel any pressure to pick a dress. My consultant was amazing and knew exactly what dress I would want. :)",
+    publish: true,
+    datePublished: "January 2023",
+  },
+  {
+    firstName: "Danielle ",
+    lastName: "Felderman ",
+    role: "Bride",
+    rating: 5,
+    feedback:
+      "I had a great experience, everyone was so great to work with. They gave honest feedback and really knew what they were talking about. They definitely made saying yes to the dress fun, easy and enjoyable!! Can’t say thank you enough!",
+    publish: true,
+    datePublished: "January 2023",
+  },
 ];
 
 const RaveReviews = () => {

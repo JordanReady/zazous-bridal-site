@@ -27,6 +27,8 @@
 .rave-review-hr {
   margin-top: 0;
   margin-bottom: 0.25rem;
+  color: var(--primary-color);
+  opacity: 1;
 }
 
 .rave-review-title {
