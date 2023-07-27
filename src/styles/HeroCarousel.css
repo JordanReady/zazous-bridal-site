@@ -147,6 +147,13 @@ li .active {
     padding-right: 20px;
     padding-left: 15px;
   }
+  .carousel-caption {
+    opacity: 0.2;
+    width: 75%;
+  }
+  .carousel-caption .caption-text {
+    font-size: 14px;
+  }
 }
 
 /* animations */
