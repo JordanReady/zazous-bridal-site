@@ -212,7 +212,6 @@ const Contact = () => {
                   src={Logo}
                   alt="Logo"
                   className="logo-image contact-animation contact-animation-12"
-                  style={{ "--i": 7 }}
                 />
               </div>
             </div>

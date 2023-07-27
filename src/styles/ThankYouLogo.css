@@ -1,0 +1,7 @@
+.thank-you-logo-image {
+  object-fit: cover;
+  height: 90px;
+  width: 90px;
+  border: 2px dashed var(--primary-color);
+  border-radius: 50%;
+}

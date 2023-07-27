@@ -21,15 +21,17 @@ const ThankYouReviewMessage = ({ firstName, rating, publish }) => {
   }
 
   return (
-    <div className="thank-you-message thank-you-animation thank-you-animation-start thank-you-review-message">
-      <h2 className="thank-you-message-heading thank-you-animation thank-you-animation-1">
+    <div className="thank-you-message thank-you-review-animation thank-you-review-animation-start thank-you-review-message">
+      <h2 className="thank-you-message-heading thank-you-review-animation thank-you-review-animation-1 mb-3">
         Thank You {firstName}!
       </h2>
-      <p className="thank-you-animation thank-you-animation-2">
+      <p className="thank-you-review-animation thank-you-review-animation-2">
         Your {rating} star review has been submitted!
       </p>
-      <p className="thank-you-animation thank-you-animation-3">{message}</p>
-      <p className="thank-you-animation thank-you-animation-4">
+      <p className="thank-you-review-animation thank-you-review-animation-3">
+        {message}
+      </p>
+      <p className="thank-you-review-animation thank-you-review-animation-4">
         {publish
           ? "Thank you for allowing us to publish your review! We greatly appriciate your feedback!"
           : "We will not publish your review per your request. We greatly appriciate your feedback!"}

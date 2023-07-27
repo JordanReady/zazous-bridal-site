@@ -1,11 +1,106 @@
 .thank-you-contact-message {
   width: 100%;
   box-shadow: var(--shadow);
-  margin-bottom: 18rem;
+  height: 335px;
+  margin-bottom: 6rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.thank-you-contact-message-heading {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
 }
 
 @media (max-width: 991px) {
   .thank-you-contact-message {
     margin-bottom: 1rem;
+  }
+}
+
+/* animations */
+
+.thank-you-contact-animation {
+  opacity: 0;
+}
+.thank-you-contact-animation-start {
+  animation: slideInUpSlow 0.75s ease-in-out forwards;
+}
+.thank-you-contact-animation-1 {
+  animation: slideUpPopAnimation 0.75s ease-in-out forwards 0.8s;
+}
+.thank-you-contact-animation-2 {
+  animation: slideInUpSlow 0.5s ease-in-out forwards 1s;
+}
+.thank-you-contact-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.thank-you-contact-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+
+@keyframes slideInLeftSlow {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightSlow {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

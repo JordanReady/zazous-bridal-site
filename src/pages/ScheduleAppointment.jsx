@@ -321,27 +321,28 @@ const ScheduleAppointment = () => {
             onSubmit={handleSubmit}
             className="schedule-your-appointment-animation schedule-your-appointment-animation-5"
           >
-            <div className="row" ref={appointmentRowRef}>
+            <div
+              className="row schedule-your-appointment-animation schedule-your-appointment-animation-7"
+              ref={appointmentRowRef}
+            >
               <div className="col-6 col-md-8">
-                <div className="">
-                  <label htmlFor="appointmentType" className="form-label">
-                    Appointment Type <span className="required-label ">*</span>
-                  </label>
-                  <select
-                    className="form-control"
-                    id="appointmentType"
-                    value={appointmentType}
-                    onChange={handleAppointmentTypeChange}
-                    onClick={handleScrollTopOfForm}
-                    required
-                  >
-                    {appointmentTypeOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                <label htmlFor="appointmentType" className="form-label">
+                  Appointment Type <span className="required-label ">*</span>
+                </label>
+                <select
+                  className="form-control"
+                  id="appointmentType"
+                  value={appointmentType}
+                  onChange={handleAppointmentTypeChange}
+                  onClick={handleScrollTopOfForm}
+                  required
+                >
+                  {appointmentTypeOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.name}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div className="col-6 col-md-4">
                 <div
@@ -351,61 +352,65 @@ const ScheduleAppointment = () => {
                   <label htmlFor="appointmentDate" className="form-label">
                     Appointment Date <span className="required-label ">*</span>
                   </label>
-                  <DatePicker
-                    className="custom-date-input"
-                    required
-                    inputMode="none"
-                    renderCustomHeader={({
-                      monthDate,
-                      customHeaderCount,
-                      decreaseMonth,
-                      increaseMonth,
-                    }) => (
-                      <div>
-                        <button
-                          aria-label="Previous Month"
-                          className="react-datepicker__navigation react-datepicker__navigation--previous"
-                          style={
-                            customHeaderCount === 1
-                              ? { visibility: "hidden" }
-                              : null
-                          }
-                          onClick={decreaseMonth}
-                        >
-                          <span className="react-datepicker__navigation-icon react-datepicker__navigation-icon--previous">
-                            {"<"}
+                  <div className="date-picker-container">
+                    <DatePicker
+                      className="custom-date-input"
+                      required
+                      inputMode="none"
+                      renderCustomHeader={({
+                        monthDate,
+                        customHeaderCount,
+                        decreaseMonth,
+                        increaseMonth,
+                      }) => (
+                        <div>
+                          <button
+                            aria-label="Previous Month"
+                            className="react-datepicker__navigation react-datepicker__navigation--previous"
+                            style={
+                              customHeaderCount === 1
+                                ? { visibility: "hidden" }
+                                : null
+                            }
+                            onClick={decreaseMonth}
+                          >
+                            <span className="react-datepicker__navigation-icon react-datepicker__navigation-icon--previous">
+                              {"<"}
+                            </span>
+                          </button>
+                          <span className="react-datepicker__current-month">
+                            {monthDate.toLocaleString("en-US", {
+                              month: "long",
+                              year: "numeric",
+                            })}
                           </span>
-                        </button>
-                        <span className="react-datepicker__current-month">
-                          {monthDate.toLocaleString("en-US", {
-                            month: "long",
-                            year: "numeric",
-                          })}
-                        </span>
-                        <button
-                          aria-label="Next Month"
-                          className="react-datepicker__navigation react-datepicker__navigation--next"
-                          style={
-                            customHeaderCount === 0
-                              ? { visibility: "hidden" }
-                              : null
-                          }
-                          onClick={increaseMonth}
-                        >
-                          <span className="react-datepicker__navigation-icon react-datepicker__navigation-icon--next">
-                            {">"}
-                          </span>
-                        </button>
-                      </div>
-                    )}
-                    selected={startDate}
-                    onChange={handleDateChange}
-                    monthsShown={2}
-                  />
+                          <button
+                            aria-label="Next Month"
+                            className="react-datepicker__navigation react-datepicker__navigation--next"
+                            style={
+                              customHeaderCount === 0
+                                ? { visibility: "hidden" }
+                                : null
+                            }
+                            onClick={increaseMonth}
+                          >
+                            <span className="react-datepicker__navigation-icon react-datepicker__navigation-icon--next">
+                              {">"}
+                            </span>
+                          </button>
+                        </div>
+                      )}
+                      selected={startDate}
+                      onChange={handleDateChange}
+                      monthsShown={2}
+                      popperPlacement="top"
+                      portalId="datepicker-portal"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-8">
               <label htmlFor="appointmentTime" className="form-label">
                 Appointment Time <span className="required-label ">*</span>
               </label>
@@ -423,7 +428,7 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="row g-2">
+            <div className="row g-2 schedule-your-appointment-animation schedule-your-appointment-animation-9">
               <div className="col">
                 <label htmlFor="firstName" className="form-label">
                   First Name <span className="required-label ">*</span>
@@ -453,7 +458,7 @@ const ScheduleAppointment = () => {
                 />
               </div>
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-10">
               <label htmlFor="phoneNumber" className="form-label">
                 Phone Number <span className="required-label ">*</span>
               </label>
@@ -469,7 +474,7 @@ const ScheduleAppointment = () => {
                 required
               />
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-11">
               <label htmlFor="email" className="form-label">
                 Email <span className="required-label ">*</span>
               </label>
@@ -483,7 +488,7 @@ const ScheduleAppointment = () => {
                 required
               />
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-12">
               <label htmlFor="budget" className="form-label">
                 Budget <span className="required-label ">*</span>
               </label>
@@ -501,7 +506,7 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-13">
               <label htmlFor="hearAboutUs" className="form-label">
                 How did you hear about us?
               </label>
@@ -518,20 +523,20 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-14">
               <label htmlFor="numPeopleJoining" className="form-label">
                 Number of People Joining You
               </label>
               <input
                 type="number"
                 className="form-control"
-                placeholder="Got friends?"
+                placeholder="Got company?"
                 id="numPeopleJoining"
                 value={numberPeople}
                 onChange={handleNumberPeopleChange}
               />
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-15">
               <label htmlFor="bestContactMethod" className="form-label">
                 Best Contact Method
               </label>
@@ -548,7 +553,7 @@ const ScheduleAppointment = () => {
                 ))}
               </select>
             </div>
-            <div className="row g-2">
+            <div className="row g-2 schedule-your-appointment-animation schedule-your-appointment-animation-16">
               <div className="col">
                 <label htmlFor="address1" className="form-label">
                   Address 1
@@ -576,7 +581,7 @@ const ScheduleAppointment = () => {
                 />
               </div>
             </div>
-            <div className="row g-2">
+            <div className="row g-2 schedule-your-appointment-animation schedule-your-appointment-animation-17">
               <div className="col">
                 <label htmlFor="city" className="form-label">
                   City
@@ -621,7 +626,7 @@ const ScheduleAppointment = () => {
                 />
               </div>
             </div>
-            <div className="">
+            <div className="schedule-your-appointment-animation schedule-your-appointment-animation-18">
               <label htmlFor="questionsComments" className="form-label">
                 Questions and Comments
               </label>
@@ -634,7 +639,7 @@ const ScheduleAppointment = () => {
                 onChange={(e) => setComments(e.target.value)}
               />
             </div>
-            <div className=" notification-preferences-container d-flex flex-wrap justify-content-center">
+            <div className=" notification-preferences-container d-flex flex-wrap justify-content-center schedule-your-appointment-animation schedule-your-appointment-animation-19">
               <label className="form-label">Notification Preferences</label>
               <div className="form-check">
                 <input
@@ -662,7 +667,7 @@ const ScheduleAppointment = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col text-center">
+              <div className="col text-center schedule-your-appointment-animation schedule-your-appointment-animation-20">
                 <button
                   type="submit"
                   className="btn btn-primary schedule-your-appointment-btn"
