@@ -62,6 +62,9 @@
 .write-review-animation-8 {
   animation: slideInRightSlow 0.8s ease-in-out forwards 1.6s;
 }
+.write-review-animation-9 {
+  animation: slideInRightSlow 0.8s ease-in-out forwards 1.8s;
+}
 
 @keyframes slideInLeftSlow {
   from {

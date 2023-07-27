@@ -12,8 +12,10 @@ const WriteReview = () => {
   const [feedback, setFeedback] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [role, setRole] = useState("");
   const [location, setLocation] = useState("");
   const [publishComments, setPublishComments] = useState(true);
+  const [datePublished, setDatePublished] = useState(new Date());
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
 
   const handleRatingChange = (newRating) => {
@@ -32,6 +34,25 @@ const WriteReview = () => {
     setLastName(event.target.value);
   };
 
+  const roleOptions = [
+    { value: "", label: "Select your role" },
+    { value: "Bride", label: "Bride" },
+    { value: "Groom", label: "Groom" },
+    { value: "Bridesmaid", label: "Bridesmaid" },
+    { value: "Groomsman", label: "Groomsman" },
+    { value: "Usher", label: "Usher" },
+    { value: "Personal Attendent", label: "Personal Attendent" },
+    { value: "Mohter of Bride", label: "Mohter of Bride" },
+    { value: "Mother of Groom", label: "Mother of Groom" },
+    { value: "Father of Bride", label: "Father of Bride" },
+    { value: "Father of Groom", label: "Father of Groom" },
+    { value: "Grandparent", label: "Grandparent" },
+    { value: "Vendor", label: "Vendor" },
+  ];
+  const handleRoleChange = (event) => {
+    setRole(event.target.value);
+  };
+
   const handleLocationChange = (event) => {
     setLocation(event.target.value);
   };
@@ -48,8 +69,10 @@ const WriteReview = () => {
     console.log("Feedback: " + feedback);
     console.log("First Name: " + firstName);
     console.log("Last Name: " + lastName);
+    console.log("Role: " + role);
     console.log("Location: " + location);
     console.log("Publish Comments: " + publishComments);
+    console.log("Date Published: " + datePublished);
     setShowThankYouMessage(true);
   };
 
@@ -163,6 +186,21 @@ const WriteReview = () => {
                     </div>
                   </div>
                   <div className="form-group write-review-animation write-review-animation-6">
+                    <label htmlFor="role">Role</label>
+                    <select
+                      className="form-control"
+                      id="role"
+                      value={role}
+                      onChange={handleRoleChange}
+                    >
+                      {roleOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="form-group write-review-animation write-review-animation-7">
                     <label htmlFor="location">Location</label>
                     <input
                       type="text"
@@ -172,7 +210,7 @@ const WriteReview = () => {
                       onChange={handleLocationChange}
                     />
                   </div>
-                  <div className="form-group write-review-animation write-review-animation-7">
+                  <div className="form-group write-review-animation write-review-animation-8">
                     <label htmlFor="publishComments">
                       May we publish your comments?
                     </label>
@@ -189,7 +227,7 @@ const WriteReview = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="form-btn-container d-flex justify-content-center write-review-animation write-review-animation-8">
+                  <div className="form-btn-container d-flex justify-content-center write-review-animation write-review-animation-9">
                     <button
                       type="submit"
                       className="contact-btn btn btn-primary mt-2 "

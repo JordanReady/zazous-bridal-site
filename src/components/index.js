@@ -15,3 +15,5 @@ export { default as ThankYouMessage } from "./ThankYouMessage";
 export { default as ThankYouContactMessage } from "./ThankYouContactMessage";
 export { default as ThankYouReviewMessage } from "./ThankYouReviewMessage";
 export { default as ThankYouLogo } from "./ThankYouLogo";
+
+export { default as RaveReviewDisplay } from "./RaveReviewDisplay";

@@ -1,0 +1,51 @@
+.rave-reviews-text {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+
+/* screen size */
+@media screen and (min-width: 992px) {
+  .rave-reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* For tablet-sized screens (2 reviews in a row) */
+@media screen and (max-width: 991px) {
+  .rave-reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* For mobile screens (1 review in a row) */
+@media screen and (max-width: 767px) {
+  .rave-reviews-container {
+    display: block;
+  }
+}
+
+/* animations */
+.rave-review-animation {
+  opacity: 0;
+}
+
+.rave-review-animation {
+  animation: slideInUpSlow 0.75s ease-out forwards;
+  animation-delay: calc(0.6s + 0.2s * var(--i));
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
