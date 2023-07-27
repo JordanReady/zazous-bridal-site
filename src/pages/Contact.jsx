@@ -199,7 +199,7 @@ const Contact = () => {
                   className="contact-btn btn btn-primary mt-2 "
                   onClick={handleSubmit}
                 >
-                  Submit
+                  Send Your Message
                 </button>
               </div>
             </form>
