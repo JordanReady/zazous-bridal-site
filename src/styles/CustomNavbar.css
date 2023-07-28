@@ -38,7 +38,8 @@
 .navbar-brand {
   font-size: 35px;
   color: var(--primary-color);
-  text-shadow: var(--text-shadow);
+  /* text-shadow: var(--text-shadow); */
+  /* font-weight: bold; */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -19,7 +19,7 @@
 
 .custom-date-input {
   background-color: white;
-  color: var(--secondary-color);
+  color: black;
   border: 1px solid var(--border-color);
   width: 100%;
   font-size: 16px;
