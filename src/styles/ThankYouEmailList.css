@@ -1,25 +1,50 @@
-.page-heading {
-  /* font-style: italic; */
+.thank-you-email-list {
+  width: 700px;
+  box-shadow: var(--shadow);
+  height: 335px;
+  margin-bottom: 6rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.thank-you-email-list-heading {
   color: var(--primary-color);
-  animation: slidInUpSlow 0.5s ease-in;
+  font-family: var(--primary-font);
+}
+
+@media (max-width: 991px) {
+  .thank-you-email-list {
+    margin-bottom: 1rem;
+  }
+}
+
+/* screen size */
+
+@media (max-width: 991px) {
+  .thank-you-email-list {
+    width: 100%;
+  }
 }
 
 /* animations */
 
-.page-heading-animation {
+.thank-you-email-list-animation {
   opacity: 0;
 }
-.page-heading-animation-1 {
-  animation: slideInUpSlow 0.75s ease-in-out forwards 0.2s;
+.thank-you-email-list-animation-start {
+  animation: slideInUpSlow 0.75s ease-in-out forwards;
 }
-.left {
-  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s !important;
+.thank-you-email-list-animation-1 {
+  animation: slideUpPopAnimation 1s ease-in-out forwards 0.85s;
 }
-.right {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 0.2s !important;
+.thank-you-email-list-animation-2 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.05s;
 }
-.down {
-  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s !important;
+.thank-you-email-list-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.25s;
 }
 
 @keyframes slideInLeftSlow {
