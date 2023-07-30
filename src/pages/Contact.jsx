@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { StoreHours, StoreInfo, StoreAwards } from "../components";
-import Logo from "../assets/Logos/Zazous-logo-1.jpg";
+import Logo from "../assets/Logos/Zazous-logo-2.png";
 
 import "../styles/Contact.css";
 

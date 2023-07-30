@@ -90,7 +90,7 @@ const Bridal = () => {
             image={Img7}
             designer={"Justin Alexander"}
             collection={"Signature"}
-            link={"https://allurebridals.com/wilderly-bride"}
+            link={"https://www.justinalexander.com/justin-alexander-signature/"}
           />
         </div>
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-10 d-flex justify-content-center">
@@ -98,7 +98,9 @@ const Bridal = () => {
             image={Img8}
             designer={"Justin Alexander"}
             collection={"Sincerity"}
-            link={"https://allurebridals.com/abella"}
+            link={
+              "https://www.justinalexander.com/sincerity-bridal/collection/wedding-dresses/"
+            }
           />
         </div>
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-11 d-flex justify-content-center">
@@ -106,7 +108,7 @@ const Bridal = () => {
             image={Img9}
             designer={"Justin Alexander"}
             collection={"Adore"}
-            link={"http://www.allurebridals.com/category/allure"}
+            link={"https://www.justinalexander.com/adore-justin-alexander/"}
           />
         </div>
       </div>
@@ -116,7 +118,7 @@ const Bridal = () => {
             image={Img10}
             designer={"Maggie Sottero"}
             collection={"Maggie Sottero"}
-            link={"https://allurebridals.com/wilderly-bride"}
+            link={"https://www.maggiesottero.com/"}
           />
         </div>
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-13 d-flex justify-content-center">
@@ -124,15 +126,17 @@ const Bridal = () => {
             image={Img11}
             designer={"Maggie Sottero"}
             collection={"Sottero & Midgley"}
-            link={"https://allurebridals.com/abella"}
+            link={
+              "https://www.maggiesottero.com/find-your-style#page=sottero-and-midgley"
+            }
           />
         </div>
         <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-14 d-flex justify-content-center">
           <DressCard
             image={Img12}
-            designer={"Justin Alexander"}
+            designer={"Maggie Sottero"}
             collection={"Rebecca Ingram"}
-            link={"http://www.allurebridals.com/category/allure"}
+            link={"https://www.maggiesottero.com/find-your-style#designers=3-4"}
           />
         </div>
       </div>

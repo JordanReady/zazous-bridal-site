@@ -35,7 +35,7 @@ const FlowerGirl = () => {
             image={Img1}
             designer={"Rosebud Fashion"}
             collection={"flowergirl"}
-            link={"http://www.rosebudfashions.com/collection.html"}
+            link={"https://rosebudfashions.com/"}
             customClass={"flowergirl-card"}
           />
         </div>
@@ -44,7 +44,7 @@ const FlowerGirl = () => {
             image={Img2}
             designer={"Rosebud Fashion"}
             collection={"flowergirl"}
-            link={"http://www.rosebudfashions.com/collection.html"}
+            link={"https://rosebudfashions.com/"}
             customClass={"flowergirl-card"}
           />
         </div>
@@ -53,7 +53,7 @@ const FlowerGirl = () => {
             image={Img3}
             designer={"Rosebud Fashion"}
             collection={"flowergirl"}
-            link={"http://www.rosebudfashions.com/collection.html"}
+            link={"https://rosebudfashions.com/"}
             customClass={"flowergirl-card"}
           />
         </div>
@@ -62,7 +62,7 @@ const FlowerGirl = () => {
             image={Img4}
             designer={"Rosebud Fashion"}
             collection={"flowergirl"}
-            link={"http://www.rosebudfashions.com/collection.html"}
+            link={"https://rosebudfashions.com/"}
             customClass={"flowergirl-card"}
           />
         </div>

@@ -28,7 +28,7 @@ const Prom = () => {
           <DressCard
             image={Img1}
             designer={"Faviana"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://www.faviana.com/prom-dresses.html"}
           />
         </div>
@@ -36,7 +36,7 @@ const Prom = () => {
           <DressCard
             image={Img2}
             designer={"Faviana"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://www.faviana.com/prom-dresses.html"}
           />
         </div>
@@ -44,7 +44,7 @@ const Prom = () => {
           <DressCard
             image={Img3}
             designer={"Faviana"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://www.faviana.com/prom-dresses.html"}
           />
         </div>
@@ -54,7 +54,7 @@ const Prom = () => {
           <DressCard
             image={Img4}
             designer={"Dave & Johnny"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://daveandjohnny.com/collections/prom-2023"}
           />
         </div>
@@ -62,7 +62,7 @@ const Prom = () => {
           <DressCard
             image={Img5}
             designer={"Dave & Johnny"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://daveandjohnny.com/collections/prom-2023"}
           />
         </div>
@@ -70,7 +70,7 @@ const Prom = () => {
           <DressCard
             image={Img6}
             designer={"Dave & Johnny"}
-            collection={"prom"}
+            collection={"Prom"}
             link={"https://daveandjohnny.com/collections/prom-2023"}
           />
         </div>

@@ -29,7 +29,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
         <a
-          href="https://www.pinterest.com/ZazousBridal/"
+          href="https://www.pinterest.com/ZazousBridalBoutique/"
           target="_blank"
           className="social-button pinterest"
         >

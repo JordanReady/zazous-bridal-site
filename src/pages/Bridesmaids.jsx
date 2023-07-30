@@ -42,7 +42,7 @@ const Bridesmaids = () => {
             image={Img1}
             designer={"Allure"}
             collection={"Bridesmaids"}
-            link={"http://www.allurebridals.com/category/bridesmaids"}
+            link={"https://allurebridals.com/collections/bridesmaids/"}
           />
         </div>
         <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-4 d-flex justify-content-center">
