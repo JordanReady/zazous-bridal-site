@@ -17,12 +17,6 @@ const Footer = () => {
 
   return (
     <footer>
-      <button
-        className="back-to-top-btn btn mt-0 mb-3"
-        onClick={handleScrollToTop}
-      >
-        Back to Top
-      </button>
       <div className="social-buttons">
         <a
           href="https://www.facebook.com/zazousbridalboutique/"
@@ -31,7 +25,7 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a href="/contact" className="social-button email">
+        <a href="#/contact" className="social-button email">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
         <a
@@ -49,6 +43,12 @@ const Footer = () => {
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
+      <button
+        className="back-to-top-btn btn mt-0 mb-3"
+        onClick={handleScrollToTop}
+      >
+        Back to Top
+      </button>
       <div className="logo-container">
         <img src={ChamberLogo} alt="Logo" />
       </div>

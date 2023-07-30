@@ -76,9 +76,12 @@ footer {
     box-shadow: var(--shadow);
     color: white;
     transition: all ease-in-out 0.3s;
-    margin-bottom: 1.75rem !important;
+    margin-top: 1.25rem !important;
   }
   .back-to-top-btn:hover {
     transform: translateY(-3px);
+  }
+  .logo-container {
+    margin-top: 0rem !important;
   }
 }

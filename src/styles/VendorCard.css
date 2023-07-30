@@ -9,7 +9,7 @@
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: center;
-  animation: slideLeft 0.7s ease-in-out forwards;
+  animation: slideInDownSlow 0.7s ease-in-out forwards 0.25s;
 }
 
 .vendor-card {
@@ -56,6 +56,17 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInDownSlow {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

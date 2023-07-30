@@ -4,7 +4,7 @@ import MeasurementPic from "../assets/logos/Measurement.png";
 
 import "../styles/HowToMeasureYourself.css";
 
-import { PageHeading } from "../components";
+import { PageHeading, ScheduleAppointmentBtn } from "../components";
 
 const HowToMeasureYourself = () => {
   return (
@@ -99,6 +99,9 @@ const HowToMeasureYourself = () => {
             size.
           </li>
         </ol>
+        <div className="measure-page measure-page-animation-9 measure-btn-container">
+          <ScheduleAppointmentBtn link={"#/contact"} text={"Contact Us"} />
+        </div>
       </div>
     </div>
   );

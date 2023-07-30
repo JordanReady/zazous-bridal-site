@@ -39,6 +39,12 @@
   font-size: 24px;
 }
 
+.measure-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
 /* screen size */
 
 @media (max-width: 768px) {
@@ -65,6 +71,10 @@
   .where-to-measure-list li {
     margin-bottom: -1rem !important;
   }
+  .measure-btn-container {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* animations */
@@ -74,10 +84,10 @@
 }
 
 .measure-page-animation-2 {
-  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.2s;
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
 .measure-page-animation-3 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 0.4s;
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.4s;
 }
 .measure-page-animation-4 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 0.6s;
