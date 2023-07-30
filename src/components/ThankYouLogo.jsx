@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logos/Zazous-logo-2.png";
+import Logo from "../assets/Logos/Zazous-logo.png";
 
 import "../styles/ThankYouLogo.css";
 
