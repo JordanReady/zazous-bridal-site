@@ -130,12 +130,14 @@ li .active {
     max-height: 220px;
   }
   .carousel-indicators {
-    bottom: -75px;
+    bottom: -65px;
     margin: 0;
+    max-width: 515px !important;
   }
   .carousel-indicators li {
     margin: 0;
-    height: 60px !important;
+    height: 50px !important;
+    width: 17vw !important;
   }
   .carousel-control-prev-icon {
     padding-top: 40px;
