@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Img1 from "../assets/carousel/carousel-img-1.jpg";
 import Img2 from "../assets/carousel/carousel-img-2.jpg";
 import Img3 from "../assets/carousel/carousel-img-3.jpg";
@@ -12,13 +11,58 @@ import "../styles/HeroCarousel.css";
 import { HeroCarouselItem } from "../components";
 
 const HeroCarousel = () => {
+  const carouselRef = useRef(null);
+  let carousel;
+
+  useEffect(() => {
+    const loadCarouselScript = async () => {
+      // Dynamically import the Bootstrap JS script
+      const bootstrap = await import(
+        "bootstrap/dist/js/bootstrap.bundle.min.js"
+      );
+      // Initialize the carousel once the script is loaded
+      const carouselElement = carouselRef.current;
+      carousel = new bootstrap.Carousel(carouselElement, {
+        pause: "false",
+        interval: 4000,
+      });
+      // Make the carousel available in the console for debugging
+      window.carousel = carousel;
+
+      // Start automatic slide change
+      startAutomaticSlideChange();
+    };
+
+    loadCarouselScript();
+
+    // Clear the interval and dispose the carousel when the component unmounts
+    return () => {
+      if (carousel) {
+        clearInterval(carousel.interval);
+        carousel.dispose();
+      }
+    };
+  }, []);
+
+  const startAutomaticSlideChange = () => {
+    // Clear previous interval if any
+    clearInterval(carousel.interval);
+    // Start a new interval for automatic slide change
+    carousel.interval = setInterval(() => {
+      carousel.next();
+    }, 4000);
+  };
+
+  const handleCarouselControlClick = () => {
+    startAutomaticSlideChange();
+  };
+
   return (
     <>
       <div
         className="carousel slide carousel-fade"
-        data-bs-ride="carousel"
+        ref={carouselRef}
         data-bs-pause="false"
-        data-bs-interval="4000"
       >
         <div className="carousel-inner">
           <div className="carousel-item active ratio-4x3">
@@ -49,6 +93,7 @@ const HeroCarousel = () => {
           href=".carousel"
           role="button"
           data-bs-slide="prev"
+          onClick={handleCarouselControlClick}
         >
           <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="visually-hidden">Previous</span>
@@ -58,6 +103,7 @@ const HeroCarousel = () => {
           href=".carousel"
           role="button"
           data-bs-slide="next"
+          onClick={handleCarouselControlClick}
         >
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
@@ -68,26 +114,31 @@ const HeroCarousel = () => {
             data-bs-slide-to="0"
             className="active"
             style={{ backgroundImage: `url(${Img1})`, "--i": 2 }}
+            onClick={handleCarouselControlClick}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="1"
             style={{ backgroundImage: `url(${Img2})`, "--i": 3 }}
+            onClick={handleCarouselControlClick}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="2"
             style={{ backgroundImage: `url(${Img3})`, "--i": 4 }}
+            onClick={handleCarouselControlClick}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="3"
             style={{ backgroundImage: `url(${Img4})`, "--i": 5 }}
+            onClick={handleCarouselControlClick}
           />
           <li
             data-bs-target=".carousel"
             data-bs-slide-to="4"
             style={{ backgroundImage: `url(${Img5})`, "--i": 6 }}
+            onClick={handleCarouselControlClick}
           />
         </ol>
       </div>
