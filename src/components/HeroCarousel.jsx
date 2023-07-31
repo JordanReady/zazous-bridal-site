@@ -109,37 +109,47 @@ const HeroCarousel = () => {
           <span className="visually-hidden">Next</span>
         </a>
         <ol className="carousel-indicators thumbnail-imgs">
-          <li
-            data-bs-target=".carousel"
-            data-bs-slide-to="0"
-            className="active"
-            style={{ backgroundImage: `url(${Img1})`, "--i": 2 }}
-            onClick={handleCarouselControlClick}
-          />
-          <li
-            data-bs-target=".carousel"
-            data-bs-slide-to="1"
-            style={{ backgroundImage: `url(${Img2})`, "--i": 3 }}
-            onClick={handleCarouselControlClick}
-          />
-          <li
-            data-bs-target=".carousel"
-            data-bs-slide-to="2"
-            style={{ backgroundImage: `url(${Img3})`, "--i": 4 }}
-            onClick={handleCarouselControlClick}
-          />
-          <li
-            data-bs-target=".carousel"
-            data-bs-slide-to="3"
-            style={{ backgroundImage: `url(${Img4})`, "--i": 5 }}
-            onClick={handleCarouselControlClick}
-          />
-          <li
-            data-bs-target=".carousel"
-            data-bs-slide-to="4"
-            style={{ backgroundImage: `url(${Img5})`, "--i": 6 }}
-            onClick={handleCarouselControlClick}
-          />
+          <div className="carousel-animation carousel-animation-1">
+            <li
+              data-bs-target=".carousel"
+              data-bs-slide-to="0"
+              className="active"
+              style={{ backgroundImage: `url(${Img1})`, "--i": 2 }}
+              onClick={handleCarouselControlClick}
+            />
+          </div>
+          <div className="carousel-animation carousel-animation-2">
+            <li
+              data-bs-target=".carousel"
+              data-bs-slide-to="1"
+              style={{ backgroundImage: `url(${Img2})`, "--i": 3 }}
+              onClick={handleCarouselControlClick}
+            />
+          </div>
+          <div className="carousel-animation carousel-animation-3">
+            <li
+              data-bs-target=".carousel"
+              data-bs-slide-to="2"
+              style={{ backgroundImage: `url(${Img3})`, "--i": 4 }}
+              onClick={handleCarouselControlClick}
+            />
+          </div>
+          <div className="carousel-animation carousel-animation-4">
+            <li
+              data-bs-target=".carousel"
+              data-bs-slide-to="3"
+              style={{ backgroundImage: `url(${Img4})`, "--i": 5 }}
+              onClick={handleCarouselControlClick}
+            />
+          </div>
+          <div className="carousel-animation carousel-animation-5">
+            <li
+              data-bs-target=".carousel"
+              data-bs-slide-to="4"
+              style={{ backgroundImage: `url(${Img5})`, "--i": 6 }}
+              onClick={handleCarouselControlClick}
+            />
+          </div>
         </ol>
       </div>
       <div className="thumbnail-spacer"></div>

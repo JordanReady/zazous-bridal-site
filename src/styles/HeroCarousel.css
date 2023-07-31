@@ -157,6 +157,25 @@ li .active {
 }
 
 /* animations */
+.carousel-animation {
+  opacity: 0;
+}
+.carousel-animation-1 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 0.8s;
+}
+.carousel-animation-2 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
+}
+.carousel-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
+}
+.carousel-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.carousel-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.6s;
+}
+
 .carousel-item.slide-from-left {
   transform: translateX(-100%);
 }
