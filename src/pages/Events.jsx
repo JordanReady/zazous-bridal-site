@@ -14,7 +14,6 @@ const Events = () => {
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [showThankYou, setShowThankYou] = useState(false);
 
@@ -46,10 +45,6 @@ const Events = () => {
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
-  };
-
-  const handleSubjectChange = (e) => {
-    setSubject(e.target.value);
   };
 
   const handleMessageChange = (e) => {
@@ -102,10 +97,10 @@ const Events = () => {
               Receive emails for our sales, promotions, and events!
             </p>
             <form
-              className="contact-form email-form event-page-email-form event-animation event-animation-7"
+              className="contact-form email-form event-page-email-form"
               onSubmit={handleSubmit}
             >
-              <div className="form-row name-row d-flex">
+              <div className="form-row name-row d-flex event-animation event-animation-7">
                 <div className="col-md-6">
                   <label htmlFor="firstName">
                     First Name <span className="required-label">*</span>
@@ -133,7 +128,7 @@ const Events = () => {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group event-animation event-animation-8">
                 <label htmlFor="phone">Phone</label>
                 <input
                   type="text"
@@ -143,7 +138,7 @@ const Events = () => {
                   onChange={handlePhoneNumberChange}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group event-animation event-animation-9">
                 <label htmlFor="email">
                   Email Address <span className="required-label">*</span>
                 </label>
@@ -156,33 +151,17 @@ const Events = () => {
                   required
                 />
               </div>
-              <div className="form-group">
-                <label htmlFor="subject">
-                  Subject <span className="required-label">*</span>
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="subject"
-                  value={subject}
-                  onChange={handleSubjectChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">
-                  Message <span className="required-label">*</span>
-                </label>
+              <div className="form-group event-animation event-animation-10">
+                <label htmlFor="message">Message</label>
                 <textarea
                   className="form-control"
                   id="message"
                   rows="5"
                   value={message}
                   onChange={handleMessageChange}
-                  required
                 />
               </div>
-              <div className="form-btn-container d-flex justify-content-center">
+              <div className="form-btn-container d-flex justify-content-center event-animation event-animation-10">
                 <button
                   type="submit"
                   className="contact-btn btn btn-primary mt-2 event-btn"

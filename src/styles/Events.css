@@ -55,22 +55,34 @@
   animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
 .event-animation-2 {
-  animation: slideInDownSlow 0.75s ease-in-out forwards 0.4s;
+  animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
 .event-animation-3 {
-  animation: slideInLeftSlow 0.75s ease-in-out forwards 0.6s;
+  animation: slideInLeftSlow 1s ease-in-out forwards 0.4s;
 }
 .event-animation-4 {
-  animation: slideInRightSlow 0.75s ease-in-out forwards 0.8s;
+  animation: slideInRightSlow 1s ease-in-out forwards 0.4s;
 }
 .event-animation-5 {
-  animation: slideInLeftSlow 0.75s ease-in-out forwards 1s;
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1s;
 }
 .event-animation-6 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1.2s;
 }
 .event-animation-7 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+.event-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.5s;
+}
+.event-animation-9 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.6s;
+}
+.event-animation-10 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.7s;
+}
+.event-animation-11 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 1.8s;
 }
 
 @keyframes slideInLeftSlow {
