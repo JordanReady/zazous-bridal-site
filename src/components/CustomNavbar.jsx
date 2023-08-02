@@ -27,9 +27,9 @@ const CustomNavbar = () => {
     }, 200); // Add a small delay before closing the dropdown
   };
 
-  const handleNavDropdownLeave = () => {
-    clearTimeout(dropdownTimerRef.current);
-    setActiveDropdown(null);
+  const handleLogoClick = () => {
+    const targetURL = "#/";
+    window.location.href = targetURL;
   };
 
   return (
@@ -40,7 +40,7 @@ const CustomNavbar = () => {
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
     >
-      <Navbar.Brand className="navbar-brand">
+      <Navbar.Brand className="navbar-brand" onClick={handleLogoClick}>
         <div className="logo-container">
           <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
           <span className="zazous-bridal">azou's Bridal </span>
