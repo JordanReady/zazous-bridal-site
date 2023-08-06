@@ -42,7 +42,7 @@
   --text-shadow-white: -1px -1px 1px rgba(255, 255, 255, 0.3),
     1px -1px 1px rgba(255, 255, 255, 0.3), -1px 1px 1px rgba(255, 255, 255, 0.3),
     1px 1px 1px rgba(255, 255, 255, 0.3);
-  --border-radius: 0px;
+  --border-radius: 5px;
 
   /* -----Scheme 2----- */
   /* --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
