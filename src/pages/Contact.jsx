@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { StoreHours, StoreInfo, StoreAwards } from "../components";
-import Logo from "../assets/Logos/Zazous-logo.png";
+import Logo from "../assets/Logos/Zazous-Logo-Green.png";
 
 import "../styles/Contact.css";
 
-import { PageHeading, ThankYouContactMessage } from "../components";
+import {
+  PageHeading,
+  ThankYouContactMessage,
+  ThankYouLogo,
+} from "../components";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);

@@ -20,14 +20,14 @@
   /* ----------Colors---------- */
 
   /* -----Scheme 1----- */
-  --primary-color: #e9b1a6;
+  /* --primary-color: #e9b1a6;
   --secondary-color: black;
-  --border-color: #e9b1a6;
+  --border-color: #e9b1a6; */
 
   /* -----Scheme 2----- */
-  /* --primary-color: rgb(33, 78, 33);
-  --secondary-color: gold;
-  --border-color: rgb(30, 65, 30); */
+  --primary-color: #496751;
+  --secondary-color: #a3caae;
+  --border-color: #273b2e;
 
   /* ----------Utilities---------- */
 
