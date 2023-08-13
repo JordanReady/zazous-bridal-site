@@ -18,6 +18,7 @@
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: justify;
+  color: var(--text-color);
 }
 
 .private-appointment-btn {

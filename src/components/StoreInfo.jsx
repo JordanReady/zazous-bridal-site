@@ -15,7 +15,9 @@ const StoreInfo = ({ style, col, customClass }) => {
         <p className="mb-4 info">955 Washington Street - Suite 104</p>
         <p className="mb-4 info">Dubuque, IA 52001</p>
         <p className="mb-4 info">563-213-2049</p>
-        <p className="mb-4 info">info@zazousbridalandtuxedos.com</p>
+        <p className="mb-4 info">
+          info<span className="at-sign">@</span>zazousbridalandtuxedos.com
+        </p>
       </div>
     </div>
   );

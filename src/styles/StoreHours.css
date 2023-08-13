@@ -5,6 +5,14 @@
   height: 335px;
 }
 
+.store-hours-table th {
+  color: var(--text-color);
+}
+
+.store-hours-table td {
+  color: var(--text-color);
+}
+
 @media (max-width: 767px) {
   .info-box {
     width: 90vw;

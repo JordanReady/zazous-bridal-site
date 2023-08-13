@@ -7,6 +7,7 @@
 
 .sign-up-subtext {
   font-family: var(--secondary-font);
+  color: var(--text-color);
 }
 
 .email-form {

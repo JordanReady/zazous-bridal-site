@@ -44,14 +44,20 @@
   margin-right: 0.7rem;
 }
 
+.rave-review-role {
+  color: var(--text-color);
+}
+
 .rave-review-date-published {
   display: flex;
   justify-content: flex-end;
+  color: var(--text-color);
 }
 
 .rave-review-feedback {
   font-family: var(--secondary-font);
   line-height: 1.35;
+  color: var(--text-color);
 }
 
 /* screen sizes */

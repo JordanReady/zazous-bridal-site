@@ -29,4 +29,5 @@
   font-family: var(--secondary-font) !important;
   font-size: 18px;
   text-align: justify;
+  color: var(--text-color);
 }

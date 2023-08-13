@@ -17,6 +17,7 @@
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: justify;
+  color: var(--text-color);
 }
 
 .suits-tuxedos-promotion-text {

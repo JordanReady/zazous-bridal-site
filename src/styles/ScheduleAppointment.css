@@ -1,6 +1,7 @@
 .schedule-your-appointment-text {
   font-family: var(--secondary-font);
   font-size: 18px;
+  color: var(--text-color);
 }
 
 .schedule-your-appointment-header {
@@ -11,6 +12,14 @@
   font-weight: bold;
 }
 
+option,
+.form-label,
+.form-check-label,
+.form-control,
+.form-control::placeholder {
+  color: var(--text-color);
+}
+
 /* date picker */
 .date-picker-row {
   display: flex;
@@ -19,7 +28,7 @@
 
 .custom-date-input {
   background-color: white;
-  color: black;
+  color: var(--text-color);
   border: 1px solid var(--border-color);
   width: 100%;
   font-size: 16px;

@@ -17,6 +17,7 @@
 }
 
 .hero-text {
+  color: var(--text-color);
   margin-top: 10px;
   font-size: 20px;
   font-weight: 400;

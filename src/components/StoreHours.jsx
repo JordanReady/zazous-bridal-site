@@ -6,7 +6,7 @@ const StoreHours = ({ style, col, customClass }) => {
     <div className={`${col} info-box ${customClass}`} style={{ "--i": style }}>
       <div className="text-center">
         <h3 className="title-text pt-2">Store Hours</h3>
-        <table className="table table-bordered">
+        <table className="table table-bordered store-hours-table">
           <tbody>
             <tr>
               <th>Monday</th>

@@ -33,7 +33,7 @@ const RaveReviewDisplay = ({ review, style }) => {
       </div>
       <div className="row rave-review-role-date-row">
         <div className="col-8">
-          <p>{role}</p>
+          <p className="rave-review-role">{role}</p>
         </div>
         <div className="col-4">
           <p className="rave-review-date-published">{datePublished}</p>

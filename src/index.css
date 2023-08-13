@@ -22,11 +22,13 @@
   /* -----Scheme 1----- */
   /* --primary-color: #e9b1a6;
   --secondary-color: black;
+  --text-color: black;
   --border-color: #e9b1a6; */
 
   /* -----Scheme 2----- */
   --primary-color: #496751;
   --secondary-color: #a3caae;
+  --text-color: #5f5f5f;
   --border-color: #273b2e;
 
   /* ----------Utilities---------- */

@@ -1,6 +1,7 @@
 .thank-you-review-message {
   width: 60%;
   box-shadow: var(--shadow);
+  color: var(--text-color);
 }
 
 /* screen size */

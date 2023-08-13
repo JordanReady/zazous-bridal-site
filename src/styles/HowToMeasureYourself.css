@@ -21,11 +21,13 @@
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: normal;
+  color: var(--text-color);
 }
 
 .where-to-measure-list {
   font-family: var(--secondary-font);
   font-size: 18px;
+  color: var(--text-color);
 }
 
 .where-to-measure-list li {

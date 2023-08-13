@@ -25,7 +25,6 @@ const Events = () => {
     console.log("Last Name: ", lastName);
     console.log("Phone Number: ", phoneNumber);
     console.log("Email: ", email);
-    console.log("Subject: ", subject);
     console.log("Message: ", message);
     // Any other actions related to form submission
     setShowThankYou(true);

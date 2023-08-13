@@ -13,6 +13,12 @@
 .info {
   font-size: 20px !important;
   font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+
+.at-sign {
+  font-family: var(--primary-font);
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {

@@ -19,11 +19,17 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: -0.05rem;
+  color: var(--text-color);
 }
 
 .write-review-text {
   font-family: var(--secondary-font);
   font-size: 18px;
+  color: var(--text-color);
+}
+
+label {
+  color: var(--text-color) !important;
 }
 
 /* screen size */

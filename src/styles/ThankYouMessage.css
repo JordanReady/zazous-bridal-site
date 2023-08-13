@@ -11,6 +11,7 @@
   z-index: 999;
   font-size: 18px;
   box-shadow: var(--shadow);
+  color: var(--text-color);
 }
 
 .thank-you-message-heading {
