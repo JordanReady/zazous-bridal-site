@@ -15,6 +15,14 @@
   margin-top: 0px !important;
 }
 
+.active-link {
+  color: var(--secondary-color) !important;
+}
+
+div.active-dropdown a.dropdown-toggle {
+  color: var(--secondary-color) !important;
+}
+
 .nav-link,
 .dropdown-item {
   color: var(--primary-color);

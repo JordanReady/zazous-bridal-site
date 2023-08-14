@@ -14,8 +14,7 @@
 
 .hero-button:hover {
   color: white;
-  background-color: var(--primary-color);
-  opacity: 0.8;
+  background-color: var(--secondary-color);
   border-color: rgba(0, 0, 0, 0.541);
   transform: translateY(-2px) !important;
   text-shadow: var(--text-shadow);
