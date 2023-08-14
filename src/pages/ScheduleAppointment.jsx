@@ -4,7 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import "../styles/ScheduleAppointment.css";
 
-import { ThankYouMessage, PageHeading } from "../components";
+import { ThankYouMessage, PageHeading, SubmitBtn } from "../components";
 
 const CustomDateInput = forwardRef(({ value, onClick }, ref) => (
   <button className="custom-date-input" onClick={onClick} ref={ref}>
@@ -668,12 +668,7 @@ const ScheduleAppointment = () => {
             </div>
             <div className="row">
               <div className="col text-center schedule-your-appointment-animation schedule-your-appointment-animation-20">
-                <button
-                  type="submit"
-                  className="btn btn-primary schedule-your-appointment-btn"
-                >
-                  Request Appointment
-                </button>
+                <SubmitBtn text={"Request Appointment"} />
               </div>
             </div>
           </form>

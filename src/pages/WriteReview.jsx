@@ -3,7 +3,7 @@ import { PageHeading } from "../components";
 import ReactRating from "react-rating";
 import classNames from "classnames";
 
-import { ThankYouReviewMessage } from "../components";
+import { ThankYouReviewMessage, SubmitBtn } from "../components";
 
 import "../styles/WriteReview.css";
 
@@ -228,12 +228,7 @@ const WriteReview = () => {
                     </div>
                   </div>
                   <div className="form-btn-container d-flex justify-content-center write-review-animation write-review-animation-9">
-                    <button
-                      type="submit"
-                      className="contact-btn btn btn-primary mt-2 "
-                    >
-                      Send your Feedback
-                    </button>
+                    <SubmitBtn text={"Send your Feedback"} />
                   </div>
                 </form>
               </div>

@@ -2,6 +2,7 @@ export { default as CustomNavbar } from "./CustomNavbar";
 export { default as Footer } from "./Footer";
 export { default as PageHeading } from "./PageHeading";
 export { default as ScheduleAppointmentBtn } from "./ScheduleAppointmentBtn";
+export { default as SubmitBtn } from "./SubmitBtn";
 export { default as VendorCard } from "./VendorCard";
 export { default as StoreHours } from "./StoreHours";
 export { default as StoreInfo } from "./StoreInfo";
@@ -16,5 +17,4 @@ export { default as ThankYouContactMessage } from "./ThankYouContactMessage";
 export { default as ThankYouReviewMessage } from "./ThankYouReviewMessage";
 export { default as ThankYouEmailList } from "./ThankYouEmailList";
 export { default as ThankYouLogo } from "./ThankYouLogo";
-
 export { default as RaveReviewDisplay } from "./RaveReviewDisplay";

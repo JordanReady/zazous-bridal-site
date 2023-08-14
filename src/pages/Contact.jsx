@@ -4,11 +4,7 @@ import Logo from "../assets/Logos/Zazous-Logo-Green.png";
 
 import "../styles/Contact.css";
 
-import {
-  PageHeading,
-  ThankYouContactMessage,
-  ThankYouLogo,
-} from "../components";
+import { PageHeading, ThankYouContactMessage, SubmitBtn } from "../components";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -197,14 +193,11 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="form-btn-container d-flex justify-content-center contact-animation contact-animation-11">
-                <button
-                  type="submit"
-                  className="contact-btn btn btn-primary mt-2 "
-                  onClick={handleSubmit}
-                >
-                  Send Your Message
-                </button>
+              <div
+                className="form-btn-container d-flex justify-content-center contact-animation contact-animation-11"
+                onClick={handleSubmit}
+              >
+                <SubmitBtn text={"Send Your Message"} />
               </div>
             </form>
           )}
