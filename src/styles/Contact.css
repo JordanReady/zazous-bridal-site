@@ -1,8 +1,8 @@
 .logo-image {
   border: 5px dashed var(--primary-color);
   border-radius: 50%;
-  height: 260px;
-  width: 260px;
+  height: 250px;
+  width: 250px;
 }
 
 .contact-store-info-row {
@@ -68,6 +68,25 @@ textarea:focus {
 }
 
 /* screen sizes */
+@media (max-width: 1400px) {
+  .logo-image {
+    width: 237px;
+    height: 237px;
+  }
+}
+@media (max-width: 1199px) {
+  .logo-image {
+    width: 192px;
+    height: 192px;
+  }
+}
+@media (max-width: 991px) {
+  .logo-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-row {
     flex-direction: column-reverse;
@@ -78,8 +97,17 @@ textarea:focus {
   .last-name-col {
     margin-right: -2.5% !important;
   }
+  .contact-store-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .contact-store-hours {
     margin-top: 0 !important;
+    width: 90dvw;
+  }
+  .contact-store-info {
+    width: 90dvw !important;
   }
   .contact-btn {
     margin-top: -1rem !important;

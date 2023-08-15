@@ -77,21 +77,21 @@ const Contact = () => {
       <PageHeading name={"Contact Us"} animationDirection={""} />
       <div className="row contact-row">
         <div className="col-lg-6 contact-store-info-row">
-          <div>
-            <div className="row d-flex justify-content-center align-items-center">
-              <StoreInfo
-                col={"col-8"}
-                style={3}
-                customClass={"mt-2 mb-4 contact-animation contact-animation-1"}
-              />
-              <StoreHours
-                col={"col-8"}
-                customClass={
-                  "mb-4 mt-4 contact-store-hours contact-animation contact-animation-2"
-                }
-                style={5}
-              />
-            </div>
+          <div className="row d-flex justify-content-center align-items-center">
+            <StoreInfo
+              col={"col-8"}
+              style={3}
+              customClass={
+                "mt-2 mb-4 contact-animation contact-animation-1 contact-store-info"
+              }
+            />
+            <StoreHours
+              col={"col-8"}
+              customClass={
+                "mb-4 mt-4 contact-store-hours contact-animation contact-animation-2 contact-store-hours"
+              }
+              style={5}
+            />
           </div>
         </div>
         <div className="col-lg-6">
