@@ -294,8 +294,7 @@ const ScheduleAppointment = () => {
                 months prior to your wedding date to ensure you're able to get
                 the dress of your dreams! There are instances such as a designer
                 being ahead of schedule or buying a dress "off the rack" that
-                would result in you receiving your gown sooner. any questions,
-                please contact us At
+                would result in you receiving your gown sooner.
               </p>
               <div className="disclaimer schedule-your-appointment-animation schedule-your-appointment-animation-6">
                 <h2 className="schedule-your-appointment-header ">

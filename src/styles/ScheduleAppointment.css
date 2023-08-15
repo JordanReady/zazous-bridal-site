@@ -55,6 +55,14 @@ option,
   float: unset;
 }
 
+.react-datepicker__day-name,
+.react-datepicker__current-month,
+.react-datepicker__navigation-icon::before {
+  /* color: white; */
+  color: var(--secondary-color) !important;
+  border-color: var(--secondary-color);
+}
+
 .react-datepicker__day--selected,
 .react-datepicker__day--in-selecting-range,
 .react-datepicker__day--in-range,
@@ -69,7 +77,8 @@ option,
 .react-datepicker__year-text--in-range {
   border-radius: 0.3rem;
   background-color: var(--primary-color);
-  color: #fff;
+  /* color: #fff; */
+  color: var(--secondary-color);
 }
 
 /* form styles */
