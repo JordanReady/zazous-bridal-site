@@ -1,26 +1,14 @@
 import React from "react";
-import { createBrowserHistory } from "history";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/ScheduleAppointmentBtn.css";
 
-const ScheduleAppointmentBtn = ({ style, customClass, text, link }) => {
-  const history = createBrowserHistory();
-
-  const handleButtonClick = () => {
-    const targetURL = link || "#/schedule-appointment"; // Use relative URL
-    history.push(targetURL);
-    window.location.reload();
-    window.scrollTo(0, 0);
-  };
+const ScheduleAppointmentBtn = ({ customClass, text, link }) => {
+  const targetURL = link || "#/schedule-appointment";
 
   return (
-    <button
-      className={"hero-button btn" + ` ${customClass}`}
-      onClick={handleButtonClick}
-      style={{ "--i": style }}
-    >
+    <a className={"hero-button btn" + ` ${customClass}`} href={`${targetURL}`}>
       {text || "Schedule Appointment"}
-    </button>
+    </a>
   );
 };
 

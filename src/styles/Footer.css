@@ -1,7 +1,5 @@
 footer {
-  display: sticky;
-  bottom: 0;
-  background-color: white;
+  background-color: transparent;
   padding: 20px;
   text-align: center;
 }

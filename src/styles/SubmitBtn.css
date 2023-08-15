@@ -10,6 +10,7 @@
   transition: all ease-in-out 0.3s;
   text-shadow: var(--text-shadow-light);
   border-radius: var(--border-radius);
+  min-width: 120px;
 }
 
 .submit-button:hover {
