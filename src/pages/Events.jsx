@@ -101,7 +101,7 @@ const Events = () => {
               onSubmit={handleSubmit}
             >
               <div className="form-row name-row d-flex event-animation event-animation-7">
-                <div className="col-md-6">
+                <div className="col-md-6 name-row">
                   <label htmlFor="firstName">
                     First Name <span className="required-label">*</span>
                   </label>

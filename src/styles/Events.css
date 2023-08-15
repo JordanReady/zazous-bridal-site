@@ -1,6 +1,5 @@
 .event-title {
   color: var(--primary-color);
-  width: 50%;
   padding: 10px;
   margin: auto;
 }
@@ -23,6 +22,7 @@
   width: 150px;
 }
 
+/* screen size */
 @media (max-width: 768px) {
   .event-title {
     width: 100%;
@@ -34,16 +34,15 @@
   .event-card {
     margin-bottom: 1.25rem;
   }
-}
-
-/* screen size */
-@media (max-width: 768px) {
   .event-page-card {
     margin-top: -0.75rem !important;
   }
   .contact-btn {
     margin-top: 1.75rem !important;
     margin-bottom: -0.5rem;
+  }
+  .name-row {
+    justify-content: space-between;
   }
 }
 
