@@ -43,3 +43,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.page-content {
+  min-height: calc(100dvh - 270px);
+}
