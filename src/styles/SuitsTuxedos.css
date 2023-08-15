@@ -32,6 +32,10 @@
   margin-bottom: -1.5rem;
 }
 
+.suits-tuxedos-btn {
+  max-width: fit-content;
+}
+
 /* screen size */
 @media (max-width: 768px) {
   .suits-tuxedos-img {
