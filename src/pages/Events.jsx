@@ -5,6 +5,7 @@ import {
   PastEventsCard,
   PageHeading,
   ThankYouEmailList,
+  SubmitBtn,
 } from "../components";
 
 import "../styles/Events.css";
@@ -161,12 +162,7 @@ const Events = () => {
                 />
               </div>
               <div className="form-btn-container d-flex justify-content-center event-animation event-animation-10">
-                <button
-                  type="submit"
-                  className="contact-btn btn btn-primary mt-2 event-btn"
-                >
-                  Submit
-                </button>
+                <SubmitBtn text={"Sign Up"} />
               </div>
             </form>
           </>
