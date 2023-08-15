@@ -1,6 +1,6 @@
 import React from "react";
-import WeddingWire1 from "../assets/logos/wedding-wire-1.png";
-import WeddingWire2 from "../assets/logos/wedding-wire-2.png";
+import WeddingWire1 from "../assets/logos/wedding-wire-1-green.png";
+import WeddingWire2 from "../assets/logos/wedding-wire-2-green.png";
 
 const StoreAwards = ({ col, style, customClass }) => {
   return (
