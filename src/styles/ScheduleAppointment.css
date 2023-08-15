@@ -95,10 +95,6 @@ textarea:focus {
   box-shadow: var(--shadow) !important;
 }
 
-option:focus {
-  background-color: purple !important;
-}
-
 form {
   font-family: var(--secondary-font);
 }
@@ -115,6 +111,7 @@ select {
 
 .form-control:focus {
   border: 4px solid var(--secondary-color) !important;
+  padding: 3px;
   border-radius: var(--border-radius);
 }
 
