@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -10,8 +10,25 @@ import "../styles/CustomNavbar.css";
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
   const dropdownTimerRef = useRef(null);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleNavItemClick = () => {
     setExpanded(false);
@@ -33,6 +50,11 @@ const CustomNavbar = () => {
     window.location.href = targetURL;
   };
 
+  const handleMenuClick = () => {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Navbar
       expand="xl"
@@ -48,7 +70,11 @@ const CustomNavbar = () => {
         </div>
         <span className="brand-break">&nbsp;Boutique & Tuxedos</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNav" className="toggle-menu">
+      <Navbar.Toggle
+        aria-controls="navbarNav"
+        className={isSticky ? "toggle-menu sticky" : "toggle-menu"}
+        onClick={handleMenuClick}
+      >
         Menu
       </Navbar.Toggle>
       <Navbar.Collapse

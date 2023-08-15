@@ -154,10 +154,9 @@ div.active-dropdown a.dropdown-toggle {
     text-align: center;
     font-size: clamp(1.8rem, 5vw, 2rem);
     margin: 0;
-    margin-top: 10px;
   }
   .navbar-expand-xl {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 0 !important;
@@ -170,6 +169,19 @@ div.active-dropdown a.dropdown-toggle {
   }
   .toggle-menu {
     width: 100%;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+  .custom-navbar-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .navbar-slide-down {
+    max-height: 2000px;
   }
 }
 
