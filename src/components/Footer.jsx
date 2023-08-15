@@ -18,38 +18,49 @@ const Footer = () => {
   return (
     <footer>
       <div className="social-buttons">
-        <a
-          href="https://www.facebook.com/zazousbridalboutique/"
-          target="_blank"
-          className="social-button facebook"
-        >
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a href="#/contact" className="social-button email">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a
-          href="https://www.pinterest.com/ZazousBridalBoutique/"
-          target="_blank"
-          className="social-button pinterest"
-        >
-          <FontAwesomeIcon icon={faPinterest} />
-        </a>
-        <a
-          href="https://www.instagram.com/zazousbridalboutique/"
-          target="_blank"
-          className="social-button instagram"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
+        <span className="footer-animation footer-animation-2">
+          <a
+            href="https://www.facebook.com/zazousbridalboutique/"
+            target="_blank"
+            className="social-button facebook "
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+        </span>
+        <span className="footer-animation footer-animation-3">
+          <a
+            href="#/contact"
+            className="social-button email footer-animation footer-animation-3"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </span>
+        <span className="footer-animation footer-animation-4">
+          <a
+            href="https://www.pinterest.com/ZazousBridalBoutique/"
+            target="_blank"
+            className="social-button pinterest footer-animation footer-animation-4"
+          >
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
+        </span>
+        <span className="footer-animation footer-animation-5">
+          <a
+            href="https://www.instagram.com/zazousbridalboutique/"
+            target="_blank"
+            className="social-button instagram footer-animation footer-animation-5"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </span>
       </div>
       <button
-        className="back-to-top-btn btn mt-0 mb-3"
+        className="back-to-top-btn btn mt-0 mb-3 footer-animation footer-animation-6"
         onClick={handleScrollToTop}
       >
         Back to Top
       </button>
-      <div className="logo-container">
+      <div className="logo-container footer-animation footer-animation-7">
         <img src={ChamberLogo} alt="Logo" />
       </div>
     </footer>

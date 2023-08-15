@@ -82,6 +82,9 @@ table tr {
 .home-animation {
   opacity: 0;
 }
+.home-animation-start {
+  animation: startAnimation 0.5s ease-in-out forwards;
+}
 .home-animation-1 {
   animation: slideInDownSlow 0.75s ease-in-out forwards 0.2s;
 }
@@ -102,6 +105,15 @@ table tr {
 }
 .home-animation-7 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 1.4s;
+}
+
+@keyframes startAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeftSlow {

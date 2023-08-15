@@ -29,11 +29,6 @@ footer {
   border: 1px solid var(--border-color);
 }
 
-.social-button:hover {
-  transform: translateY(-3px);
-  border-color: var(--secondary-color);
-}
-
 .social-button.facebook:hover {
   background-color: #0f60b5; /* Darker shade of blue */
 }
@@ -83,5 +78,61 @@ footer {
   }
   .logo-container {
     margin-top: 0rem !important;
+  }
+}
+
+/* animations */
+
+.footer-animation {
+  opacity: 0;
+}
+
+.footer-animation-2 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2.2s;
+}
+.footer-animation-3 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2.4s;
+}
+.footer-animation-4 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2.6s;
+}
+.footer-animation-5 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 2.8s;
+}
+.footer-animation-6 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 3s;
+}
+.footer-animation-7 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 3s;
+}
+
+@keyframes slideInUpSlow {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpPopAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

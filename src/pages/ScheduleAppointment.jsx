@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useRef } from "react";
+import React, { forwardRef, useState, useRef, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -33,7 +33,6 @@ const ScheduleAppointment = () => {
   const [mailingList, setMailingList] = useState(false);
   const [textAlerts, setTextAlerts] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
-
   const appointmentRowRef = useRef(null);
 
   const handleScrollTopOfForm = () => {

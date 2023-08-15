@@ -13,7 +13,7 @@ import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container home-animation home-animation-start">
       <div className="carousel-container home-animation home-animation-1">
         <HeroCarousel />
       </div>

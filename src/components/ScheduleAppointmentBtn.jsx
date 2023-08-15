@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { createBrowserHistory } from "history";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/ScheduleAppointmentBtn.css";
@@ -7,10 +7,10 @@ const ScheduleAppointmentBtn = ({ style, customClass, text, link }) => {
   const history = createBrowserHistory();
 
   const handleButtonClick = () => {
-    const targetURL = link || "#/schedule-appointment";
+    const targetURL = link || "#/schedule-appointment"; // Use relative URL
     history.push(targetURL);
-    window.scrollTo(0, 0);
     window.location.reload();
+    window.scrollTo(0, 0);
   };
 
   return (

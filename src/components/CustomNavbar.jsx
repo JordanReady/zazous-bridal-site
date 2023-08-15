@@ -37,7 +37,7 @@ const CustomNavbar = () => {
     <Navbar
       expand="xl"
       variant="light"
-      className="mt-3 mb-3 navbar"
+      className="mt-3 mb-3 navbar navbar-animation navbar-animation-1"
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
     >

@@ -18,3 +18,4 @@ export { default as ThankYouReviewMessage } from "./ThankYouReviewMessage";
 export { default as ThankYouEmailList } from "./ThankYouEmailList";
 export { default as ThankYouLogo } from "./ThankYouLogo";
 export { default as RaveReviewDisplay } from "./RaveReviewDisplay";
+export { default as WelcomeHome } from "./WelcomeHome";
