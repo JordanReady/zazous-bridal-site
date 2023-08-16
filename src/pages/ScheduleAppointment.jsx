@@ -40,7 +40,7 @@ const ScheduleAppointment = () => {
       const appointmentRowPosition =
         appointmentRowRef.current.getBoundingClientRect().top +
         window.pageYOffset;
-      const scrollOffset = 5; // Adjust this value if needed
+      const scrollOffset = 50; // Adjust this value if needed
       window.scrollTo({
         top: appointmentRowPosition - scrollOffset,
         behavior: "smooth",
@@ -354,6 +354,7 @@ const ScheduleAppointment = () => {
                     <DatePicker
                       className="custom-date-input"
                       required
+                      readonly="readonly"
                       inputMode="none"
                       renderCustomHeader={({
                         monthDate,
