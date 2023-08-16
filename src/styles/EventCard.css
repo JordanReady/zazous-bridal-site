@@ -2,10 +2,18 @@
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
+  position: relative;
 }
 
-.event-card-fill {
-  height: calc(100% - 76px);
+.event-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .card-body {
@@ -18,11 +26,11 @@
 .event-card-title {
   font-family: var(--primary-font);
   font-size: 32px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .event-card-subtitle {
-  color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .event-card-text {
@@ -30,4 +38,5 @@
   font-size: 18px;
   text-align: justify;
   color: var(--text-color);
+  margin-top: 70px;
 }

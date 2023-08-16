@@ -14,10 +14,12 @@ const EventCard = ({
   return (
     <div className={customClass + " card event-card"}>
       <div className="card-body">
-        <h5 className="event-card-title">{title}</h5>
-        <h6 className="card-subtitle mb-2 text-muted event-card-subtitle">
-          {date} - {time}
-        </h6>
+        <div className="event-header-container">
+          <h5 className="event-card-title">{title}</h5>
+          <h6 className="card-subtitle mb-2 text-muted event-card-subtitle">
+            {date} - {time}
+          </h6>
+        </div>
         <p className="card-text event-card-text">{info}</p>
         {scheduleButton && <ScheduleAppointmentBtn />}
       </div>
