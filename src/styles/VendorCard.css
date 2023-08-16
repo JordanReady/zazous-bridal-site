@@ -13,21 +13,43 @@
   color: var(--text-color);
 }
 
+.vendor-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .vendor-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   opacity: 0;
   animation: slideUp 0.5s ease-in-out forwards;
   animation-delay: calc(0.4s + (0.1s * var(--card-index)));
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.vendor-card-vendors {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vendor-card-header {
+  background-color: var(--primary-color);
+  width: 100%;
+  border-top-right-radius: calc(var(--border-radius) - 1px);
+  border-top-left-radius: calc(var(--border-radius) - 1px);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .vendor-card-title {
-  /* color: white;
-  background-color: var(--primary-color);
-  width: 80%;
-  text-shadow: var(--text-shadow);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  */
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 10px;
   font-size: 32px;
 }
@@ -41,10 +63,42 @@
 }
 
 /* screen size */
-@media (max-width: 768px) {
+@media screen and (min-width: 992px) {
+  .vendor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .vendor-container .vendor-card-grid:last-child {
+    grid-column: 2;
+  }
+}
+
+/* For tablet-sized screens (2 reviews in a row) */
+@media screen and (max-width: 991px) {
+  .vendor-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .vendor-card-grid:last-child {
+    grid-column: 1 / span 2;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/* For mobile screens (1 review in a row) */
+@media screen and (max-width: 768px) {
+  .vendor-container {
+    display: block;
+  }
   .recomendation-text {
     margin-bottom: -1rem;
     margin-top: 1rem !important;
+  }
+  .vendor-card-grid:last-child {
+    width: 100%;
   }
 }
 

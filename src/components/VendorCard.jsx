@@ -4,24 +4,25 @@ import "../styles/VendorCard.css";
 
 const VendorCard = ({ title, items, cardIndex }) => {
   return (
-    <div
-      className="col-lg-4 col-md-6 col-sm-12"
-      style={{ "--card-index": cardIndex }}
-    >
-      <div className="vendor-card d-flex flex-column justify-content-center align-items-center mt-4">
-        <h2 className="vendor-card-title d-flex justify-content-center">
-          {title}
-        </h2>
-        {items.map((item, index) => (
-          <a
-            href={item.link}
-            className="list-item mb-2"
-            key={index}
-            target="_blank"
-          >
-            {item.name}
-          </a>
-        ))}
+    <div className="vendor-card-grid" style={{ "--card-index": cardIndex }}>
+      <div className="vendor-card mt-4">
+        <div className="vendor-card-header">
+          <h2 className="vendor-card-title d-flex justify-content-center">
+            {title}
+          </h2>
+        </div>
+        <div className="vendor-card-vendors">
+          {items.map((item, index) => (
+            <a
+              href={item.link}
+              className="list-item mb-2"
+              key={index}
+              target="_blank"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

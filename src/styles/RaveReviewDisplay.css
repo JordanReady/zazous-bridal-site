@@ -15,7 +15,6 @@
   padding: 1px 8px 0 8px;
   border-top-right-radius: calc(var(--border-radius) - 5px);
   border-top-left-radius: calc(var(--border-radius) - 5px);
-
   border-bottom: 1px solid var(--border-color);
 }
 

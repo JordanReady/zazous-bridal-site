@@ -255,7 +255,7 @@ const Vendors = () => {
       <p className="recomendation-text d-flex justify-content-center">
         Need help finding a vendor? Here's our recommendations!
       </p>
-      <div className="row justify-content-center text-center">
+      <div className="vendor-container justify-content-center text-center">
         {vendors.map((vendor, index) => (
           <VendorCard key={index} {...vendor} cardIndex={index} />
         ))}
