@@ -66,9 +66,9 @@ const CustomNavbar = () => {
       <Navbar.Brand className="navbar-brand" onClick={handleLogoClick}>
         <div className="logo-container">
           <img className="zazous-nav-logo" src={Logo} alt="Zazou's Logo" />
-          <span className="zazous-bridal">azou's Bridal </span>
+          <span className="zazous-bridal">azou's Bridal</span>
         </div>
-        <span className="brand-break">&nbsp;Boutique & Tuxedos</span>
+        <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
       <Navbar.Toggle
         aria-controls="navbarNav"
