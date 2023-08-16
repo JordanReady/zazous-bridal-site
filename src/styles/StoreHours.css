@@ -7,10 +7,12 @@
 
 .store-hours-table th {
   color: var(--text-color);
+  background-color: transparent;
 }
 
 .store-hours-table td {
   color: var(--text-color);
+  background-color: transparent;
 }
 
 @media (max-width: 767px) {

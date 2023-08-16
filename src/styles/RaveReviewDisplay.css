@@ -6,6 +6,17 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 8px;
+  background-color: white !important;
+}
+
+.rave-review-info {
+  background-color: var(--primary-color);
+  margin: -8px -8px 0.25rem -8px;
+  padding: 1px 8px 0 8px;
+  border-top-right-radius: calc(var(--border-radius) - 5px);
+  border-top-left-radius: calc(var(--border-radius) - 5px);
+
+  border-bottom: 1px solid var(--border-color);
 }
 
 .rave-review-name-rating-row {
@@ -17,47 +28,41 @@
   display: flex;
   align-items: start;
   font-family: var(--secondary-font);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .rave-review-role-date-row p {
   margin-bottom: 0;
 }
 
-.rave-review-hr {
-  margin-top: 0;
-  margin-bottom: 0.25rem;
-  color: var(--primary-color);
-  opacity: 1;
-}
-
 .rave-review-title {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 24px;
   margin-bottom: 0;
 }
 
 .rave-review-rating {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   display: flex;
   justify-content: flex-end;
   margin-right: 0.7rem;
 }
 
 .rave-review-role {
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .rave-review-date-published {
   display: flex;
   justify-content: flex-end;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .rave-review-feedback {
   font-family: var(--secondary-font);
   line-height: 1.35;
   color: var(--text-color);
+  margin-bottom: 0;
 }
 
 /* screen sizes */
