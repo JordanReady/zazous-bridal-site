@@ -1,8 +1,32 @@
+.contact-header-container {
+  display: flex;
+}
+
 .logo-image {
   border: 5px dashed var(--primary-color);
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contact-header-text {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: var(--font-color);
+  text-align: center;
+  font-family: var(--secondary-font);
 }
 
 .contact-store-info-row {
@@ -71,26 +95,76 @@ textarea:focus {
 /* screen sizes */
 @media (max-width: 1400px) {
   .logo-image {
-    width: 237px;
-    height: 237px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 1199px) {
   .logo-image {
-    width: 192px;
-    height: 192px;
+    margin-top: 0.25rem;
+    margin-bottom: -0.5rem;
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+  }
+  .contact-header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-header-text {
+    margin-bottom: 0.5rem;
+  }
+  .contact-text {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 991px) {
+  .contact-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .logo-image {
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
+    margin-inline: 15px;
+  }
+  .contact-header-container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .contact-header-text {
+    margin-bottom: 0.5rem;
+  }
+  .contact-text {
+    margin-bottom: 0;
+  }
+  .contact-form {
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .contact-row {
-    flex-direction: column-reverse;
+  .logo-image {
+    margin-top: 0.25rem;
+    margin-bottom: -0.5rem;
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+  }
+  .contact-header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-header-text {
+    margin-bottom: 0.5rem;
+  }
+  .contact-text {
+    margin-bottom: 0;
+  }
+  .contact-text-container {
+    padding-bottom: 0;
+    margin-bottom: -0.5rem;
   }
   .contact-logo-container {
     margin-top: 1rem;
@@ -113,9 +187,6 @@ textarea:focus {
   .contact-btn {
     margin-top: -1rem !important;
     margin-bottom: 0.75rem !important;
-  }
-  .logo-image {
-    margin-bottom: 0.5rem;
   }
 }
 

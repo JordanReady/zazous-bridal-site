@@ -104,120 +104,121 @@ const Contact = () => {
               subject={subject}
             />
           ) : (
-            <form className="contact-form contact-animation contact-animation-3">
-              <div className="form-row name-row d-flex">
-                <div className="col-md-6 contact-animation contact-animation-4">
-                  <label htmlFor="firstName">
-                    First Name <span className="required-label ">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control name-field"
-                    id="firstName"
-                    onChange={handleFirstNameChange}
-                    required
-                  />
-                </div>
-                <div className="col-md-6 last-name-col contact-animation contact-animation-5">
-                  <label htmlFor="lastName">
-                    Last Name <span className="required-label ">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control name-field last-name-field"
-                    id="lastName"
-                    onChange={handleLastNameChange}
-                    required
-                  />
-                </div>
-              </div>
-              <div className="form-group contact-animation contact-animation-6">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="phone"
-                  onChange={handlePhoneChange}
-                />
-              </div>
-              <div className="form-group contact-animation contact-animation-7">
-                <label htmlFor="email">
-                  Email Address <span className="required-label">*</span>
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  onChange={handleEmailChange}
-                  required
-                />
-              </div>
-              <div className="contact-animation contact-animation-8">
-                <label htmlFor="bestContactMethod" className="form-label">
-                  Best Contact Method
-                </label>
-                <select
-                  className="form-control"
-                  id="bestContactMethod"
-                  value={contactType}
-                  onChange={handleContactTypeChange}
-                >
-                  {contactTypeOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="form-group contact-animation contact-animation-9">
-                <label htmlFor="subject">
-                  Subject <span className="required-label">*</span>
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="subject"
-                  onChange={handleSubjectChange}
-                  required
-                />
-              </div>
-              <div className="form-group contact-animation contact-animation-10">
-                <label htmlFor="message">
-                  Message <span className="required-label">*</span>
-                </label>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  onChange={handleMessageChange}
-                  rows="5"
-                  required
-                />
-              </div>
-              <div
-                className="form-btn-container d-flex justify-content-center contact-animation contact-animation-11"
-                onClick={handleSubmit}
-              >
-                <SubmitBtn text={"Send Your Message"} />
-              </div>
-            </form>
-          )}
-
-          <div className="row d-flex justify-content-center align-items-center flex-direction-row-reverse">
-            <div className="col-md-6">
-              <div className="row d-flex justify-content-center align-items-center contact-logo-container">
+            <>
+              <div className="contact-header-container">
                 <img
                   src={Logo}
                   alt="Logo"
-                  className="logo-image contact-animation contact-animation-12"
+                  className="logo-image contact-animation contact-animation-3"
                 />
+                <div className="contact-text-container">
+                  <h2 className="contact-header-text">Contact Us Directly</h2>
+                  <p className="contact-text">
+                    We are here to help and answer any questions you may have.
+                    Please feel free to fill out the form below and we will get
+                    back to you ASAP.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-md-6">
-              <div className="row d-flex justify-content-center align-items-center contact-animation contact-animation-13">
-                <StoreAwards />
-              </div>
-            </div>
-          </div>
+
+              <form className="contact-form contact-animation contact-animation-4">
+                <div className="form-row name-row d-flex">
+                  <div className="col-md-6 contact-animation contact-animation-5">
+                    <label htmlFor="firstName">
+                      First Name <span className="required-label ">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control name-field"
+                      id="firstName"
+                      onChange={handleFirstNameChange}
+                      required
+                    />
+                  </div>
+                  <div className="col-md-6 last-name-col contact-animation contact-animation-6">
+                    <label htmlFor="lastName">
+                      Last Name <span className="required-label ">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control name-field last-name-field"
+                      id="lastName"
+                      onChange={handleLastNameChange}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="form-group contact-animation contact-animation-7">
+                  <label htmlFor="phone">Phone</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="phone"
+                    onChange={handlePhoneChange}
+                  />
+                </div>
+                <div className="form-group contact-animation contact-animation-8">
+                  <label htmlFor="email">
+                    Email Address <span className="required-label">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    onChange={handleEmailChange}
+                    required
+                  />
+                </div>
+                <div className="contact-animation contact-animation-9">
+                  <label htmlFor="bestContactMethod" className="form-label">
+                    Best Contact Method
+                  </label>
+                  <select
+                    className="form-control"
+                    id="bestContactMethod"
+                    value={contactType}
+                    onChange={handleContactTypeChange}
+                  >
+                    {contactTypeOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="form-group contact-animation contact-animation-10">
+                  <label htmlFor="subject">
+                    Subject <span className="required-label">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="subject"
+                    onChange={handleSubjectChange}
+                    required
+                  />
+                </div>
+                <div className="form-group contact-animation contact-animation-11">
+                  <label htmlFor="message">
+                    Message <span className="required-label">*</span>
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    onChange={handleMessageChange}
+                    rows="5"
+                    required
+                  />
+                </div>
+                <div
+                  className="form-btn-container d-flex justify-content-center contact-animation contact-animation-12"
+                  onClick={handleSubmit}
+                >
+                  <SubmitBtn text={"Send Your Message"} />
+                </div>
+              </form>
+            </>
+          )}
         </div>
       </div>
     </div>
