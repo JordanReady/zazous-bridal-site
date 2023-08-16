@@ -36,8 +36,8 @@ const reviews = [
     datePublished: "May 2023",
   },
   {
-    firstName: "Wilma",
-    lastName: "Fingado",
+    firstName: "Heather",
+    lastName: "Banker",
     role: "Bride",
     rating: 5,
     feedback:
