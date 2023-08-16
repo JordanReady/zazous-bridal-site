@@ -16,7 +16,7 @@ const CustomNavbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 105) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -70,6 +70,7 @@ const CustomNavbar = () => {
         </div>
         <span className="brand-break">Boutique & Tuxedos</span>
       </Navbar.Brand>
+      <div style={isSticky ? { height: "78px" } : {}}></div>
       <Navbar.Toggle
         aria-controls="navbarNav"
         className={isSticky ? "toggle-menu sticky" : "toggle-menu"}

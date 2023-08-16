@@ -136,6 +136,7 @@ div.active-dropdown a.dropdown-toggle {
   }
   .toggle-menu {
     width: 100%;
+    margin-bottom: 1.5rem;
   }
   .sticky {
     position: fixed;
