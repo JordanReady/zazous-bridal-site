@@ -50,10 +50,16 @@ footer {
 
 .logo-container {
   margin-top: 20px;
+  margin-right: 12px;
 }
 
 .logo-container img {
-  max-width: 200px;
+  max-width: 220px;
+}
+
+.footer-chamber-logo {
+  width: 220px;
+  margin-left: 2px;
 }
 
 /* screen size */
@@ -76,6 +82,15 @@ footer {
   }
   .logo-container {
     margin-top: 0rem !important;
+  }
+  .footer-logo {
+    width: 70px;
+    height: 140px;
+    margin: 0;
+  }
+  .footer-chamber-logo {
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -102,6 +117,12 @@ footer {
 }
 .footer-animation-7 {
   animation: slideInUpSlow 0.75s ease-in-out forwards 3s;
+}
+.footer-animation-8 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 3.2s;
+}
+.footer-animation-9 {
+  animation: slideInUpSlow 0.75s ease-in-out forwards 3.4s;
 }
 
 @keyframes slideInUpSlow {

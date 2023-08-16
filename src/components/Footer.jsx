@@ -7,6 +7,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import ChamberLogo from "../assets/logos/chamber-logo.png";
+import WeddingWire1 from "../assets/Logos/wedding-wire-1-green.png";
+import WeddingWire2 from "../assets/Logos/wedding-wire-2-green.png";
 
 import "../styles/Footer.css";
 
@@ -60,8 +62,23 @@ const Footer = () => {
       >
         Back to Top
       </button>
-      <div className="logo-container footer-animation footer-animation-7">
-        <img src={ChamberLogo} alt="Logo" />
+
+      <div className="logo-container">
+        <img
+          className="footer-logo footer-animation footer-animation-7"
+          src={WeddingWire1}
+          alt="Logo"
+        />
+        <img
+          className="footer-logo footer-chamber-logo footer-animation footer-animation-8"
+          src={ChamberLogo}
+          alt="Logo"
+        />
+        <img
+          className="footer-logo footer-animation footer-animation-9"
+          src={WeddingWire2}
+          alt="Logo"
+        />
       </div>
     </footer>
   );
