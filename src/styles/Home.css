@@ -31,6 +31,10 @@
   margin-top: 15px;
 }
 
+.home-store-info-row {
+  justify-content: space-around;
+}
+
 /* Table */
 
 table {

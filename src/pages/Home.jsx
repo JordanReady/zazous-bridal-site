@@ -31,20 +31,16 @@ const Home = () => {
         </div>
       </section>
       <section className="home-info mt-4">
-        <div class="row">
+        <div class="row home-store-info-row">
           <StoreHours
-            col={"col-md-4"}
+            col={"col-xs-12 col-md-6"}
             customClass={
               "mt-4 home-store-hours home-animation home-animation-4"
             }
           />
-          <div className="col-md-4 mt-4 mb-4 d-flex justify-content-center align-items-center wedding-wire-container home-animation home-animation-5">
-            <div className="home-store-awards-container home-animation home-animation-6">
-              <StoreAwards customClass={"home-store-awards"} />
-            </div>
-          </div>
+
           <StoreInfo
-            col={"col-md-4"}
+            col={"col-xs-12 col-md-6"}
             customClass={
               "mt-4 mb-4 home-store-info home-animation home-animation-7"
             }

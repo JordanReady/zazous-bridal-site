@@ -50,6 +50,12 @@
   width: 89%;
 }
 
+.home-store-hours,
+.home-store-info {
+  width: 48%;
+  max-width: 550px;
+}
+
 /* screen sizes */
 @media (max-width: 767px) {
   .info-box {
