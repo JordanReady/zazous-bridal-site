@@ -1,8 +1,28 @@
 .info-box {
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  height: 335px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: 365px;
+}
+
+.store-hours-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-hours-container {
+  margin-top: 90px;
 }
 
 .store-hours-table th {

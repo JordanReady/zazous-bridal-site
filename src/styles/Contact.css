@@ -7,6 +7,7 @@
 
 .contact-store-info-row {
   display: flex;
+  justify-content: center;
 }
 
 .contact-btn {

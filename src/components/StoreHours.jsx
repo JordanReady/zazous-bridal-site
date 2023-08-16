@@ -3,9 +3,14 @@ import "../styles/StoreHours.css";
 
 const StoreHours = ({ style, col, customClass }) => {
   return (
-    <div className={`${col} info-box ${customClass}`} style={{ "--i": style }}>
-      <div className="text-center">
-        <h3 className="title-text pt-2">Store Hours</h3>
+    <div
+      className={`${col} info-box d-flex justify-content-center align-items-center ${customClass}`}
+      style={{ "--i": style }}
+    >
+      <div className="store-text-container">
+        <h3 className="title-text info-title store-hours-text">Store Hours</h3>
+      </div>
+      <div className="store-hours-container">
         <table className="table table-bordered store-hours-table">
           <tbody>
             <tr>

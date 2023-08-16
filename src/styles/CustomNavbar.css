@@ -85,6 +85,8 @@ div.active-dropdown a.dropdown-toggle {
   color: white;
   border: 1px solid var(--border-color);
   text-shadow: var(--text-shadow-light);
+  padding: 15px;
+  border-radius: 0;
 }
 
 .dropdwon-menu-slide {
@@ -135,6 +137,10 @@ div.active-dropdown a.dropdown-toggle {
   .toggle-menu {
     width: 100%;
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -169,10 +175,6 @@ div.active-dropdown a.dropdown-toggle {
   }
   .toggle-menu {
     width: 100%;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
   }
   .custom-navbar-collapse {
     max-height: 0;

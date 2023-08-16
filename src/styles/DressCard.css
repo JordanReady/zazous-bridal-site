@@ -69,7 +69,6 @@
     opacity: 1 !important;
     font-family: var(--primary-font);
     color: var(--secondary-color);
-    text-shadow: var(--text-shadow-white);
     font-size: 28px;
     font-weight: bold;
   }
