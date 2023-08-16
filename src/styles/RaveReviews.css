@@ -14,7 +14,6 @@
   }
 }
 
-/* For tablet-sized screens (2 reviews in a row) */
 @media screen and (max-width: 991px) {
   .rave-reviews-container {
     display: grid;
@@ -23,10 +22,12 @@
   }
 }
 
-/* For mobile screens (1 review in a row) */
 @media screen and (max-width: 767px) {
   .rave-reviews-container {
     display: block;
+  }
+  .rave-reviews-container .rave-review:last-child {
+    margin-bottom: 0rem !important;
   }
 }
 

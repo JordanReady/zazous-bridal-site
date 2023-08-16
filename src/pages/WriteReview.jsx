@@ -100,7 +100,7 @@ const WriteReview = () => {
               We would love to hear your feedback! Please leave a review below:
             </p>
             <div className="col-12 d-flex justify-content-center align-items-center flex-column">
-              <div className="form-container">
+              <div className="form-container write-review-form-container">
                 <form
                   className="contact-form contact-animation contact-animation-3"
                   onSubmit={handleSubmit}

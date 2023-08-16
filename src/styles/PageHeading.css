@@ -4,8 +4,14 @@
   animation: slidInUpSlow 0.5s ease-in;
 }
 
-/* animations */
+/* screen sizes */
+@media (max-width: 768px) {
+  .page-heading {
+    margin-top: -1rem !important;
+  }
+}
 
+/* animations */
 .page-heading-animation {
   opacity: 0;
 }

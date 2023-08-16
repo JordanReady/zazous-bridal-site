@@ -58,7 +58,7 @@ const PrivateAppointment = () => {
                     className="img-fluid private-appointment-smaller-img private-appointment-animation private-appointment-animation-6"
                   />
                 </div>
-                <div className="col-md-6 private-appointment-smaller-img-row">
+                <div className="col-md-6 private-appointment-smaller-img-row last-img">
                   <img
                     src={Img3}
                     alt="Image 2"

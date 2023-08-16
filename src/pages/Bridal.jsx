@@ -150,7 +150,7 @@ const Bridal = () => {
             link={"https://www.casablancabridal.com/collections/gowns/"}
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-16 d-flex justify-content-center">
+        <div className="col-sm-12 col-lg-4 mb-4 bridal-animation bridal-animation-16 d-flex justify-content-center last-card">
           <DressCard
             image={Img14}
             designer={"Casablanca"}

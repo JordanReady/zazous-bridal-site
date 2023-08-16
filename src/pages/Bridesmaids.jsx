@@ -36,7 +36,7 @@ const Bridesmaids = () => {
         </div>
       </div>
 
-      <div className="row mb-4">
+      <div className="row mb-4 three-card-row">
         <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-3 d-flex justify-content-center">
           <DressCard
             image={Img1}

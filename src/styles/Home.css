@@ -63,11 +63,12 @@ table tr {
     height: 70px;
   }
   .home-store-hours {
-    margin-top: 10px !important;
+    margin-top: 0rem !important;
+    margin-bottom: 2.5rem;
   }
   .hero-text {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
   }
   .hero-btn {
     margin-bottom: 0.75rem;

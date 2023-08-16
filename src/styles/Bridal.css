@@ -19,9 +19,13 @@
   }
   .three-card-row {
     margin-top: -2rem !important;
+    margin-bottom: 2rem !important;
   }
   .two-card-row {
     margin-top: -2rem !important;
+  }
+  .last-card {
+    margin-bottom: 3rem !important;
   }
 }
 

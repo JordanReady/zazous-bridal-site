@@ -82,6 +82,7 @@ footer {
   }
   .logo-container {
     margin-top: 0rem !important;
+    margin-right: 0 !important;
   }
   .footer-logo {
     width: 70px;

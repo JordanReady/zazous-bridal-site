@@ -37,6 +37,9 @@ label {
   .form-container {
     width: 90%;
   }
+  .write-review-form-container {
+    margin-bottom: -1.5rem !important;
+  }
 }
 
 /* animations */
