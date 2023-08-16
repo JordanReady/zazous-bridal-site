@@ -112,8 +112,10 @@ const Contact = () => {
                   className="logo-image contact-animation contact-animation-3"
                 />
                 <div className="contact-text-container">
-                  <h2 className="contact-header-text">Contact Us Directly</h2>
-                  <p className="contact-text">
+                  <h2 className="contact-header-text contact-animation contact-animation-3">
+                    Contact Us Directly
+                  </h2>
+                  <p className="contact-text contact-animation contact-animation-4">
                     We are here to help and answer any questions you may have.
                     Please feel free to fill out the form below and we will get
                     back to you ASAP.
