@@ -89,12 +89,6 @@ div.active-dropdown a.dropdown-toggle {
   border-radius: 0;
 }
 
-.dropdwon-menu-slide {
-  transition: max-height 1s ease;
-  overflow: hidden;
-  max-height: 0;
-}
-
 /* screen sizes */
 @media (min-width: 1300px) {
   .navbar-expand-xl {
@@ -180,7 +174,6 @@ div.active-dropdown a.dropdown-toggle {
   .custom-navbar-collapse {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
   }
 
   .navbar-slide-down {
