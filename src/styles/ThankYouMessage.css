@@ -39,6 +39,7 @@
 @media (max-width: 768px) {
   .thank-you-message {
     width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

@@ -355,7 +355,7 @@ const ScheduleAppointment = () => {
                       className="custom-date-input"
                       required
                       readonly="readonly"
-                      inputMode="none"
+                      inputmode="none"
                       renderCustomHeader={({
                         monthDate,
                         customHeaderCount,
