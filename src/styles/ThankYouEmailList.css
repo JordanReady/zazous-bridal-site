@@ -9,11 +9,30 @@
   justify-content: space-around;
   margin: auto;
   color: var(--text-color);
+  position: relative;
 }
 
 .thank-you-email-list-heading {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-email-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  height: 265px;
 }
 
 @media (max-width: 991px) {

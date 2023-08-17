@@ -69,7 +69,13 @@ const Contact = () => {
       "contactType: ",
       contactType
     );
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      const scrollOffset = 110;
+      window.scrollTo({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }, 100);
   };
 
   return (
@@ -94,7 +100,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 thank-you-contact-row">
           {formSubmitted ? (
             <ThankYouContactMessage
               firstName={firstName}

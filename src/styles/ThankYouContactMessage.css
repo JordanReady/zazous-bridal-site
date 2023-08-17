@@ -1,23 +1,57 @@
 .thank-you-contact-message {
   width: 100%;
   box-shadow: var(--shadow);
-  height: 335px;
+  height: 365px;
   margin-bottom: 6rem;
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: var(--text-color);
+  position: relative;
 }
 
 .thank-you-contact-message-heading {
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: var(--primary-font);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+.thank-you-contact-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  height: 365px !important;
 }
 
 @media (max-width: 991px) {
   .thank-you-contact-message {
+    margin: auto;
     margin-bottom: 1rem;
+    max-width: 442px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thank-you-contact-row {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thank-you-contact-message {
+    max-width: 95dvw;
+    width: 90dvw;
   }
 }
 

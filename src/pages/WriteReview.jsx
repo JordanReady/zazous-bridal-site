@@ -74,6 +74,13 @@ const WriteReview = () => {
     console.log("Publish Comments: " + publishComments);
     console.log("Date Published: " + datePublished);
     setShowThankYouMessage(true);
+    setTimeout(() => {
+      const scrollOffset = 110;
+      window.scrollTo({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }, 100);
   };
 
   const starClassName = (index) => {

@@ -12,26 +12,28 @@ const ThankYouEmailList = ({ firstName, email, phoneNumber }) => {
       <h2 className="thank-you-email-list-heading thank-you-email-list-animation thank-you-email-list-animation-1">
         Thank You, {firstName}!
       </h2>
-      {phoneNumber && !email && (
-        <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
-          Keep an eye out for sales, promotions, and events to your phone
-          number: {phoneNumber}.
-        </p>
-      )}
-      {!phoneNumber && email && (
-        <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
-          Keep an eye out for sales, promotions, and events to your email:{" "}
-          {email}.
-        </p>
-      )}
-      {phoneNumber && email && (
-        <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
-          Keep an eye out for sales, promotions, and events to your phone
-          number: {phoneNumber} and your email: {email}.
-        </p>
-      )}
-      <div className="thank-you-email-list-animation thank-you-email-list-animation-3">
-        <ThankYouLogo customClass={""} />
+      <div className="thank-you-email-text-container">
+        {phoneNumber && !email && (
+          <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
+            Keep an eye out for sales, promotions, and events to your phone
+            number: {phoneNumber}.
+          </p>
+        )}
+        {!phoneNumber && email && (
+          <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
+            Keep an eye out for sales, promotions, and events to your email:{" "}
+            {email}.
+          </p>
+        )}
+        {phoneNumber && email && (
+          <p className="thank-you-text thank-you-email-list-animation thank-you-email-list-animation-2">
+            Keep an eye out for sales, promotions, and events to your phone
+            number: {phoneNumber} and your email: {email}.
+          </p>
+        )}
+        <div className="thank-you-email-list-animation thank-you-email-list-animation-3">
+          <ThankYouLogo customClass={""} />
+        </div>
       </div>
     </div>
   );

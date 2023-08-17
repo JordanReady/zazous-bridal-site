@@ -19,20 +19,22 @@ const ThankYouContactMessage = ({
       <h2 className="thank-you-contact-message-heading thank-you-contact-animation thank-you-contact-animation-1">
         Thank You {firstName}!
       </h2>
-      <p className="thank-you-contact-animation thank-you-contact-animation-2">
-        Your message has been sent regarding {subject}.
-      </p>
-      <p className="thank-you-contact-animation thank-you-contact-animation-3">
-        We will contact you by{" "}
-        {contactType === "Phone" && phoneNumber ? (
-          <span>phone at {phoneNumber}</span>
-        ) : (
-          <span>email at {email}</span>
-        )}{" "}
-        ASAP!
-      </p>
-      <div className="thank-you-contact-animation thank-you-contact-animation-4">
-        <ThankYouLogo customClass={""} />
+      <div className="thank-you-contact-text-container">
+        <p className="thank-you-contact-animation thank-you-contact-animation-2">
+          Your message has been sent regarding {subject}.
+        </p>
+        <p className="thank-you-contact-animation thank-you-contact-animation-3">
+          We will contact you by{" "}
+          {contactType === "Phone" && phoneNumber ? (
+            <span>phone at {phoneNumber}</span>
+          ) : (
+            <span>email at {email}</span>
+          )}{" "}
+          ASAP!
+        </p>
+        <div className="thank-you-contact-animation thank-you-contact-animation-4">
+          <ThankYouLogo customClass={""} />
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,35 @@
   width: 60%;
   box-shadow: var(--shadow);
   color: var(--text-color);
+  height: 335px;
+  position: relative;
+}
+
+.thank-you-review-heading {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-review-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 49px;
+  height: 265px;
+}
+
+.thank-you-review-text-container p {
+  margin: 0;
 }
 
 /* screen size */
