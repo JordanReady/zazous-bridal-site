@@ -9,6 +9,7 @@
   justify-content: space-around;
   color: var(--text-color);
   position: relative;
+  z-index: 10;
 }
 
 .thank-you-contact-message-heading {
@@ -45,6 +46,7 @@
 @media (max-width: 768px) {
   .thank-you-contact-row {
     width: 100% !important;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
