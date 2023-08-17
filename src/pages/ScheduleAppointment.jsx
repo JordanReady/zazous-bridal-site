@@ -37,12 +37,19 @@ const ScheduleAppointment = () => {
 
   const handleScrollTopOfForm = () => {
     if (window.innerWidth <= 768) {
-      const appointmentRowPosition =
-        appointmentRowRef.current.getBoundingClientRect().top +
-        window.pageYOffset;
-      const scrollOffset = 50; // Adjust this value if needed
+      const scrollOffset = 950;
       window.scrollTo({
-        top: appointmentRowPosition - scrollOffset,
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollMidOfForm = () => {
+    if (window.innerWidth <= 768) {
+      const scrollOffset = 1330;
+      window.scrollTo({
+        top: scrollOffset,
         behavior: "smooth",
       });
     }
@@ -244,10 +251,13 @@ const ScheduleAppointment = () => {
       console.log("Mailing List:", mailingList);
       console.log("Text Alerts:", textAlerts);
       setShowThankYou(true);
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      setTimeout(() => {
+        const scrollOffset = 110;
+        window.scrollTo({
+          top: scrollOffset,
+          behavior: "smooth",
+        });
+      }, 100);
     }
   };
 
@@ -343,15 +353,16 @@ const ScheduleAppointment = () => {
                 </select>
               </div>
               <div className="col-6 col-md-4">
-                <div
-                  className=" date-picker-row"
-                  onClick={handleScrollTopOfForm}
-                >
+                <div className=" date-picker-row">
                   <label htmlFor="appointmentDate" className="form-label">
                     Appointment Date <span className="required-label ">*</span>
                   </label>
-                  <div className="date-picker-container">
+                  <div
+                    className="date-picker-container"
+                    onClick={handleScrollTopOfForm}
+                  >
                     <DatePicker
+                      type="date"
                       className="custom-date-input"
                       required
                       readonly="readonly"
@@ -496,6 +507,7 @@ const ScheduleAppointment = () => {
                 id="budget"
                 value={budgetType}
                 onChange={handleBudgetTypeChange}
+                onClick={handleScrollMidOfForm}
                 required
               >
                 {budgetTypeOptions.map((option) => (
