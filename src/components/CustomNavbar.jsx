@@ -52,7 +52,13 @@ const CustomNavbar = () => {
 
   const handleMenuClick = () => {
     // Scroll to the top of the page
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => {
+      const scrollOffset = 110;
+      window.scrollTo({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }, 100);
   };
 
   return (
