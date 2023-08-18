@@ -19,6 +19,10 @@
   color: var(--secondary-color) !important;
 }
 
+.nav-link {
+  padding: 0;
+}
+
 div.active-dropdown a.dropdown-toggle {
   color: var(--secondary-color) !important;
 }
