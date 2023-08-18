@@ -73,6 +73,9 @@
   .rave-review-title {
     font-size: 22px;
   }
+  .rave-review-date-published {
+    margin-left: -1rem;
+  }
 }
 
 /* animations */
