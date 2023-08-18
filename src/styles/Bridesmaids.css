@@ -1,7 +1,6 @@
 .bridesmaids-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
   color: var(--text-color);
 }
 
@@ -25,6 +24,9 @@
   .two-card-row {
     margin-top: -2rem !important;
     margin-bottom: -0.5rem !important;
+  }
+  .bridesmaids-text {
+    text-align: var(--text-align) !important;
   }
 }
 

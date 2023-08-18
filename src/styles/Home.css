@@ -22,7 +22,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center;
+  text-align: var(--text-align);
   font-family: var(--secondary-font);
 }
 
@@ -69,6 +69,7 @@ table tr {
   .hero-text {
     margin-top: 1rem;
     margin-bottom: 1.25rem;
+    text-align: var(--text-align);
   }
   .hero-btn {
     margin-bottom: 0.75rem;

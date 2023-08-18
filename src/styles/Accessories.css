@@ -1,7 +1,6 @@
 .accessories-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
   color: var(--text-color);
 }
 
@@ -28,6 +27,9 @@
 @media (max-width: 768px) {
   .accessories-img-small {
     width: 365px;
+  }
+  .accessories-text {
+    text-align: var(--text-align) !important;
   }
 }
 

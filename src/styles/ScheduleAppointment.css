@@ -2,7 +2,7 @@
   font-family: var(--secondary-font);
   font-size: 18px;
   color: var(--text-color);
-  text-align: justify;
+  text-align: var(--text-align);
 }
 
 .schedule-your-appointment-header {

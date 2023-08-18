@@ -16,7 +16,6 @@
 .suits-tuxedos-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
   color: var(--text-color);
 }
 
@@ -44,6 +43,9 @@
   }
   .suits-tuxedos-btn {
     margin-bottom: 1rem;
+  }
+  .suits-tuxedos-text {
+    text-align: var(--text-align) !important;
   }
 }
 

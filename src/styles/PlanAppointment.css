@@ -5,7 +5,7 @@
 .plan-appointment-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
+  text-align: var(--text-align);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,13 @@
 
 .plan-list {
   padding: 0;
+}
+
+/* screen sizes */
+@media (max-width: 768px) {
+  .plan-appointment-header {
+    text-align: var(--text-align) !important;
+  }
 }
 
 /* animations */

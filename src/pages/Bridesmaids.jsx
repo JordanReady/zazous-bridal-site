@@ -22,9 +22,9 @@ const Bridesmaids = () => {
           With Zazou's being a one-stop-shop for your wedding attire needs, we
           offer a wide selection of bridesmaids and mother’s dresses. From
           sequins to chiffon and just about any color under the sun, we can help
-          anyone find the perfect dresses to compliment their gown!
-          Bridesmaids/mothers dresses typically take 6 - 12 weeks to order,
-          depending on the manufacturer's guidelines.
+          anyone find the perfect dresses to compliment their gown! Bridesmaids
+          / mothers dresses typically take 6 - 12 weeks to order, depending on
+          the manufacturer's guidelines.
         </p>
         <div className="bridesmaids-promotion-container bridesmaids-animation bridesmaids-animation-2">
           <span className="bridesmaids-promotion">Special Promotion!</span>

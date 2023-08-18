@@ -1,7 +1,6 @@
 .bridal-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
   color: var(--text-color);
 }
 
@@ -10,6 +9,7 @@
   .bridal-text {
     margin-bottom: 2rem !important;
     margin-top: 1rem !important;
+    text-align: var(--text-align) !important;
   }
   .bridal-container {
     margin-bottom: -2rem !important;

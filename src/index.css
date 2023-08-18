@@ -23,13 +23,15 @@
   /* --primary-color: #e9b1a6;
   --secondary-color: black;
   --text-color: black;
-  --border-color: #e9b1a6; */
+  --border-color: #e9b1a6; 
+  --text-align: justify */
 
   /* -----Scheme 2----- */
   --primary-color: #496751;
   --secondary-color: #a3caae;
   --text-color: #5f5f5f;
   --border-color: #273b2e;
+  --text-align: justify;
 
   /* ----------Utilities---------- */
 

@@ -29,6 +29,9 @@
   .rave-reviews-container .rave-review:last-child {
     margin-bottom: 0rem !important;
   }
+  .rave-reviews-text {
+    text-align: var(--text-align) !important;
+  }
 }
 
 /* animations */

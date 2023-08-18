@@ -15,14 +15,14 @@
 .story-text {
   font-family: var(--secondary-font);
   font-size: 18px;
-  text-align: justify;
+  text-align: var(--text-align);
   color: var(--text-color);
 }
 
 /* screen sizes */
 @media (max-width: 767px) {
   .story-text {
-    text-align: justify;
+    text-align: var(--text-align);
   }
   .main-img {
     height: 400px;
