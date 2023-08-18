@@ -11,6 +11,8 @@
   text-align: center;
   animation: slideInDownSlow 0.7s ease-in-out forwards 0.25s;
   color: var(--text-color);
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .vendor-card-grid {

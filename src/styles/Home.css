@@ -26,6 +26,10 @@
   font-family: var(--secondary-font);
 }
 
+.hero-btn {
+  margin-top: 1.5rem;
+}
+
 /* Home Info */
 .home-info {
   margin-top: 15px;

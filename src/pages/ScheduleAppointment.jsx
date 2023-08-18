@@ -357,10 +357,7 @@ const ScheduleAppointment = () => {
                   <label htmlFor="appointmentDate" className="form-label">
                     Appointment Date <span className="required-label ">*</span>
                   </label>
-                  <div
-                    className="date-picker-container"
-                    onClick={handleScrollTopOfForm}
-                  >
+                  <div className="date-picker-container">
                     <DatePicker
                       type="date"
                       className="custom-date-input"
