@@ -2,6 +2,10 @@
   text-align: center !important;
 }
 
+.plan-appointment-outro {
+  text-align: center;
+}
+
 .plan-appointment-text {
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -26,6 +30,17 @@
 @media (max-width: 768px) {
   .plan-appointment-header {
     text-align: var(--text-align) !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .plan-list li {
+    margin-bottom: 0.5rem !important;
+  }
+  .plan-appointment-text p:nth-child(3) {
+    margin-top: -1rem !important;
+    margin-bottom: -0.25rem !important;
+  }
+  .plan-appointment-outro {
+    text-align: var(--text-align);
   }
 }
 

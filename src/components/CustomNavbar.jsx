@@ -40,9 +40,7 @@ const CustomNavbar = () => {
   };
 
   const handleDropdownLeave = (eventKey) => {
-    dropdownTimerRef.current = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 200); // Add a small delay before closing the dropdown
+    setActiveDropdown(null);
   };
 
   const handleLogoClick = () => {

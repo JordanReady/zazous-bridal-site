@@ -7,7 +7,8 @@
 /* screen sizes */
 @media (max-width: 768px) {
   .page-heading {
-    margin-top: -1rem !important;
+    margin-top: -1.25rem !important;
+    margin-bottom: 0 !important;
   }
 }
 

@@ -26,7 +26,9 @@
 @media (max-width: 768px) {
   .event-title {
     width: 100%;
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 0.5rem !important;
+    margin-top: -0.25rem !important;
   }
   .email-form {
     width: 95%;
@@ -43,6 +45,13 @@
   }
   .name-row {
     justify-content: space-between;
+  }
+  .sign-up-subtext {
+    margin-bottom: 0.25rem !important;
+  }
+  .form-btn-container {
+    margin-top: 0.75rem !important;
+    margin-bottom: -0.75rem !important;
   }
 }
 

@@ -75,7 +75,8 @@ footer {
     box-shadow: var(--shadow);
     color: white;
     transition: all ease-in-out 0.3s;
-    margin-top: 1.25rem !important;
+    margin-top: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
   }
   .back-to-top-btn:hover {
     transform: translateY(-3px);

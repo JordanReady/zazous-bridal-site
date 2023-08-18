@@ -161,7 +161,9 @@ input[type="checkbox"].form-check-input:checked {
 
 /* screen sizes */
 @media (max-width: 768px) {
-  /* stuff */
+  .schedule-your-appointment-text p {
+    margin-bottom: 0.5rem !important;
+  }
 }
 
 /* animations */

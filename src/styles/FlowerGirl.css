@@ -37,8 +37,12 @@
 /* screen size */
 @media (max-width: 768px) {
   .flowergirl-text {
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    margin-top: -0rem !important;
     text-align: var(--text-align) !important;
+  }
+  .flowergirl-card {
+    margin-bottom: -1rem !important;
   }
   .flowergirl-container {
     margin-bottom: -2rem;
@@ -48,6 +52,7 @@
   }
   .four-card-row {
     margin-top: -2rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 

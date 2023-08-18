@@ -13,7 +13,7 @@
 /* screen size */
 @media (max-width: 768px) {
   .prom-text {
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
     text-align: var(--text-align) !important;
   }
   .prom-container {

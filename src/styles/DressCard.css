@@ -54,7 +54,7 @@
 @media (max-width: 768px) {
   .dress-card {
     margin: auto;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: -0.25rem !important;
   }
   .dress-card-image {
     width: auto;

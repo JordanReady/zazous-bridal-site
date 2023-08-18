@@ -70,7 +70,7 @@ const OurStory = () => {
         </div>
         <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center">
           <img
-            className="small-img our-story-animation our-story-animation-8"
+            className="small-img our-story-animation our-story-animation-8 last-story-img"
             src={Img5}
             alt="Image"
           />{" "}

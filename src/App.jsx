@@ -37,22 +37,29 @@ const App = () => {
   const [showWelcome, setShowWelcome] = useState(true);
   const location = useLocation();
 
-  // useEffect(() => {
-  //   if (location.pathname === "/") {
-  //     const timeout = setTimeout(() => {
-  //       setShowWelcome(false);
-  //     }, 4000);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      const timeout = setTimeout(() => {
+        setShowWelcome(false);
+      }, 3500);
 
-  //     return () => {
-  //       clearTimeout(timeout);
-  //     };
-  //   } else {
-  //     setShowWelcome(false); // Disable animation for non-home URLs
-  //   }
-  // }, []);
+      return () => {
+        clearTimeout(timeout);
+      };
+    } else {
+      setShowWelcome(false); // Disable animation for non-home URLs
+    }
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (window.innerHeight < 768) {
+      const scrollOffset = 110;
+      window.scrollTo({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }
   }, [location]);
 
   return (

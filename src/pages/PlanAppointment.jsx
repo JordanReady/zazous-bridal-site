@@ -85,7 +85,7 @@ const PlanAppointment = () => {
           </li>
         </ol>
 
-        <p className=" plan-appointment-animation plan-appointment-animation-8">
+        <p className="plan-appointment-animation plan-appointment-animation-8 plan-appointment-outro">
           At the end of the day, we want what's best for you! We want your
           appointment to run as smoothly as possible and the tips listed above
           will help to ensure that happens. Always feel free to contact us with

@@ -24,13 +24,23 @@
   .story-text {
     text-align: var(--text-align);
   }
+  .story-text p:nth-child(2) {
+    margin-top: -0.5rem !important;
+  }
   .main-img {
     height: 400px;
-    margin-top: 0.25rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: -0.5rem !important;
+  }
+  .small-img {
+    margin-bottom: 0.5rem !important;
+  }
+  .last-story-img {
+    margin-bottom: 0.25rem !important;
   }
   .our-story-btn {
     margin-top: 0rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0rem;
   }
 }
 

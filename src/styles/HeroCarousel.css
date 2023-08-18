@@ -133,6 +133,7 @@ li .active {
     bottom: -65px;
     margin: 0;
     max-width: 515px !important;
+    overflow: hidden;
   }
   .carousel-indicators li {
     margin: 0;

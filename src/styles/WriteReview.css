@@ -40,6 +40,12 @@ label {
   .write-review-form-container {
     margin-bottom: -1.5rem !important;
   }
+  .write-review-text {
+    margin-bottom: 0.25rem !important;
+  }
+  .write-review-btn {
+    margin-bottom: -0.25rem !important;
+  }
 }
 
 /* animations */

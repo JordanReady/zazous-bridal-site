@@ -27,6 +27,7 @@
 }
 
 .welcome-logo {
+  margin-top: 1.5rem;
   height: 200px;
   width: 200px;
 }
@@ -42,23 +43,24 @@
   .welcome-logo {
     height: 110px;
     width: 110px;
+    margin-top: 0.5rem;
   }
 }
 
 /* animations */
-/* 
+
 .welcome-animation {
   opacity: 0;
 }
 .welcome-animation-1 {
-  animation: slideDownFadeUp 3.9s ease-in-out forwards;
+  animation: slideDownFadeUp 3.4s ease-in-out forwards;
 }
 .welcome-animation-2 {
-  animation: fadeInFadeOut 3.9s ease-in-out forwards;
+  animation: fadeInFadeOut 3.4s ease-in-out forwards;
 }
 .welcome-animation-3 {
-  animation: slideUpFadeDown 3.9s ease-in-out forwards;
-} */
+  animation: slideUpFadeDown 3.4s ease-in-out forwards;
+}
 
 @keyframes slideDownFadeUp {
   0% {

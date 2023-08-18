@@ -27,7 +27,7 @@ const Bridesmaids = () => {
           the manufacturer's guidelines.
         </p>
         <div className="bridesmaids-promotion-container bridesmaids-animation bridesmaids-animation-2">
-          <span className="bridesmaids-promotion">Special Promotion!</span>
+          <h2 className="bridesmaids-promotion">Special Promotion!</h2>
           <br />
           <p className="">
             If you find your gown at Zazou’s, your gals (bridesmaids, mothers,
@@ -74,7 +74,7 @@ const Bridesmaids = () => {
             }
           />
         </div>
-        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-7 d-flex justify-content-center">
+        <div className="col-sm-12 col-lg-4 mb-4 bridesmaids-animation bridesmaids-animation-7 d-flex justify-content-center last-bridesmaids-card">
           <DressCard
             image={Img5}
             designer={"Christina Wu Elegance"}

@@ -68,18 +68,19 @@ table tr {
   }
   .hero-text {
     margin-top: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.25rem;
     text-align: var(--text-align);
   }
   .hero-btn {
-    margin-bottom: 0.75rem;
-  }
-  .home-store-awards {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    margin-bottom: 0rem;
   }
   .home-store-info {
-    margin-top: 0 !important;
+    margin-top: -1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  .carousel-container {
+    margin-top: -1rem !important;
+    margin-bottom: -1rem !important;
   }
 }
 
