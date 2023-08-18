@@ -5,7 +5,7 @@ import "../styles/WelcomeHome.css";
 
 const WelcomeHome = () => {
   return (
-    <div className=" container welcome-container">
+    <div className=" welcome-container">
       <h1 className="welcome-title welcome-animation welcome-animation-1">
         Zazou's Bridal Boutique & Tuxedos
       </h1>

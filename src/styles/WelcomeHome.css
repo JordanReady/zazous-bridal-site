@@ -1,7 +1,6 @@
 .welcome-container {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -9,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto !important;
 }
 
 .welcome-title {
@@ -16,6 +16,7 @@
   color: var(--primary-color);
   font-size: 48px;
   text-align: center;
+  padding: 1rem;
 }
 
 .welcome-slogan {
@@ -45,7 +46,7 @@
 }
 
 /* animations */
-
+/* 
 .welcome-animation {
   opacity: 0;
 }
@@ -57,7 +58,7 @@
 }
 .welcome-animation-3 {
   animation: slideUpFadeDown 3.9s ease-in-out forwards;
-}
+} */
 
 @keyframes slideDownFadeUp {
   0% {
