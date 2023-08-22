@@ -40,7 +40,11 @@ const CustomNavbar = () => {
   };
 
   const handleDropdownLeave = (eventKey) => {
-    setActiveDropdown(null);
+    if (activeDropdown === eventKey) {
+      dropdownTimerRef.current = setTimeout(() => {
+        setActiveDropdown(null);
+      }, 200);
+    }
   };
 
   const handleLogoClick = () => {
@@ -103,6 +107,7 @@ const CustomNavbar = () => {
             onMouseEnter={() => handleDropdownEnter("aboutDropdown")}
             onMouseLeave={() => handleDropdownLeave("aboutDropdown")}
             show={activeDropdown === "aboutDropdown"}
+            renderMenuOnMount={true}
             className={
               location.pathname.includes("/our-story") ||
               location.pathname.includes("/vendors")
