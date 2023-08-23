@@ -69,13 +69,23 @@ const Contact = () => {
       "contactType: ",
       contactType
     );
-    setTimeout(() => {
-      const scrollOffset = 110;
-      window.scrollTo({
-        top: scrollOffset,
-        behavior: "smooth",
-      });
-    }, 100);
+    if (window.innerWidth <= 798) {
+      setTimeout(() => {
+        const scrollOffset = 110;
+        window.scrollTo({
+          top: scrollOffset,
+          behavior: "smooth",
+        });
+      }, 100);
+    } else {
+      setTimeout(() => {
+        const scrollOffset = 0;
+        window.scrollTo({
+          top: scrollOffset,
+          behavior: "smooth",
+        });
+      }, 100);
+    }
   };
 
   return (

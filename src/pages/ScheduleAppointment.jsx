@@ -251,13 +251,23 @@ const ScheduleAppointment = () => {
       console.log("Mailing List:", mailingList);
       console.log("Text Alerts:", textAlerts);
       setShowThankYou(true);
-      setTimeout(() => {
-        const scrollOffset = 110;
-        window.scrollTo({
-          top: scrollOffset,
-          behavior: "smooth",
-        });
-      }, 100);
+      if (window.innerWidth <= 798) {
+        setTimeout(() => {
+          const scrollOffset = 110;
+          window.scrollTo({
+            top: scrollOffset,
+            behavior: "smooth",
+          });
+        }, 100);
+      } else {
+        setTimeout(() => {
+          const scrollOffset = 0;
+          window.scrollTo({
+            top: scrollOffset,
+            behavior: "smooth",
+          });
+        }, 100);
+      }
     }
   };
 
@@ -299,9 +309,9 @@ const ScheduleAppointment = () => {
                 if possible.
               </p>
               <p className="schedule-your-appointment-animation schedule-your-appointment-animation-3">
-                If you We recommend scheduling your bridal appointment 9-12+
-                months prior to your wedding date to ensure you're able to get
-                the dress of your dreams! There are instances such as a designer
+                We recommend scheduling your bridal appointment 9-12+ months
+                prior to your wedding date to ensure you're able to get the
+                dress of your dreams! There are instances such as a designer
                 being ahead of schedule or buying a dress "off the rack" that
                 would result in you receiving your gown sooner.
               </p>
